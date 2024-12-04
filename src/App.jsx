@@ -8,11 +8,13 @@ function App() {
     <Router>
       <NavBar/>
       <Routes>
+        <Route path='/sync-exim'>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<div className='remain'>about</div>}/>
         <Route path='/contact' element={<div className='remain'>contact</div>}/>
         <Route path='/products' element={<div className='remain'>products</div>}/>
         <Route path='/certificates' element={<div className='remain'>certificates</div>}/>
+        </Route>
       </Routes>
     </Router>
   )
