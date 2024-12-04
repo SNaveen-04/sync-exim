@@ -1,6 +1,6 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
-import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
+import { BrowserRouter as Router,Route,Routes,Outlet} from 'react-router-dom'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <NavBar/>
       <Routes>
-        <Route path='/sync-exim'>
+        <Route path='/sync-exim' element={<Outlet/>}>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<div className='remain'>about</div>}/>
         <Route path='/contact' element={<div className='remain'>contact</div>}/>
