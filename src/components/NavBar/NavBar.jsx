@@ -9,19 +9,19 @@ const NavBar = () => {
         </div>
         <ul className="navigation">
             <li>
-                <Link to="/">Home</Link>
+                <Link className="link" to="/sync-exim">Home</Link>
             </li>
             <li>
-                <Link to="/about">About</Link>
+                <Link className="link" to="/sync-exim/about">About</Link>
             </li>
             <li>
-                <Link to="/contact">Contact</Link>
+                <Link className="link" to="/sync-exim/contact">Contact</Link>
             </li>
             <li>
-                <Link to="/products">Products</Link>
+                <Link className="link" to="/sync-exim/products">Products</Link>
             </li>
             <li>
-                <Link to="/certificates">Certificates</Link>
+                <Link className="link" to="/sync-exim/certificates">Certificates</Link>
             </li>
         </ul>
     </nav>
