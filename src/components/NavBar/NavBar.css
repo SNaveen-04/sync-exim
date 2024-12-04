@@ -34,21 +34,27 @@
 }
 
 #primary-nav .navigation li{
-    padding: 10px 15px;
     font-weight: bolder;
     color: rgb(0, 68, 170);
     font-size: 1em;
     text-transform: uppercase;
 }
-#primary-nav .navigation li:hover{
+#primary-nav .navigation li a:hover{
     color: blue;
     padding-bottom: 8px;
     border-bottom: 2px solid blue;
 }
 
 #primary-nav .navigation li a{
+    display: inline-block;
+    padding: 10px 15px;
     text-decoration: none;
 }
+
+a:active{
+    color: blue;
+}
+
 
 @media screen and (max-width:650px) {
     #primary-nav{
