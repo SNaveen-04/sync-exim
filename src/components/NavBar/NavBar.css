@@ -47,6 +47,7 @@
 #primary-nav .navigation li a{
     color: rgb(0, 68, 170);
     display: inline-block;
+    height: 100%;
     padding: 10px 15px;
     text-decoration: none;
 }
