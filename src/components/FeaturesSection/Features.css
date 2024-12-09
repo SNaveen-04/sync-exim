@@ -63,11 +63,11 @@
 
 
 @media screen and (max-width:430px) {
-    #features #heading .logo{
+    #features .heading .logo{
         font-size: 80px;
     }
 
-    #features #heading p.main-heading{
+    #features .heading p.main-heading{
         font-size: 30px;
         top: -20px;
     }

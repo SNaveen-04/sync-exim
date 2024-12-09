@@ -63,11 +63,12 @@
 
 
 @media screen and (max-width:430px) {
-    #services #heading .logo{
-        font-size: 80px;
+
+    #services .heading .logo{
+        font-size: 60px;
     }
 
-    #services #heading p.main-heading{
+    #services .heading p.main-heading{
         font-size: 30px;
         top: -20px;
     }

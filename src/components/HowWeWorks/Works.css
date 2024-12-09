@@ -63,11 +63,11 @@
 
 
 @media screen and (max-width:430px) {
-    #how-we-works #heading .logo{
+    #how-we-works .heading .logo{
         font-size: 80px;
     }
 
-    #how-we-works #heading p.main-heading{
+    #how-we-works .heading p.main-heading{
         font-size: 30px;
         top: -20px;
     }
