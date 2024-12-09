@@ -3,7 +3,7 @@
     margin: 0px;
 }
 
-#primary-nav{
+#primary-nav,#secondary-nav{
     background-color: white;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#primary-nav .logo{
+#primary-nav .logo, #secondary-nav .logo{
     padding: 15px 20px;
     display: block;
     color: blue;
@@ -24,6 +24,23 @@
     height: max-content;
 }
 
+#secondary-nav .logo{
+    font-size: 1.3em;
+}
+
+#secondary-nav{
+    display: none;
+}
+
+#secondary-nav .menu{
+    padding: 15px 20px;
+    display: block;
+    color: rgb(31, 66, 93);
+    font-size: 1.6em;
+    font-weight: bolder;
+    font-size: medium;
+    height: max-content;
+}
 
 #primary-nav .navigation{
     margin: 0px 10px;
@@ -58,11 +75,22 @@ a:active{
 
 
 @media screen and (max-width:650px) {
+
+    #secondary-nav{
+        display: flex;
+    }
+
     #primary-nav{
         height: 100vh;
+        position: fixed;
+        width: 100vw;
         flex-direction: column;
         justify-content: flex-start;
+        z-index: 1;
+        transition: all;
+        transition-duration: 600ms;
     }
+
 
     #primary-nav .navigation{
         flex-direction: column;
@@ -71,5 +99,16 @@ a:active{
 
     #primary-nav .navigation li{
         font-size: small;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #primary-nav .navigation li a{
+        display: flex;
+        align-items: center;
+        padding: 4px 15px;
+    }
+    #primary-nav .navigation li a:hover{
+        padding-bottom: 2px;
     }
 }
