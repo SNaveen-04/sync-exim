@@ -60,7 +60,16 @@
     border: 1px solid white;
 }
 
+@media screen and (max-width:768px) {
+    #services .heading .logo{
+        font-size: 70px;
+    }
 
+    #services .heading p.main-heading{
+        font-size: 30px;
+        top: -20px;
+    }
+}
 
 @media screen and (max-width:430px) {
 

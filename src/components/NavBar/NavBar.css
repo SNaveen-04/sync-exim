@@ -73,6 +73,12 @@ a:active{
     color: blue;
 }
 
+@media screen and (max-width:768px) {
+    #primary-nav .navigation li{
+        font-size: small;
+    }
+}
+
 
 @media screen and (max-width:650px) {
 

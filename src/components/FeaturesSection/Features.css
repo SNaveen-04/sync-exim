@@ -60,9 +60,18 @@
     border: 1px solid white;
 }
 
+@media screen and (max-width:768px) {
+    #features .heading .logo{
+        font-size: 70px;
+    }
 
+    #features .heading p.main-heading{
+        font-size: 30px;
+        top: -20px;
+    }
+}
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:425px) {
     #features .heading .logo{
         font-size: 60px;
     }

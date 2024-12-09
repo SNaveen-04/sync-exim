@@ -60,6 +60,16 @@
     border: 1px solid rgb(0, 0, 0);
 }
 
+@media screen and (max-width:768px) {
+    #how-we-works .heading .logo{
+        font-size: 70px;
+    }
+
+    #how-we-works .heading p.main-heading{
+        font-size: 30px;
+        top: -20px;
+    }
+}
 
 
 @media screen and (max-width:430px) {
