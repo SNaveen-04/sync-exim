@@ -8,15 +8,14 @@
     display: flex;
     flex-direction: column;
 }
-
-#services #heading{
+#services .heading{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     color: #FD7062;
     position: relative;
     height: 150px;
 }
 
-#services #heading p.main-heading{
+#services .heading p.main-heading{
     text-align: center;
     font-size: 50px;
     color: white;
@@ -25,12 +24,12 @@
     font-weight: 500;
 }
 
-#services #heading p.main-heading span{ 
+#services .heading p.main-heading span{ 
     color: #4AB9CF;
 }
 
 
-#services #heading .logo{
+#services .heading .logo{
     color: rgb(31, 66, 93);
     font-size: 140px;
     letter-spacing: 5px;
@@ -44,7 +43,7 @@
     text-align: center;
 }
 
-#services #card-container{
+#services .card-container{
     width: calc(100% - 20px);
     box-sizing: border-box;
     flex: 1;
@@ -56,7 +55,7 @@
     justify-content: space-between;
 }
 
-#services #card-container .card{
+#services .card-container .card{
     width: 30%;
     border: 1px solid white;
 }
