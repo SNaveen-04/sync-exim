@@ -1,0 +1,29 @@
+.icon-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.icon-container img{
+    border-radius: 10%;
+}
+
+h2,h4,p{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-size: x-large;
+}
+
+h4{
+    font-size: large;
+}
+
+p{
+    font-size: medium;
+}

@@ -49,7 +49,7 @@
     flex: 1;
     padding: 10px;
     margin: 25px 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,14 +57,14 @@
 
 #features .card-container .card{
     width: 30%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 @media screen and (max-width:768px) {
     #features .heading .logo{
         font-size: 70px;
     }
-
+    
     #features .heading p.main-heading{
         font-size: 30px;
         top: -20px;
@@ -79,5 +79,14 @@
     #features .heading p.main-heading{
         font-size: 30px;
         top: -20px;
+    }
+
+    #features .card-container{
+        flex-direction: column;
+    }
+    #features .card-container .card{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
     }
 }
