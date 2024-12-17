@@ -9,21 +9,21 @@ const Works = () => {
   const worksData = [
     {
       img:Image1,
-      size:'50px',
+      size:'70px',
       main : 'Quality You Can Trust',
       sub : '',
       content : 'We pride ourselves on offering high-quality, rigorously tested products that meet international standards.'
     },
     {
       img:Image2,
-      size:'50px',
+      size:'70px',
       main : 'Sustainable & Ethical Sourcing',
       sub : '',
       content : 'Our partnerships with local producers ensure that we promote eco-friendly practices and fair trade, empowering communities and protecting the environment.'
     },
     {
       img:Image3,
-      size:'50px',
+      size:'70px',
       main : 'Global Expertise',
       sub : '',
       content : 'With years of experience in global markets, we understand the complexities of international trade and ensure smooth, efficient logistics tailored to your needs.'
@@ -40,7 +40,7 @@ const Works = () => {
           {
             worksData.map((work,index) => {
               return <div className="card" key={index}>
-                <Card img={work.img} main={work.main} sub={work.sub} content={work.content} size={work.size} />
+                <Card img={work.img} class={"rounded"} main={work.main} sub={work.sub} content={work.content} size={work.size} mainColor={"#1f425d"} contentColor={"#7a7c7c"} />
               </div>
             })
           }
