@@ -10,6 +10,10 @@
     border-radius: 10%;
 }
 
+.services img{
+    border-radius: 3px !important;
+}
+
 .rounded{
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 10px 8px rgb(247, 247, 247);

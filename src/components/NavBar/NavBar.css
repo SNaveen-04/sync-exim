@@ -17,11 +17,15 @@
 #primary-nav .logo, #secondary-nav .logo{
     padding: 15px 20px;
     display: block;
-    color: blue;
+    color:rgb(44, 82, 110);
     font-size: 1.6em;
     font-weight: bolder;
     font-size: xx-large;
     height: max-content;
+}
+
+#primary-nav .logo span, #secondary-nav .logo span{
+    color: #4AB9CF;
 }
 
 #secondary-nav .logo{
