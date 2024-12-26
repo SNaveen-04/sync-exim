@@ -1,14 +1,12 @@
 /* eslint-disable react/prop-types */
 
 import "./Card.css"
-const Card = (props) => {
-    console.log(props.size);
-    
+const Card = (props) => {    
   return (
     <div>
         <div className="icon-container">
           <span className={props.class}>
-            <img src={props.img} height={props.size} width={props.size}/>
+            <img src={props.img} className={`h-[${props.size}] w-[${props.size}] rounded-sm`}/>
           </span>
         </div>
         <h2 style={{color:props.mainColor}}>{props.main}</h2>
