@@ -2,6 +2,8 @@
 
 import "./Card.css"
 const Card = (props) => {    
+  console.log(props.size);
+  
   return (
     <div>
         <div className="icon-container">

@@ -6,6 +6,7 @@
     margin: 10px 0px;
     border: 1px solid black;
     display: flex;
+    color: white;
     flex-direction: column;
 }
 #services .heading{
@@ -49,7 +50,6 @@
     flex: 1;
     padding: 10px;
     margin: 25px 10px;
-    /* border: 1px solid white; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,8 +57,8 @@
 
 #services .card-container .card{
     width: 30%;
-    /* border: 1px solid white; */
 }
+
 
 @media screen and (max-width:768px) {
     #services .heading .logo{
@@ -93,7 +93,5 @@
     }
     #services .card-container .card{
         width: 100%;
-        /* margin: 10px; */
-        /* padding: 10px; */
     }
 }
