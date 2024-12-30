@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './pages/Layout'
 import HomePage from "./pages/HomePage"
+import ConstrucionPage from './pages/ConstrucionPage'
 
 function App() {
   return (
@@ -9,10 +10,10 @@ function App() {
       <Routes>
         <Route path='/sync-exim' element={<Layout/>}>
           <Route index element={<HomePage/>}/>
-          <Route path='about' element={<div>about</div>}/>
-          <Route path='contact' element={<div>contact</div>}/>  
-          <Route path='products' element={<div>products</div>}/>  
-          <Route path='certificates' element={<div>certificates</div>}/>  
+          <Route path='about' element={<ConstrucionPage/>}/>
+          <Route path='contact' element={<ConstrucionPage/>}/>
+          <Route path='verticals' element={<ConstrucionPage/>}/>
+          <Route path='certificates' element={<ConstrucionPage/>}/>
         </Route>
         <Route path='*' element={<div>Page Not found</div>} />
       </Routes>

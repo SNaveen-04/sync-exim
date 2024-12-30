@@ -26,7 +26,7 @@ const Service = () => {
       size:'300px',
       main : 'Credibility',
       sub : 'Stored In Stock',
-      content : "Credibility is not just a trait; it's a commitment to excellence."
+      content : "Credibility is not just a trait, it's a commitment to excellence."
     },
   ]
 
@@ -48,7 +48,7 @@ const Service = () => {
         </div>
         <h2 style={{color:"#ffffff"}}>{service.main}</h2>
         <h4 style={{color:"#4AB9CF"}}>{service.sub}</h4>
-        <p style={{color:"#d2d2d2"}}>{service.content}</p>
+        <p style={{color:"#d2d2d2"}} className='text-xs'>{service.content}</p>
     </div>
               </div>
             })
