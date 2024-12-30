@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import "./Card.css"
-const Card = (props) => {    
-  console.log(props.size);
-  
+const Card = (props) => {      
   return (
     <div>
         <div className="icon-container">

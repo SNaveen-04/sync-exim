@@ -60,9 +60,8 @@
     text-transform: uppercase;
 }
 #primary-nav .navigation li a:hover{
-    color: blue;
     padding-bottom: 8px;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(0, 68, 170);
 }
 
 #primary-nav .navigation li a{

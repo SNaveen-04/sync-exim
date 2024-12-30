@@ -10,23 +10,23 @@ const Service = () => {
     {
       img:Image1,
       size:'300px',
-      main : '9 Million',
+      main : 'Timely service',
       sub : 'Delivered Packages',
-      content : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap'
+      content : 'Delivering on time is delivering on trust'
     },
     {
       img:Image2,
       size:'300px',
-      main : '25 Million',
+      main : 'Global reach',
       sub : 'Miles Driven',
-      content : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap'
+      content : 'Connecting to a World of Opportunities'
     },
     {
       img:Image3,
       size:'300px',
-      main : '1 Million',
+      main : 'Credibility',
       sub : 'Stored In Stock',
-      content : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap'
+      content : "Credibility is not just a trait; it's a commitment to excellence."
     },
   ]
 
@@ -42,8 +42,8 @@ const Service = () => {
               return <div className="card" key={index}>
               <div>
         <div className="icon-container">
-          <span className={service.class}>
-            <img src={service.img} className={`h-[${service.size}] w-[${service.size}]`}/>
+          <span>
+            <img src={service.img} className="h-72 w-72 !rounded-sm"/>
           </span>
         </div>
         <h2 style={{color:"#ffffff"}}>{service.main}</h2>

@@ -3,7 +3,7 @@
     min-height: 90vh;
     background-color: rgb(31, 66, 93);
     box-sizing: border-box;
-    margin: 10px 0px;
+    margin: 10px 0px 0px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
