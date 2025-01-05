@@ -15,7 +15,7 @@ const Hero = () => {
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
         >
           <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <p className="text-left flex items-center px-5 md:px-10 md:my-2 text-white text-xl font-semibold max-md:text-sm">
+            <p className="text-left flex items-center px-5 md:px-10 md:my-2 text-white text-2xl font-semibold max-md:text-sm">
               <span className="inline-flex p-0 border-2 m-1 rounded-[100%] border-white">
                 <span className="h-[8px] w-[8px] bg-white inline-block m-1 rounded-[100%]"></span>
               </span>
@@ -44,7 +44,7 @@ const Hero = () => {
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
         >
           <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <p className="text-left flex items-center px-5 md:px-10 md:my-2 text-white text-xl font-semibold max-md:text-sm">
+            <p className="text-left flex items-center px-5 md:px-10 md:my-2 text-white text-2xl font-semibold max-md:text-sm">
               <span className="inline-flex p-0 border-2 m-1 rounded-[100%] border-white">
                 <span className="h-[8px] w-[8px] bg-white inline-block m-1 rounded-[100%]"></span>
               </span>
@@ -73,7 +73,7 @@ const Hero = () => {
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
         >
           <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <p className="text-left flex items-center px-5 md:px-10 md:my-2 text-white text-xl font-semibold max-md:text-sm">
+            <p className="text-left flex items-center px-5 md:px-10 md:my-2 text-white text-2xl font-semibold max-md:text-sm">
               <span className="inline-flex p-0 border-2 m-1 rounded-[100%] border-white">
                 <span className="h-[8px] w-[8px] bg-white inline-block m-1 rounded-[100%]"></span>
               </span>
