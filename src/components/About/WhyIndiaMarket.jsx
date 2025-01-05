@@ -29,11 +29,11 @@ const qualities = [
 
 const WhyIndiaMarket = () => {
   return (
-    <div className="min-h-screen py-10">
+    <div className="min-h-screen py-10 bg-zinc-100">
       <h2 className="uppercase text-[#2c526e] py-5">
         Why <span className="text-[#4AB9CF]">India Market</span>
       </h2>
-      <div className="p-10 flex flex-wrap gap-10 justify-center">
+      <div className="p-10 flex flex-wrap gap-15 md:gap-10 justify-center">
         {qualities.map((quality, index) => {
           return (
             <Card
@@ -50,14 +50,3 @@ const WhyIndiaMarket = () => {
 };
 
 export default WhyIndiaMarket;
-
-{
-  /* <div key={index} className="tracking-wide">
-              <h3 className="uppercase text-xl text-[#2c526e] font-medium">
-                {quality.title}
-              </h3>
-              <p className="text-start pl-10 text-[#7e7e7e] text-lg ">
-                {quality.description}
-              </p>
-            </div> */
-}

@@ -39,7 +39,7 @@ const qualities = [
 
 const WhyChooseUs = () => {
   return (
-    <div className="min-h-screen py-10">
+    <div className="min-h-screen md:py-10 mt-10">
       <h2 className="uppercase text-[#2c526e] py-5 text-3xl">
         Why <span className="text-[#4AB9CF]">Choose Us</span>
       </h2>
