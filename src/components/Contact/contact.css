@@ -1,5 +1,5 @@
 .Contact {
-  background-image: url("src\\assests\\contactUs.jpeg");
+  background-image: url("/src/assests/contactUs.jpeg");
   background-position: center;
   padding: 70px;
   box-sizing: border-box;
