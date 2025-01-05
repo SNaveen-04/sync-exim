@@ -7,6 +7,13 @@ import BusinessVerticalsPage from "./pages/BusinessVerticalsPage";
 import ContactPage from "./pages/ContactPage";
 import CertificatesPage from "./pages/CertificatesPage";
 
+import { pdfjs } from "react-pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url
+).toString();
+
 function App() {
   return (
     <>

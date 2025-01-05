@@ -1,5 +1,11 @@
+import Certificates from "../components/Certificates/Certificates";
+
 const CertificatesPage = () => {
-  return <div className="h-screen">CertificatesPage</div>;
+  return (
+    <div>
+      <Certificates />
+    </div>
+  );
 };
 
 export default CertificatesPage;
