@@ -1,7 +1,7 @@
-import Hero from "../components/HeroSection/Hero"
-import Works from "../components/HowWeWorks/Works"
-import Service from "../components/ServiceSection/Service"
-import Features from "../components/FeaturesSection/Features"
+import Hero from "../components/Home/HeroSection/Hero"
+import Works from "../components/Home/HowWeWorks/Works"
+import Service from "../components/Home/ServiceSection/Service"
+import Features from "../components/Home/FeaturesSection/Features"
 
 const HomePage = () => {
   return (

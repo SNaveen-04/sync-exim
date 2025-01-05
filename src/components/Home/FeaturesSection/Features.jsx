@@ -1,8 +1,8 @@
-import Card from "../Card/Card"
+import Card from "../../Card/Card"
 import "./Features.css"
-import Image1 from "../../assests/car.png"
-import Image2 from "../../assests/world.png"
-import Image3 from "../../assests/store.png"
+import Image1 from "../../../assests/car.png"
+import Image2 from "../../../assests/world.png"
+import Image3 from "../../../assests/store.png"
 
 const Features = () => {
 

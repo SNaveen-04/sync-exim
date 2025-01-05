@@ -1,7 +1,7 @@
-import Card from "../Card/Card"
-import Image1 from "../../assests/step1.png"
-import Image2 from "../../assests/step2.png"
-import Image3 from "../../assests/step3.png"
+import Card from "../../Card/Card"
+import Image1 from "../../../assests/step1.png"
+import Image2 from "../../../assests/step2.png"
+import Image3 from "../../../assests/step3.png"
 import "./Works.css"
 
 const Works = () => {

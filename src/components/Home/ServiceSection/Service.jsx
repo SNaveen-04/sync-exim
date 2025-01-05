@@ -1,7 +1,7 @@
 import "./Service.css"
-import Image1 from "../../assests/air.jpg"
-import Image2 from "../../assests/ship.jpg"
-import Image3 from "../../assests/truck.jpg"
+import Image1 from "../../../assests/air.jpg"
+import Image2 from "../../../assests/ship.jpg"
+import Image3 from "../../../assests/truck.jpg"
 
 
 const Service = () => {

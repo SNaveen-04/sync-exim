@@ -1,9 +1,9 @@
 import "./Hero.css"
 import { Carousel } from "flowbite-react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image1 from "../../assests/SlideImg1.png"
-import Image2 from "../../assests/SlideImg2.png"
-import Image3 from "../../assests/SlideImg2.png"
+import Image1 from "../../../assests/SlideImg1.png"
+import Image2 from "../../../assests/SlideImg2.png"
+import Image3 from "../../../assests/SlideImg2.png"
 import { FaArrowRight } from "react-icons/fa";
 
 
