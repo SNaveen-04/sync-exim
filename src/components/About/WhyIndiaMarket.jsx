@@ -34,7 +34,7 @@ const qualities = [
 const WhyIndiaMarket = () => {
   return (
     <div className="min-h-screen py-10 bg-zinc-100">
-      <h2 className="uppercase text-[#2c526e] py-5">
+      <h2 className="uppercase text-[#2c526e] py-5 text-3xl">
         Why <span className="text-[#4AB9CF]">India Market</span>
       </h2>
       <div className="p-10 flex flex-wrap gap-14 md:gap-10 justify-center">

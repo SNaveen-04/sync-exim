@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import Logo from "../../assests/Logo.png";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -17,7 +18,8 @@ const NavBar = () => {
     <>
       <nav id="primary-nav" style={{ right: right }}>
         <div className="logo">
-          Sync <span>Exim</span>
+          <img src={Logo} className="h-16" />
+          {/* Sync <span>Exim</span> */}
         </div>
         <ul className="navigation">
           <li onClick={handleClick}>
@@ -27,10 +29,10 @@ const NavBar = () => {
             <Link to="/sync-exim/about">About</Link>
           </li>
           <li onClick={handleClick}>
-            <Link to="/sync-exim/contact">Contact</Link>
+            <Link to="/sync-exim/verticals">BUSINESS VERTICALS</Link>
           </li>
           <li onClick={handleClick}>
-            <Link to="/sync-exim/verticals">BUSINESS VERTICALS</Link>
+            <Link to="/sync-exim/contact">Contact</Link>
           </li>
           {/* <li onClick={handleClick}>
             <Link to="/sync-exim/certificates">Certificates</Link>

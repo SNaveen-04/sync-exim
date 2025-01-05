@@ -44,7 +44,7 @@ const Service = () => {
               <div>
                 <div className="icon-container">
                   <span>
-                    <img src={service.img} className="h-72 w-72 !rounded-sm" />
+                    <img src={service.img} className="h-64 w-64 !rounded-md" />
                   </span>
                 </div>
                 <h2 style={{ color: "#ffffff" }}>{service.main}</h2>
