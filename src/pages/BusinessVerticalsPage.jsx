@@ -53,13 +53,12 @@ const verticals = [
 ];
 
 const BusinessVerticalsPage = () => {
-  console.log(verticals);
   return (
-    <div className="flex gap-3 m-5 flex-wrap justify-center">
+    <div className="flex gap-6 m-5 flex-wrap justify-center">
       {verticals.map((vertical, index) => {
         return (
-          <div className="w-48" key={index}>
-            <img src={vertical.img} className="h-48 w-48 rounded-md" />
+          <div className="w-52" key={index}>
+            <img src={vertical.img} className="h-52 w-52 rounded-md" />
             <p className="text-wrap text-sm">{vertical.text}</p>
           </div>
         );

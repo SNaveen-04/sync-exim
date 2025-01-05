@@ -1,119 +1,120 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-#primary-nav,#secondary-nav{
-    background-color: white;
+#primary-nav,
+#secondary-nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 0px rgba(142, 141, 141, 0.5);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#primary-nav .logo,
+#secondary-nav .logo {
+  padding: 15px 20px;
+  display: block;
+  color: #2c526e;
+  font-size: 1.6em;
+  font-weight: bolder;
+  font-size: xx-large;
+  height: max-content;
+}
+
+#primary-nav .logo span,
+#secondary-nav .logo span {
+  color: #4ab9cf;
+}
+
+#secondary-nav .logo {
+  font-size: 1.3em;
+}
+
+#secondary-nav {
+  display: none;
+}
+
+#secondary-nav .menu {
+  padding: 15px 20px;
+  display: block;
+  color: rgba(75, 75, 75, 0.9);
+  font-size: 1.6em;
+  font-weight: bolder;
+  font-size: medium;
+  height: max-content;
+}
+
+#primary-nav .navigation {
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#primary-nav .navigation li {
+  font-weight: bolder;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+#primary-nav .navigation li a:hover {
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(75, 75, 75, 0.9);
+}
+
+#primary-nav .navigation li a {
+  color: rgba(75, 75, 75, 0.9);
+  display: inline-block;
+  height: 100%;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  #primary-nav .navigation li {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #secondary-nav {
+    display: flex;
+  }
+
+  #primary-nav {
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    transition: all;
+    transition-duration: 600ms;
+  }
+
+  #primary-nav .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #primary-nav .navigation li {
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #primary-nav .navigation li a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid rgb(215,215,215);
-    border-radius: 4px;
-    box-shadow: 1px 1px 3px 0px rgba(142, 141, 141, 0.5);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#primary-nav .logo, #secondary-nav .logo{
-    padding: 15px 20px;
-    display: block;
-    color:#2c526e;
-    font-size: 1.6em;
-    font-weight: bolder;
-    font-size: xx-large;
-    height: max-content;
-}
-
-#primary-nav .logo span, #secondary-nav .logo span{
-    color: #4AB9CF;
-}
-
-#secondary-nav .logo{
-    font-size: 1.3em;
-}
-
-#secondary-nav{
-    display: none;
-}
-
-#secondary-nav .menu{
-    padding: 15px 20px;
-    display: block;
-    color: rgb(31, 66, 93);
-    font-size: 1.6em;
-    font-weight: bolder;
-    font-size: medium;
-    height: max-content;
-}
-
-#primary-nav .navigation{
-    margin: 0px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
-
-#primary-nav .navigation li{
-    font-weight: bolder;
-    font-size: 1em;
-    text-transform: uppercase;
-}
-#primary-nav .navigation li a:hover{
-    padding-bottom: 8px;
-    border-bottom: 2px solid rgb(0, 68, 170);
-}
-
-#primary-nav .navigation li a{
-    color: rgb(0, 68, 170);
-    display: inline-block;
-    height: 100%;
-    padding: 10px 15px;
-    text-decoration: none;
-}
-
-@media screen and (max-width:768px) {
-    #primary-nav .navigation li{
-        font-size: small;
-    }
-}
-
-
-@media screen and (max-width:650px) {
-
-    #secondary-nav{
-        display: flex;
-    }
-
-    #primary-nav{
-        height: 100vh;
-        position: fixed;
-        width: 100vw;
-        flex-direction: column;
-        justify-content: flex-start;
-        z-index: 1;
-        transition: all;
-        transition-duration: 600ms;
-    }
-
-
-    #primary-nav .navigation{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #primary-nav .navigation li{
-        font-size: small;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #primary-nav .navigation li a{
-        display: flex;
-        align-items: center;
-        padding: 4px 15px;
-    }
-    #primary-nav .navigation li a:hover{
-        padding-bottom: 2px;
-    }
+    padding: 4px 15px;
+  }
+  #primary-nav .navigation li a:hover {
+    padding-bottom: 2px;
+  }
 }
