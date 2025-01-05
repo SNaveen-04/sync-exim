@@ -1,13 +1,3 @@
-/* eslint-disable react/prop-types */
-const Card = (props) => {
-  return (
-    <div className="w-48">
-      <img src={props.img} className="h-48 w-48 rounded-md" />
-      <p className="text-wrap text-sm">{props.text}</p>
-    </div>
-  );
-};
-
 import EdibleOils from "../assests/edibleOils.jpeg";
 import Coconut from "../assests/coconut.jpeg";
 import Noodles from "../assests/noodles.jpeg";
@@ -67,7 +57,12 @@ const BusinessVerticalsPage = () => {
   return (
     <div className="flex gap-3 m-5 flex-wrap justify-center">
       {verticals.map((vertical, index) => {
-        return <Card img={vertical.img} text={vertical.text} key={index} />;
+        return (
+          <div className="w-48" key={index}>
+            <img src={vertical.img} className="h-48 w-48 rounded-md" />
+            <p className="text-wrap text-sm">{vertical.text}</p>
+          </div>
+        );
       })}
     </div>
   );
