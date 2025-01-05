@@ -1,6 +1,6 @@
 const Vision = () => {
   return (
-    <div className="text-[#2c526e] flex max-md:flex-col justify-center flex-row-reverse md:p-10 font-sans md:h-screen bg-zinc-100">
+    <div className="text-[#2c526e] flex max-md:flex-col justify-center flex-row-reverse py-14 md:p-10 font-sans md:h-screen bg-zinc-100">
       <div className="md:w-[40%] max-md:my-5 flex items-center justify-center uppercase text-2xl font-semibold tracking-widest">
         OUR <span className="text-[#4AB9CF] px-2"> Vision </span>
       </div>

@@ -1,6 +1,6 @@
 const Mission = () => {
   return (
-    <div className="text-[#2c526e] flex max-md:flex-col justify-center md:p-10 font-sans md:h-screen">
+    <div className="text-[#2c526e] flex max-md:flex-col justify-center py-14 md:p-10 font-sans md:h-screen">
       <div className="md:w-[40%] max-md:my-5 flex items-center justify-center uppercase text-2xl font-semibold tracking-widest">
         OUR <span className="text-[#4AB9CF] px-2"> MISSION </span>
       </div>

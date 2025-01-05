@@ -4,7 +4,7 @@ const About = () => {
       <h1 className="uppercase text-center text-2xl md:text-3xl font-semibold tracking-wide text-[#2c526e] p-2 md:py-4">
         About<span className="px-2 text-[#4AB9CF]">Us</span>
       </h1>
-      <div className="text-[#2c526e] text-xs sm:text-sm md:text-lg md:tracking-wide text-justify">
+      <div className="text-[#2c526e] text-sm py-6 md:text-lg md:tracking-wide text-justify">
         <div className="md:px-6 p-2">
           We supply premium produce to all over world. Our commitment to quality
           and customer service has made us one of the most trusted names in the
