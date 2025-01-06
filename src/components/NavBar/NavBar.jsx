@@ -30,9 +30,9 @@ const NavBar = () => {
           <li onClick={handleClick}>
             <Link to="/sync-exim/verticals">BUSINESS VERTICALS</Link>
           </li>
-          {/* <li onClick={handleClick}>
+          <li onClick={handleClick}>
             <Link to="/sync-exim/certificates">Certificates</Link>
-          </li> */}
+          </li>
           <li onClick={handleClick}>
             <Link to="/sync-exim/contact">Contact</Link>
           </li>
