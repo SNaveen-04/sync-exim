@@ -5,6 +5,7 @@ import Image1 from "../../../assests/SlideImg1.png";
 import Image2 from "../../../assests/SlideImg2.png";
 import Image3 from "../../../assests/SlideImg2.png";
 import { FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -28,14 +29,20 @@ const Hero = () => {
               &quot;Delivering excellence beyond borders&quot;
             </p>
             <div className="px-5 md:px-10 py-2">
-              <a className="inline-flex items-center text-sm md:font-bold p-[15px] bg-[#4AB9CF] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] ">
+              <NavLink
+                to="/sync-exim/about"
+                className="inline-flex items-center text-sm md:font-bold p-[15px] bg-[#4AB9CF] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] "
+              >
                 Service we provide
                 <FaArrowRight />
-              </a>
-              <a className="inline-flex items-center text-sm md:font-bold p-[15px] border border-white hover:border-[#2c526e] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] ">
+              </NavLink>
+              <NavLink
+                to="/sync-exim/about"
+                className="inline-flex items-center text-sm md:font-bold p-[15px] border border-white hover:border-[#2c526e] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] "
+              >
                 Learn More
                 <FaArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -57,14 +64,20 @@ const Hero = () => {
               &quot;Certified for trust,approved for you&quot;
             </p>
             <div className="px-5 md:px-10 py-2">
-              <a className="inline-flex items-center text-sm md:font-bold p-[15px] bg-[#4AB9CF] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] ">
+              <NavLink
+                to="/sync-exim/about"
+                className="inline-flex items-center text-sm md:font-bold p-[15px] bg-[#4AB9CF] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] "
+              >
                 Service we provide
                 <FaArrowRight />
-              </a>
-              <a className="inline-flex items-center text-sm md:font-bold p-[15px] border border-white hover:border-[#2c526e] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] ">
+              </NavLink>
+              <NavLink
+                to="/sync-exim/about"
+                className="inline-flex items-center text-sm md:font-bold p-[15px] border border-white hover:border-[#2c526e] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] "
+              >
                 Learn More
                 <FaArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -86,14 +99,20 @@ const Hero = () => {
               &quot;Export Excellence&quot;
             </p>
             <div className="px-5 md:px-10 py-2">
-              <a className="inline-flex items-center text-sm md:font-bold p-[15px] bg-[#4AB9CF] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] ">
+              <NavLink
+                to="/sync-exim/about"
+                className="inline-flex items-center text-sm md:font-bold p-[15px] bg-[#4AB9CF] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] "
+              >
                 Service we provide
                 <FaArrowRight />
-              </a>
-              <a className="inline-flex items-center text-sm md:font-bold p-[15px] border border-white hover:border-[#2c526e] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] ">
+              </NavLink>
+              <NavLink
+                to="/sync-exim/about"
+                className="inline-flex items-center text-sm md:font-bold p-[15px] border border-white hover:border-[#2c526e] text-white m-[10px] gap-[2px] cursor-pointer hover:bg-[#2c526e] max-md:p-[5px] max-md:m-[5px] "
+              >
                 Learn More
                 <FaArrowRight />
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

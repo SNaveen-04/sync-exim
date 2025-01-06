@@ -9,8 +9,6 @@
   flex-direction: column;
 }
 #features .heading {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #fd7062;
   position: relative;
   height: 150px;
@@ -34,7 +32,6 @@
   font-size: 140px;
   letter-spacing: 5px;
   font-weight: bolder;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: -1px -1px 0 rgb(44, 82, 110), 1px -1px 0 rgb(44, 82, 110),
     -1px 1px 0 rgb(44, 82, 110), 1px 1px 0 rgb(44, 82, 110);
   text-align: center;
@@ -46,7 +43,6 @@
   flex: 1;
   padding: 20px;
   margin: 25px 10px;
-  /* border: 1px solid white; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +51,6 @@
 
 #features .card-container .card {
   width: 30%;
-  /* border: 1px solid white; */
 }
 
 @media screen and (max-width: 768px) {

@@ -10,8 +10,6 @@
   flex-direction: column;
 }
 #services .heading {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #fd7062;
   position: relative;
   height: 150px;
@@ -35,7 +33,6 @@
   font-size: 140px;
   letter-spacing: 5px;
   font-weight: bolder;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: -1px -1px 0 rgb(44, 82, 110), 1px -1px 0 rgb(44, 82, 110),
     -1px 1px 0 rgb(44, 82, 110), 1px 1px 0 rgb(44, 82, 110);
   text-align: center;
