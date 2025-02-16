@@ -18,7 +18,9 @@ const NavBar = () => {
     <>
       <nav id="primary-nav" style={{ right: right }}>
         <div className="logo">
-          <img src={Logo} className="h-16" />
+          <Link to="/sync-exim">
+            <img src={Logo} className="h-16" />
+          </Link>
         </div>
         <ul className="navigation">
           <li onClick={handleClick}>
@@ -40,7 +42,9 @@ const NavBar = () => {
       </nav>
       <nav id="secondary-nav">
         <div className="logo">
-          Sync <span>Exim</span>
+          <Link to="/sync-exim">
+            <img src={Logo} className="h-12 md:h-16" />
+          </Link>
         </div>
         <div className="menu" onClick={handleClick}>
           Menu

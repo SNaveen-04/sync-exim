@@ -1,87 +1,107 @@
-#services {
+#service {
   width: 100%;
-  min-height: 90vh;
-  background-color: rgb(31, 66, 93);
+  min-height: 100vh;
+  /* margin: 10px 0px; */
   box-sizing: border-box;
-  margin: 10px 0px;
-  border: 1px solid black;
+  background: url("../../../assests/Services/Service Bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
-  color: white;
   flex-direction: column;
-}
-#services .heading {
-  color: #fd7062;
-  position: relative;
-  height: 150px;
+  justify-content: center;
 }
 
-#services .heading p.main-heading {
-  text-align: center;
-  font-size: 50px;
-  color: white;
-  position: relative;
-  top: -90px;
-  font-weight: 500;
-}
-
-#services .heading p.main-heading span {
-  color: #4ab9cf;
-}
-
-#services .heading .logo {
-  color: rgb(31, 66, 93);
-  font-size: 140px;
-  letter-spacing: 5px;
-  font-weight: bolder;
-  text-shadow: -1px -1px 0 rgb(44, 82, 110), 1px -1px 0 rgb(44, 82, 110),
-    -1px 1px 0 rgb(44, 82, 110), 1px 1px 0 rgb(44, 82, 110);
-  text-align: center;
-}
-
-#services .card-container {
-  width: calc(100% - 20px);
-  box-sizing: border-box;
-  flex: 1;
-  padding: 20px;
-  margin: 25px 10px;
+#service .bg-cover {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+  /* padding: 20px; */
+  color: white;
 }
 
-#services .card-container .card {
-  width: 30%;
+#service .bg-cover .main-heading {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  #services .heading .logo {
-    font-size: 70px;
-  }
-
-  #services .heading p.main-heading {
-    font-size: 30px;
-    top: -20px;
-  }
+#service .bg-cover .main-section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
 }
 
-@media screen and (max-width: 430px) {
-  #services .heading .logo {
-    font-size: 60px;
-  }
+#service .bg-cover .main-section .card {
+  margin-top: 10px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 30%;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  #services .card-container {
-    margin: 0;
-  }
+#service .bg-cover .main-section .card .title {
+  margin-top: 10px;
+  min-height: 40px;
+  font-size: 22px;
+  font-weight: 800;
+}
+#service .bg-cover .main-section .card img {
+  height: 170px;
+  width: 170px;
+}
+#service .bg-cover .main-section .card .content {
+  font-size: 10px;
+  font-weight: bolder;
+}
 
-  #services .heading p.main-heading {
-    font-size: 30px;
-    top: -20px;
-  }
-
-  #services .card-container {
+@media screen and (max-width: 600px) {
+  #service .bg-cover .main-section {
     flex-direction: column;
   }
-  #services .card-container .card {
-    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  #service .bg-cover .main-section {
+    flex-direction: row;
+  }
+
+  #service .bg-cover .main-section .card {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  #service .bg-cover .main-heading {
+    font-size: 100px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  #service .bg-cover .main-section .card .title {
+    min-height: 40px;
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  #service .bg-cover .main-section .card .content {
+    font-size: 25px;
+  }
+
+  #service .bg-cover .main-section {
+    justify-content: space-between;
+    gap: 100px;
+  }
+  #service .bg-cover .main-section .card img {
+    height: 250px;
+    width: 250px;
   }
 }

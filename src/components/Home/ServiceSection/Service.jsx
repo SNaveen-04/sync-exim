@@ -1,61 +1,46 @@
 import "./Service.css";
-import Image1 from "../../../assests/air.jpg";
-import Image2 from "../../../assests/ship.jpg";
-import Image3 from "../../../assests/truck.jpg";
+import Image1 from "../../../assests/Services/Asset 1.png";
+import Image2 from "../../../assests/Services/Asset 2.png";
+import Image3 from "../../../assests/Services/Asset 3.png";
 
 const Service = () => {
   const servicesData = [
     {
-      img: Image1,
-      size: "300px",
-      main: "Timely service",
-      sub: "Delivered Packages",
-      content: "Delivering on time is delivering on trust",
-    },
-    {
       img: Image2,
-      size: "300px",
+      class: "",
       main: "Global reach",
-      sub: "Miles Driven",
       content: "Connecting to a World of Opportunities",
     },
     {
+      img: Image1,
+      class: "",
+      main: "Timely service",
+      content: "Delivering on time is delivering on trust",
+    },
+    {
       img: Image3,
-      size: "300px",
+      class: "assest3",
       main: "Credibility",
-      sub: "Stored In Stock",
       content:
-        "Credibility is not just a trait, it's a commitment to excellence.",
+        "Credibility is not just a trait, it's a commitment to excellence",
     },
   ];
 
   return (
-    <div id="services">
-      <div className="heading">
-        <p className="logo">Freight</p>
-        <p className="main-heading">
-          SyncExIm <span>Services</span>
-        </p>
-      </div>
-      <div className="card-container">
-        {servicesData.map((service, index) => {
-          return (
-            <div className="card" key={index}>
-              <div>
-                <div className="icon-container">
-                  <span>
-                    <img src={service.img} className="h-64 w-64 !rounded-md" />
-                  </span>
-                </div>
-                <h2 style={{ color: "#ffffff" }}>{service.main}</h2>
-                <h4 style={{ color: "#4AB9CF" }}>{service.sub}</h4>
-                <p style={{ color: "#d2d2d2" }} className="text-xs">
-                  {service.content}
-                </p>
+    <div id="service">
+      <div className="bg-cover">
+        <h1 className="main-heading">OUR SERVICES</h1>
+        <div className="main-section">
+          {servicesData.map((d, idx) => {
+            return (
+              <div key={idx} className="card">
+                <img src={d.img} className={d.class} />
+                <h2 className="title">{d.main}</h2>
+                <p className="content">{d.content}</p>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

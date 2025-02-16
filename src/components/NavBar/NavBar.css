@@ -41,7 +41,7 @@
 #secondary-nav .menu {
   padding: 15px 20px;
   display: block;
-  color: rgba(75, 75, 75, 0.9);
+  color: rgb(39, 50, 150);
   font-size: 1.6em;
   font-weight: bolder;
   font-size: medium;
@@ -63,11 +63,11 @@
 }
 #primary-nav .navigation li a:hover {
   padding-bottom: 8px;
-  border-bottom: 2px solid rgba(75, 75, 75, 0.9);
+  border-bottom: 2px solid rgb(39, 50, 150);
 }
 
 #primary-nav .navigation li a {
-  color: rgba(75, 75, 75, 0.9);
+  color: #273296;
   display: inline-block;
   height: 100%;
   padding: 10px 15px;

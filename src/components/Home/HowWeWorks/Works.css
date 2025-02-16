@@ -1,87 +1,107 @@
 #how-we-works {
   width: 100%;
-  min-height: 90vh;
-  background-color: white;
+  min-height: 100vh;
+  /* margin: 10px 0px; */
   box-sizing: border-box;
-  margin: 10px 0px;
-  /* border: 1px solid black; */
+  background: url("../../../assests/HowWeWorks/How we Work Bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
-}
-#how-we-works .heading {
-  color: #fd7062;
-  position: relative;
-  height: 150px;
+  justify-content: center;
 }
 
-#how-we-works .heading p.main-heading {
-  text-align: center;
-  font-size: 50px;
-  color: #1f425d;
-  position: relative;
-  top: -90px;
-  font-weight: 500;
-}
-
-#how-we-works .heading p.main-heading span {
-  color: #4ab9cf;
-}
-
-#how-we-works .heading .logo {
-  color: white;
-  font-size: 140px;
-  letter-spacing: 5px;
-  font-weight: bolder;
-  text-shadow: -1px -1px 0 rgb(237, 237, 237), 1px -1px 0 rgb(237, 237, 237),
-    -1px 1px 0 rgb(237, 237, 237), 1px 1px 0 rgb(237, 237, 237);
-  text-align: center;
-}
-
-#how-we-works .card-container {
-  width: calc(100% - 20px);
-  box-sizing: border-box;
-  flex: 1;
-  padding: 10px;
-  margin: 25px 10px;
-  /* border: 1px solid rgb(0, 0, 0); */
+#how-we-works .bg-cover {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  /* padding: 20px; */
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #273296;
 }
 
-#how-we-works .card-container .card {
-  width: 30%;
-  /* border: 1px solid rgb(0, 0, 0); */
+#how-we-works .bg-cover .main-heading {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  #how-we-works .heading .logo {
-    font-size: 70px;
-  }
-
-  #how-we-works .heading p.main-heading {
-    font-size: 30px;
-    top: -20px;
-  }
+#how-we-works .bg-cover .main-section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
-@media screen and (max-width: 430px) {
-  #how-we-works .heading .logo {
-    font-size: 80px;
-  }
+#how-we-works .bg-cover .main-section .card {
+  margin-top: 10px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  #how-we-works .heading p.main-heading {
-    font-size: 30px;
-    top: -20px;
-  }
+#how-we-works .bg-cover .main-section .card .title {
+  margin-top: 10px;
+  min-height: 40px;
+  font-size: 22px;
+  font-weight: 800;
+}
+#how-we-works .bg-cover .main-section .card img {
+  height: 170px;
+  width: 170px;
+}
+#how-we-works .bg-cover .main-section .card .content {
+  font-size: 10px;
+  font-weight: bolder;
+}
 
-  #how-we-works .card-container {
+@media screen and (max-width: 600px) {
+  #how-we-works .bg-cover .main-section {
     flex-direction: column;
   }
+}
 
-  #how-we-works .card-container .card {
-    width: 100%;
+@media screen and (min-width: 600px) {
+  #how-we-works .bg-cover .main-section {
+    flex-direction: row;
+  }
+
+  #how-we-works .bg-cover .main-section .card {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  #how-we-works .bg-cover .main-heading {
+    font-size: 100px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  #how-we-works .bg-cover .main-section .card .title {
+    min-height: 40px;
+    font-size: 40px;
     margin: 10px;
-    padding: 10px;
+  }
+
+  #how-we-works .bg-cover .main-section .card .content {
+    font-size: 25px;
+  }
+
+  #how-we-works .bg-cover .main-section {
+    justify-content: space-between;
+    gap: 100px;
+  }
+  #how-we-works .bg-cover .main-section .card img {
+    height: 250px;
+    width: 250px;
   }
 }
