@@ -1,7 +1,8 @@
 import "./Service.css";
-import Image1 from "../../../assests/Services/Asset 1.png";
-import Image2 from "../../../assests/Services/Asset 2.png";
-import Image3 from "../../../assests/Services/Asset 3.png";
+
+import Image1 from "../../../assets/services/Asset3.png";
+import Image2 from "../../../assets/services/Asset4.jpg";
+import Image3 from "../../../assets/services/Asset3.png";
 
 const Service = () => {
   const servicesData = [

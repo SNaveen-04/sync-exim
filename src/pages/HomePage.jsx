@@ -1,13 +1,13 @@
 import Hero from "../components/Home/HeroSection/Hero";
-// import Works from "../components/Home/HowWeWorks/Works";
-// import Service from "../components/Home/ServiceSection/Service";
+import Service from "../components/Home/ServiceSection/Service";
+import Works from "../components/Home/HowWeWorks/Works";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      {/* <Service />
-      <Works /> */}
+      <Service />
+      <Works />
       {/* <Features /> */}
     </>
   );
