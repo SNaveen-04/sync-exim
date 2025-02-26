@@ -1,9 +1,9 @@
 import "./Hero.css";
 import { Carousel } from "flowbite-react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image1 from "../../../assests/SlideImg1.png";
-import Image2 from "../../../assests/SlideImg2.png";
-import Image3 from "../../../assests/SlideImg2.png";
+// import Image1 from "../../../assests/SlideImg1.png";
+// import Image2 from "../../../assests/SlideImg2.png";
+// import Image3 from "../../../assests/SlideImg2.png";
 import { FaArrowRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -46,6 +46,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        
         <div
           style={{ backgroundImage: `url(${Image2})` }}
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
@@ -81,6 +82,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
         <div
           style={{ backgroundImage: `url(${Image3})` }}
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
