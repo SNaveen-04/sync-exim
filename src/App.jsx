@@ -2,17 +2,21 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import BusinessVerticalsPage from "./pages/BusinessVerticalsPage";
-import ContactPage from "./pages/ContactPage";
-import CertificatesPage from "./pages/CertificatesPage";
 
 import { pdfjs } from "react-pdf";
+import { lazy, Suspense } from "react";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
   import.meta.url
 ).toString();
+
+const About = lazy(() => import("./pages/AboutPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const BusinessVerticalsPage = lazy(() =>
+  import("./pages/BusinessVerticalsPage")
+);
+const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
 
 function App() {
   return (
@@ -20,10 +24,38 @@ function App() {
       <Routes>
         <Route path="/sync-exim" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="verticals" element={<BusinessVerticalsPage />} />
-          <Route path="certificates" element={<CertificatesPage />} />
+          <Route
+            path="about"
+            element={
+              <Suspense fallback={<>...</>}>
+                <About />
+              </Suspense>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <Suspense fallback={<>...</>}>
+                <ContactPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="verticals"
+            element={
+              <Suspense fallback={<>...</>}>
+                <BusinessVerticalsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="certificates"
+            element={
+              <Suspense fallback={<>...</>}>
+                <CertificatesPage />
+              </Suspense>
+            }
+          />
         </Route>
         <Route path="*" element={<div>Page Not found</div>} />
       </Routes>

@@ -1,10 +1,10 @@
+import "./About.css";
+
 const About = () => {
   return (
-    <div className="p-4 md:p-10 bg-zinc-100">
-      <h1 className="uppercase text-center text-2xl md:text-3xl font-semibold tracking-wide text-[#2c526e] p-2 md:py-4">
-        About<span className="px-2 text-[#4AB9CF]">Us</span>
-      </h1>
-      <div className="text-[#2c526e] text-sm py-6 md:text-lg md:tracking-wide text-justify">
+    <div className="about">
+      <h1 className="title">About Us</h1>
+      <div className="text-sm py-6 md:text-lg md:tracking-wide text-justify">
         <div className="md:px-6 p-2">
           We supply premium produce to all over world. Our commitment to quality
           and customer service has made us one of the most trusted names in the
@@ -15,9 +15,8 @@ const About = () => {
           the highest standards. Thanks to our years of experience and
           expertise, we are able to provide our clients with unmatched value and
           our Company is engaged into trading and marketing of agricultural
-          produce and commodities such as spices like dry red chillies oils such
-          as coconut oil,groundnut oil,sunflower oil,sesame oil and coconut and
-          agricultural feed.
+          produce,food products,carbon,cattle feed and panchagavya pooja
+          products.
         </div>
         <div className="md:px-6 p-2">
           Our Company has developed business strategy to switch over

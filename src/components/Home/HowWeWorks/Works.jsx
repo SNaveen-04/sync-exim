@@ -1,6 +1,6 @@
-import Image1 from "../../../assests/HowWeWorks/Asset 4.png";
-import Image2 from "../../../assests/HowWeWorks/Asset 5.png";
-import Image3 from "../../../assests/HowWeWorks/Asset 6.png";
+import Image3 from "../../../assests/HowWeWorks/Asset 4.png";
+import Image1 from "../../../assests/HowWeWorks/Asset 5.png";
+import Image2 from "../../../assests/HowWeWorks/Asset 6.png";
 import "./Works.css";
 
 const Works = () => {
