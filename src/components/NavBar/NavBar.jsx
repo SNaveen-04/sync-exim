@@ -1,17 +1,16 @@
-import { Link } from "react-router-dom";
-import "./NavBar.css";
-import Logo from "../../assests/Logo.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import "./NavBar.css";
+
+import Logo from "../../assests/logo.png";
 
 const NavBar = () => {
   const [right, setRight] = useState("100%");
 
   const handleClick = () => {
-    if (right === "0%") {
-      setRight("100%");
-    } else {
-      setRight("0%");
-    }
+    if (right === "0%") setRight("100%");
+    else setRight("0%");
   };
 
   return (
@@ -22,6 +21,7 @@ const NavBar = () => {
             <img src={Logo} className="h-16" />
           </Link>
         </div>
+
         <ul className="navigation">
           <li onClick={handleClick}>
             <Link to="/sync-exim">Home</Link>
@@ -40,6 +40,7 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
+
       <nav id="secondary-nav">
         <div className="logo">
           <Link to="/sync-exim">
