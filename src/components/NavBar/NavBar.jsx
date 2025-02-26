@@ -30,7 +30,7 @@ const NavBar = () => {
             <Link to="/sync-exim/about">About</Link>
           </li>
           <li onClick={handleClick}>
-            <Link to="/sync-exim/verticals">BUSINESS VERTICALS</Link>
+            <Link to="/sync-exim/verticals">Business Verticals</Link>
           </li>
           <li onClick={handleClick}>
             <Link to="/sync-exim/certificates">Certificates</Link>
