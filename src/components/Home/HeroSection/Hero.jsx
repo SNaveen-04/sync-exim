@@ -1,9 +1,11 @@
 import "./Hero.css";
+
 import { Carousel } from "flowbite-react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image1 from "../../../assests/SlideImg1.png";
-import Image2 from "../../../assests/SlideImg2.png";
-import Image3 from "../../../assests/SlideImg2.png";
+
+import Image1 from "../../../assets/others/SlideImg1.png";
+import Image2 from "../../../assets/others/SlideImg2.png";
+import Image3 from "../../../assets/others/SlideImg2.png";
 
 const Hero = () => {
   return (
@@ -14,66 +16,48 @@ const Hero = () => {
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
         >
           <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <h1 className="px-5 md:px-10 md:my-2 text-white text-5xl font-semibold max-md:text-sm w-2/3">
-              Global quality products exporter from india
-            </h1>
-            <p className="text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-xl font-semibold">
-              Delivering excellence beyond borders
-            </p>
+            <div className="w-[70rem]">
+              <h1 className="px-5 md:px-10 md:my-2 text-white text-8xl font-bold max-md:text-sm w-2/3">
+                Welcome To Sync Exim
+              </h1>
+              <p className="!mt-3 text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-3xl font-extrabold">
+                Connecting Global Markets Seamlessly
+              </p>
+            </div>
           </div>
         </div>
+
         <div
           style={{ backgroundImage: `url(${Image2})` }}
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
         >
           <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <h1 className="px-5 md:px-10 md:my-2 text-white text-5xl font-semibold max-md:text-sm w-2/3">
-              Trusted & Legally Approved Certified products
-            </h1>
-            <p className="text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-xl font-semibold">
-              Certified for trust,approved for you
-            </p>
+            <div className="w-[80rem]">
+              <h1 className="px-5 md:px-10 md:my-2 text-white text-8xl font-bold max-md:text-sm w-2/3">
+                Comprehensive Import & Export Solutions
+              </h1>
+              <p className="w-[28.5rem] !mt-3 text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-xl font-extrabold">
+                International Sourcing & Procurement Customs Clearance &
+                Documentation Freight Forwarding & Logistics Product
+                Distribution & Wholesale
+              </p>
+            </div>
           </div>
         </div>
+
         <div
           style={{ backgroundImage: `url(${Image3})` }}
           className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
         >
           <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <h1 className="px-5 md:px-10 md:my-2 text-white text-5xl font-semibold max-md:text-sm w-2/3">
-              We export our finest
-            </h1>
-            <p className="text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-xl font-semibold">
-              Export Excellence
-            </p>
-          </div>
-        </div>
-        <div
-          style={{ backgroundImage: `url(${Image3})` }}
-          className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
-        >
-          <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <h1 className="px-5 md:px-10 md:my-2 text-white text-5xl font-semibold max-md:text-sm w-2/3">
-              Bridging Businesses Beyond Borders
-            </h1>
-            <p className="text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-xl font-semibold">
-              We empower businesses to expand internationally by offering
-              smooth, hassle-free export services
-            </p>
-          </div>
-        </div>
-        <div
-          style={{ backgroundImage: `url(${Image3})` }}
-          className="h-full w-full bg-gray-400 dark:bg-gray-700 dark:text-white bg-no-repeat bg-cover bg-center bg-scroll cursor-default"
-        >
-          <div className="h-full w-full flex flex-col justify-center bg-black bg-opacity-55">
-            <h1 className="px-5 md:px-10 md:my-2 text-white text-5xl font-semibold max-md:text-sm w-2/3">
-              Committed to Excellence in Global Trade
-            </h1>
-            <p className="text-left px-5 md:px-10 md:my-2 max-md:text-sm text-white text-xl font-semibold">
-              Our mission is to drive success and foster lasting partnerships
-              worldwide.
-            </p>
+            <div className="w-[80rem]">
+              <h1 className="px-5 md:px-10 md:my-2 text-white text-8xl font-bold max-md:text-sm w-2/3">
+                Diverse Industry Experience
+              </h1>
+              <p className="!mt-3 text-left px-5 md:px-11 md:my-2 max-md:text-sm text-white text-2xl font-extrabold">
+                Connecting Industries to Global Markets
+              </p>
+            </div>
           </div>
         </div>
       </Carousel>

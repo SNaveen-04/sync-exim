@@ -10,6 +10,7 @@ const Footer = () => {
       <span className="font-semibold text-center text-base inline-block">
         &copy;2024 SyncExim.All Rights Reserved
       </span>
+
       <span className="inline-flex gap-6 items-center text-lg md:text-xl">
         <FaFacebookF className="cursor-pointer" />
         <FaTwitter className="cursor-pointer" />

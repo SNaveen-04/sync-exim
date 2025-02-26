@@ -1,22 +1,21 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Layout from "./pages/Layout";
-import HomePage from "./pages/HomePage";
-
 import { pdfjs } from "react-pdf";
 import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+
+import Layout from "./pages/Layout";
+import HomePage from "./pages/HomePage";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
   import.meta.url
 ).toString();
 
-const About = lazy(() => import("./pages/AboutPage"));
-const ContactPage = lazy(() => import("./pages/ContactPage"));
-const BusinessVerticalsPage = lazy(() =>
-  import("./pages/BusinessVerticalsPage")
-);
-const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
+// const About = lazy(() => import("./pages/AboutPage"));
+// const ContactPage = lazy(() => import("./pages/ContactPage"));
+// const BusinessVerticalsPage = lazy(() =>
+//   import("./pages/BusinessVerticalsPage")
+// );
+// const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
 
 function App() {
   return (
@@ -24,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/sync-exim" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route
+          {/* <Route
             path="about"
             element={
               <Suspense fallback={<>...</>}>
@@ -55,7 +54,7 @@ function App() {
                 <CertificatesPage />
               </Suspense>
             }
-          />
+          /> */}
         </Route>
         <Route path="*" element={<div>Page Not found</div>} />
       </Routes>
