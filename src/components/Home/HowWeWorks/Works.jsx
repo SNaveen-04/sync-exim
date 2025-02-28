@@ -29,7 +29,7 @@ const Works = () => {
     <div id="how-we-works">
       <div className="bg-cover">
         <h1 className="main-heading text-white">HOW WE WORK</h1>
-        <div className="mt-16 main-section">
+        <div className="mt-10 main-section">
           {worksData.map((d, idx) => {
             return (
               <div key={idx} className="card">

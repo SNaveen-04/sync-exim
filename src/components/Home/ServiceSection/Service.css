@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: none; /* Remove the direct background image */
+  background: none;
 }
 
 #service::after {
@@ -20,9 +20,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.2; /* Adjust opacity */
-  z-index: -1; /* Place it behind content */
+  opacity: 0.2;
+  z-index: -1;
 }
+
 #service .bg-cover {
   min-height: 100vh;
   display: flex;
@@ -31,11 +32,13 @@
   justify-content: center;
   width: 100%;
   color: #273296;
+  padding: 20px;
 }
 
 #service .bg-cover .main-heading {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
+  text-align: center;
 }
 
 #service .bg-cover .main-section {
@@ -43,30 +46,35 @@
   justify-content: center;
   align-items: start;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #service .bg-cover .main-section .card {
   margin-top: 10px;
-  min-height: 300px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  max-width: 30%;
+  max-width: 100%;
   text-transform: uppercase;
   text-align: center;
+  padding: 20px;
 }
 
 #service .bg-cover .main-section .card .title {
   margin-top: 10px;
   min-height: 40px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 800;
 }
+
 #service .bg-cover .main-section .card img {
   height: 170px;
   width: 170px;
 }
+
 #service .bg-cover .main-section .card .content {
   font-size: 10px;
   font-weight: bolder;
@@ -75,16 +83,45 @@
 @media screen and (max-width: 600px) {
   #service .bg-cover .main-section {
     flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #service .bg-cover .main-section {
-    flex-direction: row;
+    align-items: center;
   }
 
   #service .bg-cover .main-section .card {
-    width: 33%;
+    max-width: 90%;
+  }
+
+  #service .bg-cover .main-heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #service .bg-cover .main-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #service .bg-cover .main-section .card {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #service .bg-cover .main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #service .bg-cover .main-section .card {
+    max-width: 30%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -93,12 +130,20 @@
     font-size: 100px;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-weight: 800;
+    font-weight: 600;
+  }
+
+  #service .bg-cover .main-section {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  #service .bg-cover .main-section .card {
+    max-width: 30%;
   }
 
   #service .bg-cover .main-section .card .title {
-    min-height: 40px;
-    font-size: 40px;
+    font-size: 31spx;
     margin: 10px;
   }
 
@@ -106,10 +151,6 @@
     font-size: 25px;
   }
 
-  #service .bg-cover .main-section {
-    justify-content: space-between;
-    gap: 100px;
-  }
   #service .bg-cover .main-section .card img {
     height: 250px;
     width: 250px;

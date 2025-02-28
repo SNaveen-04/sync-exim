@@ -31,7 +31,7 @@ const Service = () => {
     <div id="service">
       <div className="bg-cover">
         <h1 className="main-heading">OUR SERVICES</h1>
-        <div className="main-section">
+        <div className="mt-10 main-section">
           {servicesData.map((d, idx) => {
             return (
               <div key={idx} className="card">
