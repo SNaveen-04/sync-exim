@@ -30,24 +30,24 @@ function App() {
                 <About />
               </Suspense>
             }
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="contact"
             element={
               <Suspense fallback={<>...</>}>
                 <ContactPage />
               </Suspense>
             }
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="verticals"
             element={
               <Suspense fallback={<>...</>}>
                 <BusinessVerticalsPage />
               </Suspense>
             }
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="certificates"
             element={
               <Suspense fallback={<>...</>}>

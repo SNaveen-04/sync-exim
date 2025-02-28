@@ -1,26 +1,36 @@
 #service {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  /* margin: 10px 0px; */
   box-sizing: border-box;
-  background: url("../../../assests/Services/Service Bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: none; /* Remove the direct background image */
 }
 
+#service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/how_we_work/BgCover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.2; /* Adjust opacity */
+  z-index: -1; /* Place it behind content */
+}
 #service .bg-cover {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   justify-content: center;
-  /* padding: 20px; */
-  color: white;
+  width: 100%;
+  color: #273296;
 }
 
 #service .bg-cover .main-heading {
@@ -83,7 +93,7 @@
     font-size: 100px;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   #service .bg-cover .main-section .card .title {

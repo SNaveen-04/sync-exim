@@ -3,7 +3,7 @@
   min-height: 100vh;
   /* margin: 10px 0px; */
   box-sizing: border-box;
-  background: url("../../../assests/HowWeWorks/How we Work Bg.png");
+  background: url("../../../assets/services/BgCover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,9 +19,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* padding: 20px; */
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #273296;
+  color: white;
 }
 
 #how-we-works .bg-cover .main-heading {
@@ -33,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: start;
+  width: 100%;
 }
 
 #how-we-works .bg-cover .main-section .card {
@@ -42,7 +41,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 80%;
+  max-width: 30%;
   text-transform: uppercase;
   text-align: center;
 }
@@ -101,7 +100,7 @@
     gap: 100px;
   }
   #how-we-works .bg-cover .main-section .card img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
   }
 }

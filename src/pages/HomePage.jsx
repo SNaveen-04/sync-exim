@@ -6,9 +6,8 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <Service />
       <Works />
-      {/* <Features /> */}
+      <Service />
     </>
   );
 };

@@ -1,13 +1,13 @@
 import "./Service.css";
 
-import Image1 from "../../../assets/services/Asset3.png";
-import Image2 from "../../../assets/services/Asset4.jpg";
+import Image1 from "../../../assets/services/Asset1.png";
+import Image2 from "../../../assets/services/Asset2.png";
 import Image3 from "../../../assets/services/Asset3.png";
 
 const Service = () => {
   const servicesData = [
     {
-      img: Image2,
+      img: Image3,
       class: "",
       main: "Global reach",
       content: "Connecting to a World of Opportunities",
@@ -19,7 +19,7 @@ const Service = () => {
       content: "Delivering on time is delivering on trust",
     },
     {
-      img: Image3,
+      img: Image2,
       class: "assest3",
       main: "Credibility",
       content:
