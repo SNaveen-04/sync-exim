@@ -1,7 +1,7 @@
 .Contact {
-  background-image: url("/src/assests/contactUs.jpeg");
+  background-image: url("../../assets//contact//contactUs.jpeg");
   background-position: center;
-  padding: 70px;
+  padding: 40px 20px;
   box-sizing: border-box;
   text-transform: uppercase;
   text-align: center;
@@ -9,4 +9,11 @@
   background-size: cover;
   font-weight: 600;
   background-repeat: no-repeat;
+}
+
+/* Responsive padding for larger screens */
+@media (min-width: 768px) {
+  .Contact {
+    padding: 70px;
+  }
 }

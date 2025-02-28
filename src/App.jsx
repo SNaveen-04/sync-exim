@@ -11,7 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 // const About = lazy(() => import("./pages/AboutPage"));
-// const ContactPage = lazy(() => import("./pages/ContactPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 // const BusinessVerticalsPage = lazy(() =>
 //   import("./pages/BusinessVerticalsPage")
 // );
@@ -31,14 +31,14 @@ function App() {
               </Suspense>
             }
           /> */}
-          {/* <Route
+          <Route
             path="contact"
             element={
               <Suspense fallback={<>...</>}>
                 <ContactPage />
               </Suspense>
             }
-          /> */}
+          />
           {/* <Route
             path="verticals"
             element={
