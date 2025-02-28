@@ -1,11 +1,7 @@
 import Certificates from "../components/Certificates/Certificates";
 
 const CertificatesPage = () => {
-  return (
-    <div>
-      <Certificates />
-    </div>
-  );
+  return <Certificates />;
 };
 
 export default CertificatesPage;

@@ -15,7 +15,7 @@ const ContactPage = lazy(() => import("./pages/ContactPage"));
 // const BusinessVerticalsPage = lazy(() =>
 //   import("./pages/BusinessVerticalsPage")
 // );
-// const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
+const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
 
 function App() {
   return (
@@ -47,14 +47,14 @@ function App() {
               </Suspense>
             }
           /> */}
-          {/* <Route
+          <Route
             path="certificates"
             element={
               <Suspense fallback={<>...</>}>
                 <CertificatesPage />
               </Suspense>
             }
-          /> */}
+          />
         </Route>
         <Route path="*" element={<div>Page Not found</div>} />
       </Routes>

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import PDF1 from "../../assests/certificate Of IEC.pdf";
-import PDF2 from "../../assests/Print _ Udyam Registration Certificate.pdf";
+
+import PDF1 from "../../assets/pdf/certificate_of_iec.pdf";
+import PDF2 from "../../assets/pdf/print_udyam_registration_certificate.pdf";
 
 const Certificates = () => {
   const [isVisible, setIsVisible] = useState(false);
