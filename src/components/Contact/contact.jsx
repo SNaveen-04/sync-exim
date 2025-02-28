@@ -3,8 +3,8 @@ import "./contact.css";
 const Contact = () => {
   return (
     <div className="mx-auto">
-      <h2 className="uppercase text-[#2c526e] py-5 text-3xl Contact">
-        CONTACT <span className="text-[#4AB9CF]">us</span>
+      <h2 className="uppercase text-[#273296] py-5 text-3xl contact !font-bold">
+        CONTACT US
       </h2>
 
       <div className="flex flex-wrap mt-8">
