@@ -1,5 +1,4 @@
 import "./Works.css";
-
 import Image3 from "../../../assets/how_we_work/Asset1.png";
 import Image1 from "../../../assets/how_we_work/Asset2.png";
 import Image2 from "../../../assets/how_we_work/Asset3.png";
@@ -34,9 +33,9 @@ const Works = () => {
           {worksData.map((d, idx) => {
             return (
               <div key={idx} className="card">
-                <img src={d.img} alt="Image" />
+                <img src={d.img} alt={d.main} />
                 <h2 className="title text-white">{d.main}</h2>
-                <p className="content !text-sm leading-7 w-[35rem] text-white">
+                <p className="content !text-sm leading-7 text-white">
                   {d.content}
                 </p>
               </div>
