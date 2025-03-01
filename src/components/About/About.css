@@ -1,0 +1,17 @@
+.title {
+  margin-top: 10px;
+  height: 60px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.about {
+  color: #273296;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
