@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: none;
 }
 
 #service::after {
@@ -19,7 +18,7 @@
   background: url("../../../assets/how_we_work/BgCover.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   opacity: 0.2;
   z-index: -1;
 }
@@ -31,12 +30,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  color: #273296;
   padding: 20px;
 }
 
 #service .bg-cover .main-heading {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   text-align: center;
 }
@@ -52,7 +50,7 @@
 
 #service .bg-cover .main-section .card {
   margin-top: 10px;
-  min-height: 350px;
+  /* min-height: 350px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,7 +64,7 @@
 #service .bg-cover .main-section .card .title {
   margin-top: 10px;
   min-height: 40px;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -130,7 +128,7 @@
     font-size: 100px;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-weight: 800;
+    font-weight: 600;
   }
 
   #service .bg-cover .main-section {
@@ -143,7 +141,7 @@
   }
 
   #service .bg-cover .main-section .card .title {
-    font-size: 31spx;
+    font-size: 31px;
     margin: 10px;
   }
 

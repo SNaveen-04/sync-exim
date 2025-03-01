@@ -8,19 +8,16 @@ const Service = () => {
   const servicesData = [
     {
       img: Image3,
-      class: "",
       main: "Global reach",
       content: "Connecting to a World of Opportunities",
     },
     {
       img: Image1,
-      class: "",
       main: "Timely service",
       content: "Delivering on time is delivering on trust",
     },
     {
       img: Image2,
-      class: "assest3",
       main: "Credibility",
       content:
         "Credibility is not just a trait, it's a commitment to excellence",
@@ -30,14 +27,16 @@ const Service = () => {
   return (
     <div id="service">
       <div className="bg-cover">
-        <h1 className="main-heading">OUR SERVICES</h1>
+        <h1 className="main-heading text-[#273296]">OUR SERVICES</h1>
         <div className="mt-10 main-section">
           {servicesData.map((d, idx) => {
             return (
               <div key={idx} className="card">
-                <img src={d.img} className={d.class} />
-                <h2 className="title">{d.main}</h2>
-                <p className="content">{d.content}</p>
+                <img src={d.img} alt={d.main} />
+                <h2 className="title text-[#273296]">{d.main}</h2>
+                <p className="content !text-sm leading-7 text-[#273296]">
+                  {d.content}
+                </p>
               </div>
             );
           })}

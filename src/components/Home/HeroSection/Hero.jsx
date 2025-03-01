@@ -25,7 +25,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="w-full sm:w-[calc(100%-20px)] sm:mx-2.5 sm:my-2.5 h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] box-border relative sm:rounded-lg sm:border sm:border-black">
+    <div className="w-full sm:w-[calc(100%-20px)] sm:mx-2.5 sm:my-2.5 h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[88vh] box-border relative sm:rounded-lg sm:border sm:border-black">
       <Carousel
         rightControl=" "
         leftControl=" "

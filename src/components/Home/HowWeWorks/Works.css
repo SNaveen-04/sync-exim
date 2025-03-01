@@ -39,7 +39,7 @@
 
 #how-we-works .bg-cover .main-section .card {
   margin-top: 10px;
-  min-height: 350px; /* Set a fixed minimum height */
+  /* min-height: 350px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures cards align properly */
