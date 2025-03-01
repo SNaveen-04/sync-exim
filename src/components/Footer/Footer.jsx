@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -9,17 +9,30 @@ import {
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
-import Logo from "../../assets/logo.png";
+
+import Logo from "../../assets/logo_white.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-[#01004b] border border-zinc-300 px-5 pt-5 pb-2 text-slate-500">
       <div className="flex flex-col md:flex-row items-start justify-between gap-5">
         <div className="flex flex-col items-start">
           <div className="logo mb-4">
-            <Link to="/sync-exim">
+            <button
+              onClick={() => {
+                scrollToTop();
+                navigate("/sync-exim");
+              }}
+              type="button"
+            >
               <img src={Logo} className="h-12 md:h-16" alt="SyncExim Logo" />
-            </Link>
+            </button>
           </div>
 
           <div className="mt-5 flex gap-4 text-lg md:text-xl !text-white">
@@ -35,24 +48,52 @@ const Footer = () => {
           <h2 className="text-white text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="flex flex-col gap-3 !text-white">
             <li>
-              <Link to="/sync-exim/about" className="hover:underline">
+              <button
+                className="hover:underline"
+                onClick={() => {
+                  scrollToTop();
+                  navigate("/sync-exim/about");
+                }}
+                type="button"
+              >
                 About
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/sync-exim/verticals" className="hover:underline">
+              <button
+                className="hover:underline"
+                onClick={() => {
+                  scrollToTop();
+                  navigate("/sync-exim/verticals");
+                }}
+                type="button"
+              >
                 Business Verticals
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/sync-exim/certificates" className="hover:underline">
+              <button
+                className="hover:underline"
+                onClick={() => {
+                  scrollToTop();
+                  navigate("/sync-exim/certificates");
+                }}
+                type="button"
+              >
                 Certificates
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/sync-exim/contact" className="hover:underline">
+              <button
+                className="hover:underline"
+                onClick={() => {
+                  scrollToTop();
+                  navigate("/sync-exim/contact");
+                }}
+                type="button"
+              >
                 Contact
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
