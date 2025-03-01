@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
-// const About = lazy(() => import("./pages/AboutPage"));
+const About = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const BusinessVerticalsPage = lazy(() =>
   import("./pages/BusinessVerticalsPage")
@@ -23,14 +23,14 @@ function App() {
       <Routes>
         <Route path="/sync-exim" element={<Layout />}>
           <Route index element={<HomePage />} />
-          {/* <Route
+          <Route
             path="about"
             element={
               <Suspense fallback={<>...</>}>
                 <About />
               </Suspense>
             }
-          /> */}
+          />
           <Route
             path="contact"
             element={
