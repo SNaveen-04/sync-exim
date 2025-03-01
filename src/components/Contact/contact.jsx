@@ -8,34 +8,6 @@ const Contact = () => {
       </h2>
 
       <div className="flex flex-wrap mt-8">
-        {/* Contact Information - Left Side */}
-        <div className="w-full md:w-1/2 tracking-widest">
-          <h3 className="mt-4 px-6 py-2 text-xl font-semibold text-[#2c526e] uppercase border-b border-b-[#2c526e] border-opacity-25">
-            Address
-          </h3>
-          <div className="px-6 py-4">
-            Sync Exim
-            <br />
-            Codissia industrial park
-            <br />
-            Orattukupai
-            <br />
-            Chettipalayam 641201
-            <br />
-            Coimbatore
-            <br />
-            Tamilnadu
-          </div>
-          <h3 className="mt-4 px-6 py-2 text-xl font-semibold text-[#2c526e] uppercase border-b border-b-[#2c526e] border-opacity-25">
-            Phone
-          </h3>
-          <div className="px-6 py-4">+916380702686</div>
-          <h3 className="mt-4 px-6 py-2 text-xl font-semibold text-[#2c526e] uppercase border-b border-b-[#2c526e] border-opacity-25">
-            Mail
-          </h3>
-          <div className="px-6 py-4">synceximevercross@gmail.com</div>
-        </div>
-
         {/* Contact Form - Right Side */}
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <div className="bg-white p-6">
@@ -98,6 +70,34 @@ const Contact = () => {
               </button>
             </form>
           </div>
+        </div>
+
+        {/* Contact Information - Left Side */}
+        <div className="w-full md:w-1/2 tracking-widest">
+          <h3 className="mt-4 px-6 py-2 text-xl font-semibold text-[#2c526e] uppercase border-b border-b-[#2c526e] border-opacity-25">
+            Address
+          </h3>
+          <div className="px-6 py-4">
+            Sync Exim
+            <br />
+            Codissia industrial park
+            <br />
+            Orattukupai
+            <br />
+            Chettipalayam 641201
+            <br />
+            Coimbatore
+            <br />
+            Tamilnadu
+          </div>
+          <h3 className="mt-4 px-6 py-2 text-xl font-semibold text-[#2c526e] uppercase border-b border-b-[#2c526e] border-opacity-25">
+            Phone
+          </h3>
+          <div className="px-6 py-4">+916380702686</div>
+          <h3 className="mt-4 px-6 py-2 text-xl font-semibold text-[#2c526e] uppercase border-b border-b-[#2c526e] border-opacity-25">
+            Mail
+          </h3>
+          <div className="px-6 py-4">synceximevercross@gmail.com</div>
         </div>
       </div>
     </div>

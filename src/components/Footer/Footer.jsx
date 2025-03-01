@@ -8,7 +8,7 @@ import Logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-50 border border-zinc-300 bg-opacity-70 px-5 pt-5 pb-2 text-slate-500">
+    <footer className="bg-[#01004b] border border-zinc-300 px-5 pt-5 pb-2 text-slate-500">
       <div className="flex flex-col md:flex-row justify-between items-start  gap-5">
         <div className="flex flex-col items-start">
           <div className="logo mb-4">
@@ -17,7 +17,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="mt-5 flex gap-6 text-lg md:text-xl">
+          <div className="mt-5 flex gap-6 text-lg md:text-xl !text-white">
             <FaFacebookF className="cursor-pointer" />
             <FaTwitter className="cursor-pointer" />
             <FaLinkedinIn className="cursor-pointer" />
@@ -25,7 +25,8 @@ const Footer = () => {
             <FaSkype className="cursor-pointer" />
           </div>
         </div>
-        <ul className="flex flex-col md:flex-row gap-4 md:gap-8 mt-3">
+
+        <ul className="flex flex-col md:flex-row gap-4 md:gap-8 mt-3 !text-white">
           <li>
             <Link to="/sync-exim" className="hover:underline">
               Home
@@ -53,7 +54,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="font-semibold text-center text-base mt-8">
+
+      <div className="font-semibold text-center text-base mt-8 !text-white">
         &copy;2024 SyncExim. All Rights Reserved
       </div>
     </footer>
