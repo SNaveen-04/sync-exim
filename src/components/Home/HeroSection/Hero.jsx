@@ -1,8 +1,8 @@
 import { Carousel } from "flowbite-react";
 
-import Image1 from "../../../assets/others/SlideImg1.png";
-import Image2 from "../../../assets/others/SlideImg2.png";
-import Image3 from "../../../assets/others/SlideImg2.png";
+import Image1 from "../../../assets/hero/SlideImg1.png";
+import Image2 from "../../../assets/hero/SlideImg2.png";
+import Image3 from "../../../assets/hero/SlideImg2.png";
 
 const Hero = () => {
   const slides = [
