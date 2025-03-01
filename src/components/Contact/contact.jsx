@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <div className="bg-white p-6">
             <h3 className="text-xl font-semibold text-[#2c526e] uppercase mb-4">
-              Send us a message
+              React out to us
             </h3>
             <form>
               <div className="mb-4">
