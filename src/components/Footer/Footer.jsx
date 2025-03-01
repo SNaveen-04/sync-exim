@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#01004b] border border-zinc-300 px-5 pt-5 pb-2 text-slate-500">
+    <footer className="bg-[#01004b] px-5 pt-5 pb-2 text-slate-500">
       <div className="flex flex-col md:flex-row items-start justify-between gap-5">
         <div className="flex flex-col items-start">
           <div className="logo mb-4">
