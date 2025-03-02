@@ -27,7 +27,7 @@ const NavBar = () => {
     <>
       {/* Top Bar */}
       <div className="hidden md:flex md:justify-end">
-        <div className="flex justify-end pr-5 pl-4 lg:pl-40 gap-7 bg-[#01004b] text-white py-1.5 rounded-bl-2xl">
+        <div className="flex justify-end pr-5 pl-4 lg:pl-40 gap-7 bg-[#01004b] text-white py-1.5 rounded-bl-full">
           <p className="text-sm">Your Trusted Business Partner</p>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-3 text-sm">

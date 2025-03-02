@@ -1,11 +1,13 @@
 import Hero from "../components/Home/HeroSection/Hero";
-import Service from "../components/Home/ServiceSection/Service";
+import Exporter from "../components/Home/Exporter/Exporter";
 import Works from "../components/Home/HowWeWorks/Works";
+import Service from "../components/Home/ServiceSection/Service";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
+      <Exporter />
       <Works />
       <Service />
     </>
