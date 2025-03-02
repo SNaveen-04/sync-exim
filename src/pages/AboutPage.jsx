@@ -1,8 +1,8 @@
 import About from "../components/About/About";
 import WhyChooseUs from "../components/About/WhyChooseUs";
+import WhyIndiaMarket from "../components/About/WhyIndiaMarket";
 // import Mission from "../components/About/Mission";
 // import Vision from "../components/About/Vision";
-// import WhyIndiaMarket from "../components/About/WhyIndiaMarket";
 
 const AboutPage = () => {
   return (
@@ -10,7 +10,7 @@ const AboutPage = () => {
       <About />
       <br />
       <WhyChooseUs />
-      {/* <WhyIndiaMarket /> */}
+      <WhyIndiaMarket />
       {/* <Mission /> */}
       {/* <Vision /> */}
     </div>
