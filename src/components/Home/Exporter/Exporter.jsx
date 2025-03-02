@@ -2,10 +2,11 @@ import Image1 from "../../../assets/hero/SlideImg1.png";
 
 export default function Exporter() {
   return (
-    <div className="my-10 mb-20 flex justify-center">
-      <div className="flex justify-center relative">
+    <div className="md:my-10">
+      <div className="flex justify-center relative lg:p-0">
+        {/* Main content box */}
         <div
-          className="border-2 border-white/30 rounded-tr-3xl w-[40%] space-y-5 p-10 bg-white/70 z-10"
+          className="border-2 border-white/30 md:rounded-tr-3xl md:w-[40%] space-y-5 p-10 bg-white/70 z-10 md:-translate-x-40"
           style={{ boxShadow: "1px 0px 8px 4px grey" }}
         >
           <h1 className="text-3xl font-bold text-[#01004b]">
@@ -46,11 +47,16 @@ export default function Exporter() {
           </p>
         </div>
 
+        {/* Image container - keeps exact same size and position */}
         <div
-          className="absolute -bottom-10 right-20 border-2 rounded-tl-3xl w-[35%] h-fit p-2"
+          className="absolute -bottom-10 right-0 md:right-48 border-2 rounded-tl-3xl md:w-[35%] h-fit p-2"
           style={{ boxShadow: "1px 0px 8px 4px grey" }}
         >
-          <img src={Image1} alt={"Image"} className="bg-cover rounded-tl-3xl" />
+          <img
+            src={Image1}
+            alt="Sync Exim Products"
+            className="bg-cover rounded-tl-3xl"
+          />
         </div>
       </div>
     </div>
