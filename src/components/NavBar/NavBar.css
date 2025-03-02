@@ -61,9 +61,15 @@
   font-size: 1em;
   text-transform: uppercase;
 }
+
+#primary-nav .navigation li a {
+  transition-duration: 300ms;
+}
+
 #primary-nav .navigation li a:hover {
   padding-bottom: 8px;
-  border-bottom: 2px solid rgb(39, 50, 150);
+  background-color: rgb(39, 50, 150);
+  color: white;
 }
 
 #primary-nav .navigation li a {
