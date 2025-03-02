@@ -6,21 +6,48 @@ import Image3 from "../../../assets/hero/SlideImg2.png";
 
 const Hero = () => {
   const slides = [
+    // {
+    //   image: Image1,
+    //   title: "Welcome To Sync Exim",
+    //   subtitle: "Connecting Global Markets Seamlessly",
+    // },
+    // {
+    //   image: Image2,
+    //   title: "Comprehensive Import & Export Solutions",
+    //   subtitle:
+    //     "International Sourcing & Procurement Customs Clearance & Documentation Freight Forwarding & Logistics Product Distribution & Wholesale",
+    // },
+    // {
+    //   image: Image3,
+    //   title: "Diverse Industry Experience",
+    //   subtitle: "Connecting Industries to Global Markets",
+    // },
     {
       image: Image1,
-      title: "Welcome To Sync Exim",
-      subtitle: "Connecting Global Markets Seamlessly",
+      title: "Global quality products exporter from india",
+      subtitle: "Delivering excellence beyond borders",
     },
     {
       image: Image2,
-      title: "Comprehensive Import & Export Solutions",
-      subtitle:
-        "International Sourcing & Procurement Customs Clearance & Documentation Freight Forwarding & Logistics Product Distribution & Wholesale",
+      title: "Trusted & Legally Approved Certified products",
+      subtitle: "Certified for trust, approved for you",
     },
     {
       image: Image3,
-      title: "Diverse Industry Experience",
-      subtitle: "Connecting Industries to Global Markets",
+      title: "We export our finest",
+      subtitle: "Export Excellence",
+    },
+    {
+      image: Image2,
+      title: "Bridging Businesses Beyond Borders",
+      subtitle:
+        "We empower businesses to expand internationally by offering smooth, hassle-free export services",
+    },
+    {
+      image: Image3,
+      title: "Committed to Excellence in Global Trade",
+      subtitle:
+        "Our mission is to drive success and foster lasting partnerships worldwide.",
     },
   ];
 
