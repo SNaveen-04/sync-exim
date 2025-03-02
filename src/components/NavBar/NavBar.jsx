@@ -4,6 +4,15 @@ import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 
 import Logo from "../../assets/logo.png";
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaSkype,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 const NavBar = () => {
   const [right, setRight] = useState("100%");
@@ -16,6 +25,34 @@ const NavBar = () => {
 
   return (
     <>
+      {/* Top Bar */}
+      <div className="hidden md:flex md:justify-end">
+        <div className="flex justify-end pr-5 pl-4 lg:pl-40 gap-7 bg-[#01004b] text-white py-1.5 rounded-bl-2xl">
+          <p className="text-sm">Your Trusted Business Partner</p>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3 text-sm">
+              <FaPhoneAlt className="flex-shrink-0" />
+              <span>+916380702686</span>
+            </div>
+
+            <p>|</p>
+
+            <div className="flex items-center gap-3 text-sm">
+              <FaEnvelope className="flex-shrink-0" />
+              <span>synceximevercross@gmail.com</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4 !text-white text-sm">
+            <FaFacebookF className="cursor-pointer hover:text-blue-600" />
+            <FaTwitter className="cursor-pointer hover:text-blue-400" />
+            <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+            <FaYoutube className="cursor-pointer hover:text-red-600" />
+            <FaSkype className="cursor-pointer hover:text-blue-500" />
+          </div>
+        </div>
+      </div>
+
       <nav id="primary-nav" style={{ right: right }}>
         <div className="logo">
           <Link to="/sync-exim">
@@ -86,7 +123,6 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-
       <nav id="secondary-nav">
         <div className="logo">
           <Link to="/sync-exim">
