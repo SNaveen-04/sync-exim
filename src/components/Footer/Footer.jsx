@@ -84,6 +84,14 @@ const Footer = () => {
               <FaEnvelope className="flex-shrink-0" />
               <span>synceximevercross@gmail.com</span>
             </div>
+
+            {/* <div className="mt-5 flex gap-4 text-lg md:text-xl !text-white">
+              <FaFacebookF className="cursor-pointer hover:text-blue-600" />
+              <FaTwitter className="cursor-pointer hover:text-blue-400" />
+              <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+              <FaYoutube className="cursor-pointer hover:text-red-600" />
+              <FaSkype className="cursor-pointer hover:text-blue-500" />
+            </div> */}
           </div>
         </div>
       </div>
