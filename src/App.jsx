@@ -1,10 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Layout from "./pages/Layout";
-import HomePage from "./pages/HomePage";
-
 import { pdfjs } from "react-pdf";
 import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+
+import Layout from "./pages/Layout";
+import HomePage from "./pages/HomePage";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",

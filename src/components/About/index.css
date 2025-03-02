@@ -1,0 +1,12 @@
+.bg-img {
+  width: 100%;
+  /* min-height: 100vh; */
+  box-sizing: border-box;
+  background: url("../../assets//services/BgCover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

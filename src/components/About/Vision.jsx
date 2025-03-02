@@ -1,10 +1,15 @@
+import "./index.css";
+
 const Vision = () => {
   return (
-    <div className="text-[#2c526e] flex max-md:flex-col justify-center flex-row-reverse py-14 md:p-10 font-sans md:h-screen bg-zinc-100">
-      <div className="md:w-[40%] max-md:my-5 flex items-center justify-center uppercase text-2xl font-semibold tracking-widest">
-        OUR <span className="text-[#4AB9CF] px-2"> Vision </span>
+    <div className="text-zinc-700 flex max-md:flex-col md:flex-row-reverse font-sans">
+      {/* OUR Vision div as a square with reduced width */}
+      <div className="bg-img md:!w-1/3 lg:!w-1/4 aspect-square flex items-center justify-center uppercase text-2xl font-semibold tracking-widest text-white">
+        OUR VISION
       </div>
-      <div className="w-full md:w-[60%] flex items-center justify-center tracking-wider max-md:mx-auto max-md:w-[75%] text-sm md:text-lg font-normal my-5 text-center">
+
+      {/* Text content div with increased width */}
+      <div className="w-full md:w-2/3 lg:w-3/4 flex items-center justify-center tracking-wider px-8 py-12 text-sm md:text-lg font-normal text-center">
         To deliver high-quality Indian products to global markets, fostering
         sustainable international trade relationships while adhering to ethical
         business practices. We strive to ensure customer satisfaction, promote

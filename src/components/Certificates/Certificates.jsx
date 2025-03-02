@@ -1,37 +1,42 @@
-import { useState } from "react";
-import PDF1 from "../../assests/certificate Of IEC.pdf";
-import PDF2 from "../../assests/Print _ Udyam Registration Certificate.pdf";
+import Image1 from "../../assets/certificates/certificate_of_iec.jpg";
+import Image2 from "../../assets/certificates/print_udyam_registration_certificate.jpg";
 
 const Certificates = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [pdf, setPdf] = useState("");
-
-  const handleToggle = (selectedPdf) => {
-    setPdf(selectedPdf);
-    setIsVisible(true);
-  };
-
   return (
-    <div className="flex flex-col min-h-screen items-center p-4">
-      <div className="flex gap-4 md:gap-10 mb-6">
-        <button
-          onClick={() => handleToggle(PDF1)}
-          className="p-2 md:px-4 md:py-2 text-xs md:text-sm text-zinc-700 border border-zinc-500 hover:bg-slate-100 rounded-lg"
-        >
-          IEC Certificate
-        </button>
-        <button
-          onClick={() => handleToggle(PDF2)}
-          className="p-2 md:px-4 md:py-2 text-xs md:text-sm text-zinc-700 border border-zinc-500 hover:bg-slate-100 rounded-lg"
-        >
-          Udyam Registration Certificate
-        </button>
-      </div>
-      {isVisible && (
-        <div className="w-full h-screen border rounded-lg shadow-lg">
-          <iframe src={pdf} className="w-full h-full" title="PDF Viewer" />
+    <div className="container mx-auto px-4 py-8">
+      <h2 className="uppercase text-[#273296] py-5 text-4xl text-center !font-bold">
+        Certificates
+      </h2>
+
+      <div className="flex flex-col md:flex-row gap-8 items-center md:items-start justify-center">
+        {/* Certificate 1 */}
+        <div className="w-full md:w-1/2 max-w-lg">
+          <h2 className="text-xl font-semibold mb-4 text-center">
+            IEC Certificate
+          </h2>
+          <div className="border rounded-lg overflow-hidden shadow-lg">
+            <img
+              src={Image1}
+              alt="IEC Certificate"
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
-      )}
+
+        {/* Certificate 2 */}
+        <div className="w-full md:w-1/2 max-w-lg">
+          <h2 className="text-xl font-semibold mb-4 text-center">
+            Udyam Registration Certificate
+          </h2>
+          <div className="border rounded-lg overflow-hidden shadow-lg">
+            <img
+              src={Image2}
+              alt="Udyam Registration Certificate"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

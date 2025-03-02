@@ -1,10 +1,12 @@
-import "./About.css";
+import "./index.css";
 
 const About = () => {
   return (
-    <div className="about">
-      <h1 className="title">About Us</h1>
-      <div className="text-sm py-6 md:text-lg md:tracking-wide text-justify">
+    <div className="pt-10">
+      <h1 className="text-3xl text-center font-bold text-[#273296]">
+        ABOUT US
+      </h1>
+      <div className="text-sm py-6 md:text-lg md:tracking-wide text-justify text-[#273296]">
         <div className="md:px-6 p-2">
           We supply premium produce to all over world. Our commitment to quality
           and customer service has made us one of the most trusted names in the
@@ -18,6 +20,7 @@ const About = () => {
           produce,food products,carbon,cattle feed and panchagavya pooja
           products.
         </div>
+
         <div className="md:px-6 p-2">
           Our Company has developed business strategy to switch over
           exports/imports from one commodity to another with change in demander
@@ -25,6 +28,7 @@ const About = () => {
           policy adopted by the management ensures that the Company does not
           pass through a lean period during the year.
         </div>
+
         <div className="md:px-6 p-2">
           We believe that our market position has been achieved by adherence to
           the vision of our Promoter and senior management and their experience.
