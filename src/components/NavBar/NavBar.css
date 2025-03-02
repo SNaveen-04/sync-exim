@@ -67,7 +67,6 @@
 }
 
 #primary-nav .navigation li a:hover {
-  padding-bottom: 8px;
   background-color: rgb(39, 50, 150);
   color: white;
 }
@@ -117,8 +116,5 @@
     display: flex;
     align-items: center;
     padding: 4px 15px;
-  }
-  #primary-nav .navigation li a:hover {
-    padding-bottom: 2px;
   }
 }
