@@ -2,9 +2,11 @@ import "./index.css";
 
 const About = () => {
   return (
-    <div className="bg-img pt-10">
-      <h1 className="text-3xl text-center font-bold text-white">ABOUT US</h1>
-      <div className="text-sm py-6 md:text-lg md:tracking-wide text-justify text-white">
+    <div className="pt-10">
+      <h1 className="text-3xl text-center font-bold text-[#273296]">
+        ABOUT US
+      </h1>
+      <div className="text-sm py-6 md:text-lg md:tracking-wide text-justify text-[#273296]">
         <div className="md:px-6 p-2">
           We supply premium produce to all over world. Our commitment to quality
           and customer service has made us one of the most trusted names in the
