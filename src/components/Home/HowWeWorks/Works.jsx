@@ -35,7 +35,7 @@ const Works = () => {
             return (
               <div key={idx} className="card">
                 <img src={d.img} alt={d.main} />
-                <h2 className="title text-white">{d.main}</h2>
+                <h2 className="title text-white uppercase">{d.main}</h2>
                 <p className="content !text-sm leading-7 text-white">
                   {d.content}
                 </p>

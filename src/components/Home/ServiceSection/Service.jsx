@@ -33,7 +33,7 @@ const Service = () => {
             return (
               <div key={idx} className="card">
                 <img src={d.img} alt={d.main} />
-                <h2 className="title text-[#273296]">{d.main}</h2>
+                <h2 className="title text-[#273296] uppercase">{d.main}</h2>
                 <p className="content !text-sm leading-7 text-[#273296]">
                   {d.content}
                 </p>
