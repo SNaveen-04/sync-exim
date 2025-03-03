@@ -53,7 +53,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <nav id="primary-nav" style={{ right: right }} className="!z-[50]">
+      <nav id="primary-nav" style={{ right: right, zIndex: 100 }}>
         <div className="logo">
           <Link to="/sync-exim">
             <img src={Logo} className="h-16" />
