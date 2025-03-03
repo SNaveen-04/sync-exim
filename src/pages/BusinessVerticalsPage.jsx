@@ -10,31 +10,31 @@ import Image7 from "../assets/product_images/Image7.jpg";
 
 const verticals = [
   {
-    text: "Edible Oils",
+    text: "Rice",
     img: Image1,
   },
   {
-    text: "Image 2",
+    text: "Edible Oils",
     img: Image2,
   },
   {
-    text: "Image 3",
+    text: "Moringa Powder/Tablets",
     img: Image3,
   },
   {
-    text: "Image 4",
+    text: "Cattle Feed",
     img: Image4,
   },
   {
-    text: "Image 5",
+    text: "Tomato Ketchup",
     img: Image5,
   },
   {
-    text: "Image 6",
+    text: "Coconut Shell Charcoal",
     img: Image6,
   },
   {
-    text: "Image 7",
+    text: "India Spices",
     img: Image7,
   },
 ];
