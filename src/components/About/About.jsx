@@ -3,7 +3,7 @@ import "./index.css";
 const About = () => {
   return (
     <div className="pt-10">
-      <h1 className="text-3xl text-center font-bold text-[#273296]">
+      <h1 className="text-4xl md:text-5xl text-center font-bold text-[#273296]">
         ABOUT US
       </h1>
       <div className="text-sm py-6 md:text-lg md:tracking-wide text-justify text-[#273296]">

@@ -3,12 +3,12 @@ import Image2 from "../../assets/certificates/print_udyam_registration_certifica
 
 const Certificates = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="uppercase text-[#273296] py-5 text-4xl text-center !font-bold">
+    <div className="container mx-auto px-4 pb-8 pt-5">
+      <h2 className="uppercase text-[#273296] py-5 text-4xl md:text-5xl text-center !font-bold">
         Certificates
       </h2>
 
-      <div className="flex flex-col md:flex-row gap-8 items-center md:items-start justify-center">
+      <div className="mt-3 flex flex-col md:flex-row gap-8 items-center md:items-start justify-center">
         {/* Certificate 1 */}
         <div className="w-full md:w-1/2 max-w-lg">
           <h2 className="text-xl font-semibold mb-4 text-center">
