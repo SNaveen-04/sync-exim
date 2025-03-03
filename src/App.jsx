@@ -1,6 +1,7 @@
 import { pdfjs } from "react-pdf";
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import { Flip, ToastContainer } from "react-toastify";
 
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
@@ -58,6 +59,14 @@ function App() {
         </Route>
         <Route path="*" element={<div>Page Not found</div>} />
       </Routes>
+
+      <ToastContainer
+        position="bottom-left"
+        transition={Flip}
+        autoClose={2500}
+        hideProgressBar
+        theme="colored"
+      />
     </>
   );
 }
