@@ -17,13 +17,13 @@ const data = [
       "Raw materials allow India to produce spices, oils, and other food products at great affordable rates.",
   },
   {
-    image: Image3,
+    image: Image4,
     title: "VARIETY OF SPICES AND TASTES",
     description:
       "Indias spice market is unparalleled due to its rich heritage, diverse climate, and traditional farming practices that ensure the highest quality and authenticity of spices.",
   },
   {
-    image: Image4,
+    image: Image3,
     title: "TECHNOLOGY AND INNOVATION",
     description:
       "In a land blessed with great scientific minds, India's technological advancements and innovation have made international trade all the easier, making it the perfect choice.",
@@ -54,9 +54,7 @@ const WhyIndiaMarket = () => {
               <h2 className="text-2xl font-semibold text-center mb-2 text-[#273296] uppercase">
                 {d.title}
               </h2>
-              <p className="text-[#273296] text-center uppercase">
-                {d.description}
-              </p>
+              <p className="text-[#273296] text-center">{d.description}</p>
             </div>
           );
         })}

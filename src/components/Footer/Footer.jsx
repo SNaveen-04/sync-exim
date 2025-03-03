@@ -71,13 +71,14 @@ const Footer = () => {
                 <br />
                 Chettipalayam,
                 <br />
-                Coimbatore, Tamilnadu - 641201
+                Coimbatore, Tamilnadu -{" "}
+                <span className="!font-sans">641201</span>
               </span>
             </div>
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt className="flex-shrink-0" />
-              <span>+916380702686</span>
+              <span className="!font-sans">+91 6380702686</span>
             </div>
 
             <div className="flex items-center gap-3">

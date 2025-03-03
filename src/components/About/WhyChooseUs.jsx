@@ -62,9 +62,7 @@ const WhyChooseUs = () => {
               <h2 className="text-2xl font-semibold text-center mb-2 text-white uppercase">
                 {d.title}
               </h2>
-              <p className="text-white text-center uppercase">
-                {d.description}
-              </p>
+              <p className="text-white text-center">{d.description}</p>
             </div>
           );
         })}

@@ -92,24 +92,23 @@ const Contact = () => {
             Address
           </h3>
           <div className="px-6 py-4 text-white text-sm m-5">
-            Sync Exim
+            Sync Exim,
             <br />
-            Codissia industrial park
+            Codissia industrial park,
             <br />
-            Orattukupai
+            Orattukupai,
             <br />
-            Chettipalayam 641201
+            Chettipalayam,
             <br />
-            Coimbatore
-            <br />
-            Tamilnadu
+            Coimbatore, Tamilnadu - <span className="!font-sans">641201</span>
           </div>
 
           <h3 className="mt-4 px-6 py-2 text-lg font-semibold text-white uppercase border-b border-b-white border-opacity-25 m-5">
             Phone
           </h3>
-          <div className="px-6 py-4 text-white text-sm m-5">+916380702686</div>
-
+          <div className="px-6 py-4 text-white text-sm m-5 !font-sans">
+            +91 6380702686
+          </div>
           <h3 className="mt-4 px-6 py-2 text-lg font-semibold text-white uppercase border-b border-b-white border-opacity-25 m-5">
             Mail
           </h3>

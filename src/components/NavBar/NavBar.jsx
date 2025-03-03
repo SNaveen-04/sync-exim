@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-3 text-sm">
               <FaPhoneAlt className="flex-shrink-0" />
-              <span>+916380702686</span>
+              <span className="!font-sans">+91 6380702686</span>
             </div>
 
             <p>|</p>
