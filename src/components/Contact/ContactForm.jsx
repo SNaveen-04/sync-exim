@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 import { BiLoaderAlt } from "react-icons/bi";
 
-export default function ContactForm() {
+export default function ContactForm({ withBorder = false }) {
   const initialState = {
     name: "",
     contact: "",
@@ -30,10 +30,11 @@ export default function ContactForm() {
         form
       );
       if (response.status === 200) {
-        toast.success("Message Sent");
+        toast.success("Form Data Sent Successfully");
         setForm(initialState);
       }
     } catch (err) {
+      toast.error("Form Data Not Sent");
       console.log(err);
     } finally {
       setLoading(false);
@@ -41,8 +42,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full md:w-1/2">
-      <div className="bg-white p-6">
+    <div
+      className={`w-full md:w-1/2 ${withBorder ? "border-2 rounded-2xl" : ""}`}
+    >
+      <div className="bg-white p-6 rounded-2xl">
         <h3 className="text-lg font-semibold text-[#2c526e] uppercase mb-4">
           React out to us
         </h3>
