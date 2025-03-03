@@ -15,7 +15,7 @@ const Mission = () => {
         to empower Indian communities, promote eco-friendly practices, and build
         lasting partnerships by delivering high-quality, reliable, and
         responsibly sourced solutions to meet the diverse needs of our
-        international customers
+        international customers.
       </div>
     </div>
   );
