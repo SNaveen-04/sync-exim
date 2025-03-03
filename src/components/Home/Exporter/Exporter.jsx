@@ -15,14 +15,14 @@ export default function Exporter() {
 
           <p>Welcome to Sync Exim - India's Gateway to Global Markets</p>
 
-          <p>
+          <p className="text-justify">
             At Sync Exim, we bring the finest of India's products to the world
             stage. With a commitment to quality, sustainability, and innovation,
             we specialize in exporting premium goods that reflect India's rich
             heritage and diverse culture.
           </p>
 
-          <p>
+          <p className="text-justify">
             <span className="font-bold">Sync Exim</span> always think the
             customer is king, and we have an extremely reliable and open working
             process. Sync Exim is one of the trusted exporter and supplier in
@@ -37,7 +37,7 @@ export default function Exporter() {
             represent Indian culture and our variety of products to the world.
           </p>
 
-          <p>
+          <p className="text-justify">
             <span className="font-bold">Mission</span> Quality is not an
             accident, miracle or an assumed thing but it is continuous and
             sustained efforts of strong techno-managerial skill and dedication

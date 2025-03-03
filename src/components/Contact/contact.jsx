@@ -107,7 +107,7 @@ const Contact = () => {
             Phone
           </h3>
           <div className="px-6 py-4 text-white text-sm m-5 !font-sans">
-            +91 6380702686
+            +91 638 070 2686
           </div>
           <h3 className="mt-4 px-6 py-2 text-lg font-semibold text-white uppercase border-b border-b-white border-opacity-25 m-5">
             Mail
