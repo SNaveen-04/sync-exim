@@ -7,6 +7,8 @@ import Image4 from "../assets/product_images/Image4.jpg";
 import Image5 from "../assets/product_images/Image5.jpg";
 import Image6 from "../assets/product_images/Image6.jpg";
 import Image7 from "../assets/product_images/Image7.jpg";
+import Image8 from "../assets/product_images/Image8.jpeg";
+import Image9 from "../assets/product_images/Image9.jpeg";
 
 const verticals = [
   {
@@ -36,6 +38,14 @@ const verticals = [
   {
     text: "India Spices",
     img: Image7,
+  },
+  {
+    text: "Coconut",
+    img: Image8,
+  },
+  {
+    text: "Noodles",
+    img: Image9,
   },
 ];
 

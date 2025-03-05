@@ -1,8 +1,10 @@
 import { Carousel } from "flowbite-react";
 
-import Image1 from "../../../assets/hero/SlideImg1.png";
+import Image1 from "../../../assets/hero/SlideImg1.jpg";
 import Image2 from "../../../assets/hero/SlideImg2.png";
-import Image3 from "../../../assets/hero/SlideImg2.png";
+import Image3 from "../../../assets/hero/SlideImg3.jpg";
+import Image4 from "../../../assets/hero/SlideImg4.jpg";
+import Image5 from "../../../assets/hero/SlideImg5.jpg";
 
 const Hero = () => {
   const slides = [
@@ -38,13 +40,13 @@ const Hero = () => {
       subtitle: "Export Excellence",
     },
     {
-      image: Image2,
+      image: Image4,
       title: "Bridging Businesses Beyond Borders",
       subtitle:
         "We empower businesses to expand internationally by offering smooth, hassle-free export services",
     },
     {
-      image: Image3,
+      image: Image5,
       title: "Committed to Excellence in Global Trade",
       subtitle:
         "Our mission is to drive success and foster lasting partnerships worldwide.",

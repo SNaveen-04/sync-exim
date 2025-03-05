@@ -4,8 +4,8 @@ const Vision = () => {
   return (
     <div className="text-zinc-700 flex max-md:flex-col md:flex-row-reverse font-sans">
       {/* OUR Vision div as a square with reduced width */}
-      <div className="bg-img md:!w-1/3 lg:!w-1/4 aspect-square flex items-center justify-center uppercase text-2xl font-semibold tracking-widest text-white">
-        OUR VISION
+      <div className="bg-img-vission md:!w-1/3 lg:!w-1/4 aspect-square flex items-center justify-center uppercase text-2xl font-semibold tracking-widest text-white">
+        {/* OUR VISION */}
       </div>
 
       {/* Text content div with increased width */}

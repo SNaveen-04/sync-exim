@@ -1,4 +1,4 @@
-import Image1 from "../../../assets/hero/SlideImg1.png";
+import Image1 from "../../../assets/hero/Exporter.png";
 
 export default function Exporter() {
   return (

@@ -4,8 +4,8 @@ const Mission = () => {
   return (
     <div className="text-zinc-700 flex max-md:flex-col md:flex-row font-sans bg-zinc-100">
       {/* OUR MISSION div as a square with reduced width */}
-      <div className="bg-img md:!w-1/3 lg:!w-1/4 aspect-square flex items-center justify-center uppercase text-2xl font-semibold tracking-widest text-white">
-        OUR MISSION
+      <div className="bg-img-mission md:!w-1/3 lg:!w-1/4 aspect-square flex items-center justify-center uppercase text-2xl font-semibold tracking-widest text-white">
+        {/* OUR MISSION */}
       </div>
 
       {/* Text content div with increased width */}
