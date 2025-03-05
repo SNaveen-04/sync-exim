@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 
 import Logo from "../../assets/logo_white.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,11 +24,41 @@ const Footer = () => {
           </div>
 
           <div className="mt-5 flex gap-4 text-lg md:text-xl !text-white">
-            <FaFacebookF className="cursor-pointer hover:text-blue-600" />
-            <FaTwitter className="cursor-pointer hover:text-blue-400" />
-            <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
-            <FaYoutube className="cursor-pointer hover:text-red-600" />
-            <FaSkype className="cursor-pointer hover:text-blue-500" />
+            <Link
+              className="cursor-pointer hover:text-blue-600 duration-300"
+              to={"https://www.facebook.com/profile.php?id=61573565835343"}
+              target="_blank"
+            >
+              <FaFacebookF />
+            </Link>
+            <Link
+              className="cursor-pointer hover:text-blue-400 duration-300"
+              to={"#"}
+              target="_blank"
+            >
+              <FaTwitter />
+            </Link>
+            <Link
+              className="cursor-pointer hover:text-blue-700 duration-300"
+              to={"#"}
+              target="_blank"
+            >
+              <FaLinkedinIn />
+            </Link>
+            <Link
+              className="cursor-pointer hover:text-red-600 duration-300"
+              to={"#"}
+              target="_blank"
+            >
+              <FaYoutube />
+            </Link>
+            <Link
+              className="cursor-pointer hover:text-blue-500 duration-300"
+              to={"#"}
+              target="_blank"
+            >
+              <FaSkype />
+            </Link>
           </div>
         </div>
 
