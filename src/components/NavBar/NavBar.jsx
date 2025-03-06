@@ -10,9 +10,8 @@ import {
   FaLinkedinIn,
   FaPhoneAlt,
   FaSkype,
-  FaTwitter,
-  FaYoutube,
 } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 const NavBar = () => {
   const [right, setRight] = useState("100%");
@@ -52,11 +51,11 @@ const NavBar = () => {
               <FaFacebookF />
             </Link>
             <Link
-              className="cursor-pointer hover:text-blue-400 duration-300"
-              to={"#"}
+              className="cursor-pointer hover:text-blue-700 duration-300"
+              to={"https://www.instagram.com/sync_exim?igsh=Y3NucWJjODZnNjRp"}
               target="_blank"
             >
-              <FaTwitter />
+              <RiInstagramFill />
             </Link>
             <Link
               className="cursor-pointer hover:text-blue-700 duration-300"
@@ -64,13 +63,6 @@ const NavBar = () => {
               target="_blank"
             >
               <FaLinkedinIn />
-            </Link>
-            <Link
-              className="cursor-pointer hover:text-red-600 duration-300"
-              to={"#"}
-              target="_blank"
-            >
-              <FaYoutube />
             </Link>
             <Link
               className="cursor-pointer hover:text-blue-500 duration-300"

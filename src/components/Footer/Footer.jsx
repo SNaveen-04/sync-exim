@@ -1,13 +1,12 @@
 import {
   FaFacebookF,
-  FaTwitter,
-  FaYoutube,
   FaLinkedinIn,
   FaSkype,
   FaMapMarkerAlt,
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 import Logo from "../../assets/logo_white.png";
 import { Link } from "react-router-dom";
@@ -32,11 +31,11 @@ const Footer = () => {
               <FaFacebookF />
             </Link>
             <Link
-              className="cursor-pointer hover:text-blue-400 duration-300"
-              to={"#"}
+              className="cursor-pointer hover:text-blue-700 duration-300"
+              to={"https://www.instagram.com/sync_exim?igsh=Y3NucWJjODZnNjRp"}
               target="_blank"
             >
-              <FaTwitter />
+              <RiInstagramFill />
             </Link>
             <Link
               className="cursor-pointer hover:text-blue-700 duration-300"
@@ -44,13 +43,6 @@ const Footer = () => {
               target="_blank"
             >
               <FaLinkedinIn />
-            </Link>
-            <Link
-              className="cursor-pointer hover:text-red-600 duration-300"
-              to={"#"}
-              target="_blank"
-            >
-              <FaYoutube />
             </Link>
             <Link
               className="cursor-pointer hover:text-blue-500 duration-300"
