@@ -59,7 +59,7 @@ const NavBar = () => {
             </Link>
             <Link
               className="cursor-pointer hover:text-blue-700 duration-300"
-              to={"#"}
+              to={"http://www.linkedin.com/in/sync-exim-116b04354"}
               target="_blank"
             >
               <FaLinkedinIn />
