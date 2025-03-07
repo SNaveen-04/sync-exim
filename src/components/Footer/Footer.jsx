@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-start justify-between gap-5">
         <div className="flex flex-col items-start">
           <div className="logo mb-4">
-            <a href="/sync-exim/">
+            <a href="/">
               <img src={Logo} className="h-12 md:h-16" alt="SyncExim Logo" />
             </a>
           </div>
@@ -58,22 +58,22 @@ const Footer = () => {
           <h2 className="text-white text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="flex flex-col gap-3 !text-white">
             <li>
-              <a className="hover:underline" href="/sync-exim/about">
+              <a className="hover:underline" href="/about">
                 About
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="/sync-exim/verticals">
+              <a className="hover:underline" href="/verticals">
                 Business Verticals
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="/sync-exim/certificates">
+              <a className="hover:underline" href="/certificates">
                 Certificates
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="/sync-exim/contact">
+              <a className="hover:underline" href="/contact">
                 Contact
               </a>
             </li>

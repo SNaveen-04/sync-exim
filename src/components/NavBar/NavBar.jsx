@@ -77,7 +77,7 @@ const NavBar = () => {
 
       <nav id="primary-nav" style={{ right: right, zIndex: 100 }}>
         <div className="logo">
-          <Link to="/sync-exim">
+          <Link to="/">
             <img src={Logo} className="h-16" />
           </Link>
         </div>
@@ -85,11 +85,9 @@ const NavBar = () => {
         <ul className="navigation">
           <li onClick={handleClick}>
             <Link
-              to="/sync-exim"
+              to="/"
               className={
-                location.pathname === "/sync-exim"
-                  ? "!bg-[#273296] !text-white"
-                  : ""
+                location.pathname === "/" ? "!bg-[#273296] !text-white" : ""
               }
             >
               Home
@@ -97,9 +95,9 @@ const NavBar = () => {
           </li>
           <li onClick={handleClick}>
             <Link
-              to="/sync-exim/about"
+              to="/about"
               className={
-                location.pathname === "/sync-exim/about"
+                location.pathname === "/about"
                   ? "!bg-[#273296] !text-white"
                   : ""
               }
@@ -109,9 +107,9 @@ const NavBar = () => {
           </li>
           <li onClick={handleClick}>
             <Link
-              to="/sync-exim/verticals"
+              to="/verticals"
               className={
-                location.pathname === "/sync-exim/verticals"
+                location.pathname === "/verticals"
                   ? "!bg-[#273296] !text-white"
                   : ""
               }
@@ -121,9 +119,9 @@ const NavBar = () => {
           </li>
           <li onClick={handleClick}>
             <Link
-              to="/sync-exim/certificates"
+              to="/certificates"
               className={
-                location.pathname === "/sync-exim/certificates"
+                location.pathname === "/certificates"
                   ? "!bg-[#273296] !text-white"
                   : ""
               }
@@ -133,9 +131,9 @@ const NavBar = () => {
           </li>
           <li onClick={handleClick}>
             <Link
-              to="/sync-exim/contact"
+              to="/contact"
               className={
-                location.pathname === "/sync-exim/contact"
+                location.pathname === "/contact"
                   ? "!bg-[#273296] !text-white"
                   : ""
               }
@@ -147,7 +145,7 @@ const NavBar = () => {
       </nav>
       <nav id="secondary-nav">
         <div className="logo">
-          <Link to="/sync-exim">
+          <Link to="/">
             <img src={Logo} className="h-12 md:h-16" />
           </Link>
         </div>
