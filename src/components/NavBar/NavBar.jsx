@@ -146,8 +146,10 @@ const NavBar = () => {
             <Link
               to="/product-enquiry"
               className={`${
-                location.pathname === "/contact" ? "" : ""
-              } md:ml-5 bg-[#01004b] !text-white rounded-tl-full rounded-br-full !px-10`}
+                location.pathname === "/product-enquiry"
+                  ? "bg-[#01004b] !text-white"
+                  : ""
+              } md:ml-5 text-[#01004b] border-2 border-[#01004b] hover:!bg-[#01004b] hover:!text-white rounded-tl-full rounded-br-full !px-10 !py-2`}
             >
               Product Enquiry
             </Link>

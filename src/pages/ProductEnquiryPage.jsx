@@ -28,16 +28,14 @@ export default function ProductEnquiryPage() {
 
     setLoading(true);
     try {
-      // const response = await axios.post(
-      //   `${import.meta.env.VITE_API_URL}/send-product-enquiry`,
-      //   form
-      // );
-      // if (response.status === 200) {
-      //   toast.success("Form Data Sent Successfully");
-      //   setForm(initialState);
-      // }
-
-      console.log(form);
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/send-product-enquiry`,
+        form
+      );
+      if (response.status === 200) {
+        toast.success("Form Data Sent Successfully");
+        setForm(initialState);
+      }
     } catch (err) {
       toast.error("Form Data Not Sent");
       console.log(err);
@@ -52,8 +50,8 @@ export default function ProductEnquiryPage() {
         Product Enquiry
       </h2>
 
-      <div className="flex justify-center">
-        <div className="w-3/4 border-2 rounded-2xl">
+      <div className="md:flex md:justify-center">
+        <div className="md:w-3/4 border-2 rounded-2xl">
           <div className="bg-white p-6 rounded-2xl">
             <h3 className="text-lg font-semibold text-[#2c526e] uppercase mb-4">
               Send Product Enquiry
@@ -119,7 +117,7 @@ export default function ProductEnquiryPage() {
 
               <div className="mb-3">
                 <label
-                  htmlFor="quantityIn"
+                  htmlFor="qtyType"
                   className="block text-[#2c526e] mb-1 text-sm"
                 >
                   Quantity in
@@ -129,7 +127,7 @@ export default function ProductEnquiryPage() {
                   <div>
                     <input
                       type="radio"
-                      name="quantityIn"
+                      name="qtyType"
                       value="KGS"
                       onChange={handleChange}
                       checked={form.qtyType === "KGS"}
@@ -143,7 +141,7 @@ export default function ProductEnquiryPage() {
                   <div>
                     <input
                       type="radio"
-                      name="quantityIn"
+                      name="qtyType"
                       value="MTS"
                       onChange={handleChange}
                       checked={form.qtyType === "MTS"}
