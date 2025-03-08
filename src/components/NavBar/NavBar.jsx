@@ -141,8 +141,20 @@ const NavBar = () => {
               Contact
             </Link>
           </li>
+
+          <li onClick={handleClick}>
+            <Link
+              to="/product-enquiry"
+              className={`${
+                location.pathname === "/contact" ? "" : ""
+              } md:ml-5 bg-[#01004b] !text-white rounded-tl-full rounded-br-full !px-10`}
+            >
+              Product Enquiry
+            </Link>
+          </li>
         </ul>
       </nav>
+
       <nav id="secondary-nav">
         <div className="logo">
           <Link to="/">

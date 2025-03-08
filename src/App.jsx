@@ -17,6 +17,7 @@ const BusinessVerticalsPage = lazy(() =>
   import("./pages/BusinessVerticalsPage")
 );
 const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
+const ProductEnquiryPage = lazy(() => import("./pages/ProductEnquiryPage"));
 
 function App() {
   return (
@@ -53,6 +54,14 @@ function App() {
             element={
               <Suspense fallback={<>...</>}>
                 <CertificatesPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="product-enquiry"
+            element={
+              <Suspense fallback={<>...</>}>
+                <ProductEnquiryPage />
               </Suspense>
             }
           />
