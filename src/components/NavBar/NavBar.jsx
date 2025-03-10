@@ -38,7 +38,7 @@ const NavBar = () => {
 
             <div className="flex items-center gap-3 text-sm">
               <FaEnvelope className="flex-shrink-0" />
-              <span>synceximevercross@gmail.com</span>
+              <span>contact@syncexim.com</span>
             </div>
           </div>
 
@@ -114,7 +114,7 @@ const NavBar = () => {
                   : ""
               }
             >
-              BUSINESS VERTICALS
+              BUSINESS VERTICALS / PRODUCTS
             </Link>
           </li>
           <li onClick={handleClick}>

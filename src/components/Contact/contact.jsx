@@ -42,7 +42,7 @@ const Contact = () => {
             Mail
           </h3>
           <div className="px-6 py-4 text-white text-sm m-5">
-            synceximevercross@gmail.com
+            contact@syncexim.com
           </div>
         </div>
       </div>

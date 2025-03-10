@@ -64,7 +64,7 @@ const Footer = () => {
             </li>
             <li>
               <a className="hover:underline" href="/verticals">
-                Business Verticals
+                Business Verticals / Products
               </a>
             </li>
             <li>
@@ -106,7 +106,7 @@ const Footer = () => {
 
             <div className="flex items-center gap-3">
               <FaEnvelope className="flex-shrink-0" />
-              <span>synceximevercross@gmail.com</span>
+              <span>contact@syncexim.com</span>
             </div>
           </div>
         </div>

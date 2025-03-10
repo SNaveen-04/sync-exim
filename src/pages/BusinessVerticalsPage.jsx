@@ -53,7 +53,7 @@ const BusinessVerticalsPage = () => {
   return (
     <div className="container mx-auto p-4 pb-10 pt-5">
       <h2 className="uppercase text-[#273296] py-5 text-4xl md:text-5xl text-center !font-bold">
-        Our Business Verticals
+        Our Business Verticals / Products
       </h2>
 
       <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
