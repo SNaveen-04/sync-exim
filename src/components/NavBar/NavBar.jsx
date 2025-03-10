@@ -9,7 +9,6 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaPhoneAlt,
-  FaSkype,
 } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
@@ -26,7 +25,7 @@ const NavBar = () => {
     <>
       {/* Top Bar */}
       <div className="hidden md:flex md:justify-end">
-        <div className="flex justify-end pr-5 pl-4 lg:pl-40 gap-7 bg-[#01004b] text-white py-1.5 rounded-bl-full">
+        <div className="flex items-center justify-end pr-5 pl-4 lg:pl-40 gap-7 bg-[#01004b] text-white py-1.5 rounded-bl-full">
           <p className="text-sm">Your Trusted Business Partner</p>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-3 text-sm">
@@ -63,13 +62,6 @@ const NavBar = () => {
               target="_blank"
             >
               <FaLinkedinIn />
-            </Link>
-            <Link
-              className="cursor-pointer hover:text-blue-500 duration-300"
-              to={"#"}
-              target="_blank"
-            >
-              <FaSkype />
             </Link>
           </div>
         </div>
@@ -149,7 +141,7 @@ const NavBar = () => {
                 location.pathname === "/product-enquiry"
                   ? "bg-[#01004b] !text-white"
                   : ""
-              } md:ml-5 text-[#01004b] border-2 border-[#01004b] hover:!bg-[#01004b] hover:!text-white rounded-tl-full rounded-br-full !px-10 !py-2`}
+              } md:ml-5 !text-white bg-[#01004b] border-2 border-[#01004b] hover:!bg-white hover:!text-[#01004b] rounded-tl-full rounded-br-full !px-10 !py-2`}
             >
               Product Enquiry
             </Link>

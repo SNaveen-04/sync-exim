@@ -58,134 +58,140 @@ export default function ProductEnquiryPage() {
             </h3>
 
             <form onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <label
-                  htmlFor="productName"
-                  className="block text-[#2c526e] mb-1 text-sm"
-                >
-                  Product Name
-                </label>
-                <input
-                  type="text"
-                  name="productName"
-                  value={form.productName}
-                  onChange={handleChange}
-                  className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
-                  required
-                />
+              <div className="md:flex md:gap-10 md:items-center">
+                <div className="mb-3 flex-1">
+                  <label
+                    htmlFor="productName"
+                    className="block text-[#2c526e] mb-1 text-sm"
+                  >
+                    Product Name
+                  </label>
+                  <input
+                    type="text"
+                    name="productName"
+                    value={form.productName}
+                    onChange={handleChange}
+                    className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
+                    required
+                  />
+                </div>
+
+                <div className="mb-3 flex-1">
+                  <label
+                    htmlFor="qtyRequired"
+                    className="block text-[#2c526e] mb-1 text-sm"
+                  >
+                    Quantity Required
+                  </label>
+                  <input
+                    type="number"
+                    name="qtyRequired"
+                    value={form.qtyRequired}
+                    onChange={handleChange}
+                    className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
+                    required
+                  />
+                </div>
               </div>
 
-              <div className="mb-3">
-                <label
-                  htmlFor="qtyRequired"
-                  className="block text-[#2c526e] mb-1 text-sm"
-                >
-                  Quantity Required
-                </label>
-                <input
-                  type="number"
-                  name="qtyRequired"
-                  value={form.qtyRequired}
-                  onChange={handleChange}
-                  className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
-                  required
-                />
-              </div>
+              <div className="md:flex md:gap-10 md:items-center">
+                <div className="mb-3 flex-1">
+                  <label
+                    htmlFor="shipmentType"
+                    className="block text-[#2c526e] mb-1 text-sm"
+                  >
+                    Shipment Type
+                  </label>
+                  <select
+                    name="shipmentType"
+                    value={form.shipmentType}
+                    onChange={handleChange}
+                    className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
+                    required
+                  >
+                    <option value="">Select an option</option>
+                    <option value="20'' DV">20'' DV</option>
+                    <option value="40'' HQ">40'' HQ</option>
+                    <option value="40'' RF">40'' RF</option>
+                    <option value="Break Bulk">Break Bulk</option>
+                    <option value="Bulk">Bulk</option>
+                  </select>
+                </div>
 
-              <div className="mb-3">
-                <label
-                  htmlFor="shipmentType"
-                  className="block text-[#2c526e] mb-1 text-sm"
-                >
-                  Shipment Type
-                </label>
-                <select
-                  name="shipmentType"
-                  value={form.shipmentType}
-                  onChange={handleChange}
-                  className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
-                  required
-                >
-                  <option value="">Select an option</option>
-                  <option value="20'' DV">20'' DV</option>
-                  <option value="40'' HQ">40'' HQ</option>
-                  <option value="40'' RF">40'' RF</option>
-                  <option value="Break Bulk">Break Bulk</option>
-                  <option value="Bulk">Bulk</option>
-                </select>
-              </div>
+                <div className="mb-3 flex-1">
+                  <label
+                    htmlFor="qtyType"
+                    className="block text-[#2c526e] mb-1 text-sm"
+                  >
+                    Quantity in
+                  </label>
 
-              <div className="mb-3">
-                <label
-                  htmlFor="qtyType"
-                  className="block text-[#2c526e] mb-1 text-sm"
-                >
-                  Quantity in
-                </label>
-
-                <div className="flex items-center gap-5">
-                  <div>
-                    <input
-                      type="radio"
-                      name="qtyType"
-                      value="KGS"
-                      onChange={handleChange}
-                      checked={form.qtyType === "KGS"}
-                      className="mr-2 focus:ring-2 focus:ring-[#4AB9CF]"
-                      required
-                    />
-                    <label htmlFor="KGS" className="text-sm text-[#2c526e]">
-                      KGS
-                    </label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      name="qtyType"
-                      value="MTS"
-                      onChange={handleChange}
-                      checked={form.qtyType === "MTS"}
-                      className="mr-2 focus:ring-2 focus:ring-[#4AB9CF]"
-                    />
-                    <label htmlFor="MTS" className="text-sm text-[#2c526e]">
-                      MTS
-                    </label>
+                  <div className="flex items-center gap-5">
+                    <div>
+                      <input
+                        type="radio"
+                        name="qtyType"
+                        value="KGS"
+                        onChange={handleChange}
+                        checked={form.qtyType === "KGS"}
+                        className="mr-2 focus:ring-2 focus:ring-[#4AB9CF]"
+                        required
+                      />
+                      <label htmlFor="KGS" className="text-sm text-[#2c526e]">
+                        KGS
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="qtyType"
+                        value="MTS"
+                        onChange={handleChange}
+                        checked={form.qtyType === "MTS"}
+                        className="mr-2 focus:ring-2 focus:ring-[#4AB9CF]"
+                      />
+                      <label htmlFor="MTS" className="text-sm text-[#2c526e]">
+                        MTS
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="mb-3">
-                <label
-                  htmlFor="email"
-                  className="block text-[#2c526e] mb-1 text-sm"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
-                  required
-                />
-              </div>
+              <div className="md:flex md:gap-10 md:items-center">
+                <div className="mb-3 flex-1">
+                  <label
+                    htmlFor="email"
+                    className="block text-[#2c526e] mb-1 text-sm"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
+                    required
+                  />
+                </div>
 
-              <div className="mb-3">
-                <label
-                  htmlFor="companyName"
-                  className="block text-[#2c526e] mb-1 text-sm"
-                >
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  name="companyName"
-                  value={form.companyName}
-                  onChange={handleChange}
-                  className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
-                  required
-                />
+                <div className="mb-3 flex-1">
+                  <label
+                    htmlFor="companyName"
+                    className="block text-[#2c526e] mb-1 text-sm"
+                  >
+                    Company Name
+                  </label>
+                  <input
+                    type="text"
+                    name="companyName"
+                    value={form.companyName}
+                    onChange={handleChange}
+                    className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
+                    required
+                  />
+                </div>
               </div>
 
               <div className="mb-3">
@@ -216,7 +222,7 @@ export default function ProductEnquiryPage() {
                     <span>Loading...</span>
                   </>
                 ) : (
-                  "Submit"
+                  "Send Enquiry"
                 )}
               </button>
             </form>

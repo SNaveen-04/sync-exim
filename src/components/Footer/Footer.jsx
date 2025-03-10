@@ -1,7 +1,6 @@
 import {
   FaFacebookF,
   FaLinkedinIn,
-  FaSkype,
   FaMapMarkerAlt,
   FaEnvelope,
   FaPhoneAlt,
@@ -43,13 +42,6 @@ const Footer = () => {
               target="_blank"
             >
               <FaLinkedinIn />
-            </Link>
-            <Link
-              className="cursor-pointer hover:text-blue-500 duration-300"
-              to={"#"}
-              target="_blank"
-            >
-              <FaSkype />
             </Link>
           </div>
         </div>

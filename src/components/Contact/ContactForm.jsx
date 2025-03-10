@@ -47,7 +47,7 @@ export default function ContactForm({ withBorder = false }) {
     >
       <div className="bg-white p-6 rounded-2xl">
         <h3 className="text-lg font-semibold text-[#2c526e] uppercase mb-4">
-          React out to us
+          Reach out to us
         </h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
