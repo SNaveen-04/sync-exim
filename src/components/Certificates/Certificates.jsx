@@ -1,5 +1,6 @@
 import Image1 from "../../assets/certificates/certificate_of_iec.jpg";
 import Image2 from "../../assets/certificates/print_udyam_registration_certificate.jpg";
+import Image3 from "../../assets/certificates/GST_certificate.png";
 
 const Certificates = () => {
   return (
@@ -32,6 +33,20 @@ const Certificates = () => {
             <img
               src={Image2}
               alt="Udyam Registration Certificate"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Certificate 3 */}
+        <div className="w-full md:w-1/2 max-w-lg">
+          <h2 className="text-xl font-semibold mb-4 text-center">
+            GST Certificate
+          </h2>
+          <div className="border rounded-lg overflow-hidden shadow-lg">
+            <img
+              src={Image3}
+              alt="GST Certificate"
               className="w-full h-auto object-contain"
             />
           </div>

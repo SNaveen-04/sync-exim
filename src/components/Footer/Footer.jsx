@@ -98,7 +98,7 @@ const Footer = () => {
 
             <div className="flex items-center gap-3">
               <FaEnvelope className="flex-shrink-0" />
-              <span>contact@syncexim.com</span>
+              <span>export@syncexim.com</span>
             </div>
           </div>
         </div>
