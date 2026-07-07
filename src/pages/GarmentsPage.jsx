@@ -80,7 +80,6 @@ const GarmentsPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
         {/* Left — text */}
         <div>
-          <SectionLabel>Export Catalogue</SectionLabel>
           <h1 className="text-4xl md:text-5xl !font-bold text-[#273296] leading-tight mb-4">
             Premium Knitted
             <br />
