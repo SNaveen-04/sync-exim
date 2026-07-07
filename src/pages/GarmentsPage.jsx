@@ -4,61 +4,16 @@ import { FaCheck, FaArrowRight } from "react-icons/fa";
 import garment1 from "../assets/garments/garment1.jpeg";
 import garment2 from "../assets/garments/garment2.jpeg";
 
-// ── Data ──────────────────────────────────────────────────────────────────────
+import {
+  highlights,
+  products,
+  fabricOptions,
+  customizations,
+  coloursSizes,
+  whyChooseUs,
+} from "../data/garments.data";
 
-const products = [
-  "Premium T-Shirts",
-  "Polo T-Shirts",
-  "Corporate T-Shirts",
-  "Promotional T-Shirts",
-  "Uniforms",
-];
-
-const fabricOptions = [
-  "100% Cotton",
-  "Combed Cotton",
-  "Organic Cotton",
-  "Cotton Piqué",
-  "Polyester",
-  "Poly-Cotton Blend",
-  "Dry-Fit Fabric",
-  "Single Jersey",
-  "Interlock",
-  "French Terry",
-  "Fleece",
-  "Recycled & Sustainable Fabrics",
-];
-
-const customizations = [
-  "Private Label",
-  "OEM Sourcing",
-  "Screen & DTF Printing",
-  "Embroidery",
-  "Woven Labels & Hang Tags",
-  "Custom Packaging",
-  "Buyer Branding",
-];
-
-const whyChooseUs = [
-  "Trusted Merchant Exporter",
-  "Export-Quality Products",
-  "Reliable Manufacturing Partner Network",
-  "Competitive Pricing",
-  "Flexible Order Quantities",
-  "Strict Quality Inspection",
-  "On-Time Delivery",
-  "Professional Export Documentation",
-  "Worldwide Shipping Support",
-];
-
-const highlights = [
-  "Bulk Orders",
-  "Private Label",
-  "Custom Branding",
-  "Worldwide Export",
-];
-
-// ── Component ─────────────────────────────────────────────────────────────────
+// ── Sub-components ─────────────────────────────────────────────────────────────
 
 const Bullet = ({ children }) => (
   <li className="flex items-start gap-2.5 text-[#2c526e] text-sm leading-relaxed">
@@ -72,6 +27,8 @@ const SectionLabel = ({ children }) => (
     {children}
   </span>
 );
+
+// ── Page ──────────────────────────────────────────────────────────────────────
 
 const GarmentsPage = () => {
   return (
@@ -208,11 +165,7 @@ const GarmentsPage = () => {
                 Colours &amp; Sizes
               </h3>
               <ul className="space-y-2">
-                {[
-                  "Custom Colours with Pantone Matching",
-                  "Sizes from XS to 5XL",
-                  "Custom Size Charts Available",
-                ].map((item) => (
+                {coloursSizes.map((item) => (
                   <Bullet key={item}>{item}</Bullet>
                 ))}
               </ul>
