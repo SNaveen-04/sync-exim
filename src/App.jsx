@@ -13,11 +13,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const About = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
-const BusinessVerticalsPage = lazy(() =>
-  import("./pages/BusinessVerticalsPage")
-);
 const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
 const ProductEnquiryPage = lazy(() => import("./pages/ProductEnquiryPage"));
+const SpicesPage = lazy(() => import("./pages/SpicesPage"));
+const GarmentsPage = lazy(() => import("./pages/GarmentsPage"));
+const NoodlesPage = lazy(() => import("./pages/NoodlesPage"));
+const OthersPage = lazy(() => import("./pages/OthersPage"));
 
 function App() {
   return (
@@ -41,11 +42,36 @@ function App() {
               </Suspense>
             }
           />
+
           <Route
-            path="verticals"
+            path="verticals/spices"
             element={
               <Suspense fallback={<>...</>}>
-                <BusinessVerticalsPage />
+                <SpicesPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="verticals/garments"
+            element={
+              <Suspense fallback={<>...</>}>
+                <GarmentsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="verticals/noodles"
+            element={
+              <Suspense fallback={<>...</>}>
+                <NoodlesPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="verticals/others"
+            element={
+              <Suspense fallback={<>...</>}>
+                <OthersPage />
               </Suspense>
             }
           />
