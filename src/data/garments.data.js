@@ -8,11 +8,31 @@ export const highlights = [
 ];
 
 export const products = [
-  "Premium T-Shirts",
-  "Polo T-Shirts",
-  "Corporate T-Shirts",
-  "Promotional T-Shirts",
-  "Uniforms",
+  {
+    name: "Premium T-Shirts",
+    image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&h=600&q=80",
+    description: "Export-quality combed cotton and single jersey t-shirts tailored for retail markets."
+  },
+  {
+    name: "Polo T-Shirts",
+    image: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&h=600&q=80",
+    description: "Classic piqué knit polo shirts with custom collars, buttons, and high-durability stitching."
+  },
+  {
+    name: "Corporate T-Shirts",
+    image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&h=600&q=80",
+    description: "Branded executive and team wear with premium embroidery and subtle styling."
+  },
+  {
+    name: "Promotional T-Shirts",
+    image: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=800&h=600&q=80",
+    description: "Cost-effective, high-visibility promotional tees with vibrant screen or DTF printing."
+  },
+  {
+    name: "Uniforms",
+    image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&h=600&q=80",
+    description: "Industrial, school, institutional, and hospitality uniforms designed for daily utility and comfort."
+  }
 ];
 
 export const fabricOptions = [

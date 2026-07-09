@@ -109,18 +109,35 @@ const GarmentsPage = () => {
             industrial, promotional, and institutional applications.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center justify-items-center max-w-6xl mx-auto">
             {products.map((p, i) => (
               <div
-                key={p}
-                className="group bg-white border border-[#273296]/10 rounded-xl shadow-sm hover:shadow-md hover:border-[#273296]/30 transition-all duration-300 p-5"
+                key={p.name}
+                className="group bg-white border border-[#273296]/10 rounded-xl shadow-sm hover:shadow-md hover:border-[#273296]/30 transition-all duration-300 overflow-hidden flex flex-col w-full min-w-[280px] max-w-[350px]"
               >
-                <span className="block text-3xl font-black text-[#273296]/10 leading-none mb-2 group-hover:text-[#273296]/25 transition-colors">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <p className="text-[#273296] font-bold text-sm leading-snug">
-                  {p}
-                </p>
+                {/* Product Image */}
+                <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 flex-shrink-0">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#273296]/10 to-transparent" />
+                </div>
+                {/* Product Info */}
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span className="block text-3xl font-black text-[#273296]/10 leading-none mb-2 group-hover:text-[#273296]/25 transition-colors">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-[#273296] font-bold text-lg leading-snug mb-2">
+                      {p.name}
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      {p.description}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
