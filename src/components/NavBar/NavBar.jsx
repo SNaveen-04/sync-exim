@@ -34,17 +34,17 @@ const NavBar = () => {
         <div className="flex items-center justify-end pr-5 pl-4 lg:pl-40 gap-7 bg-[#01004b] text-white py-1.5 rounded-bl-full">
           <p className="text-sm">Your Trusted Business Partner</p>
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-3 text-sm">
+            <Link to="tel:+916380702686" className="flex items-center gap-3 text-sm hover:underline">
               <FaPhoneAlt className="flex-shrink-0" />
               <span className="!font-sans">+91 638 070 2686</span>
-            </div>
+            </Link>
 
             <p>|</p>
 
-            <div className="flex items-center gap-3 text-sm">
+            <Link to="mailto:export@syncexim.com" className="flex items-center gap-3 text-sm hover:underline">
               <FaEnvelope className="flex-shrink-0" />
               <span>export@syncexim.com</span>
-            </div>
+            </Link>
           </div>
 
           <div className="flex items-center gap-4 !text-white text-sm">
