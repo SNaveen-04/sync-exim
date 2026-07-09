@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import { FaCheck, FaArrowRight, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
-import { highlights, spices, PLACEHOLDER } from "../data/spices.data";
+import { highlights, spices } from "../data/spices.data";
 import ProductWhyChooseUs from "../components/Common/ProductWhyChooseUs";
 import ProductCTA from "../components/Common/ProductCTA";
+
+import spicesImg from "../assets/spices/spices.jpeg"
 
 // ── Sub-components ─────────────────────────────────────────────────────────────
 
@@ -70,7 +72,7 @@ const SpiceModal = ({ spice, onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal image banner — sticky top */}
-        <div className="relative h-52 overflow-hidden rounded-t-2xl flex-shrink-0">
+        <div className="relative h-64 overflow-hidden rounded-t-2xl flex-shrink-0">
           <img
             src={spice.image}
             alt={spice.name}
@@ -246,7 +248,7 @@ const SpicesPage = () => {
         {/* Right — hero image */}
         <div className="rounded-2xl overflow-hidden shadow-lg" style={{ height: "480px" }}>
           <img
-            src={PLACEHOLDER}
+            src={spicesImg}
             alt="Indian spices assortment"
             className="w-full h-full object-cover"
           />
