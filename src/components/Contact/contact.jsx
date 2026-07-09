@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./contact.css";
 
 import ContactForm from "./ContactForm";
@@ -36,13 +37,17 @@ const Contact = () => {
             Phone
           </h3>
           <div className="px-6 py-4 text-white text-sm m-5 !font-sans">
-            +91 638 070 2686
+            <Link to="tel:+916380702686" className="hover:underline">
+              +91 638 070 2686
+            </Link>
           </div>
           <h3 className="mt-4 px-6 py-2 text-lg font-semibold text-white uppercase border-b border-b-white border-opacity-25 m-5">
             Mail
           </h3>
           <div className="px-6 py-4 text-white text-sm m-5">
-            export@syncexim.com
+            <Link to="mailto:export@syncexim.com" className="hover:underline">
+              export@syncexim.com
+            </Link>
           </div>
         </div>
       </div>
