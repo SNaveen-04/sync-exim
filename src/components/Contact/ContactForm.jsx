@@ -23,6 +23,14 @@ export default function ContactForm({ withBorder = false }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Validate phone number: must be 7-15 digits, allowing leading +, spaces, dashes, parentheses
+    const phoneRegex = /^\+?[0-9\s\-()]{7,20}$/;
+    const digitsOnly = form.phone_number.replace(/\D/g, "");
+    if (!phoneRegex.test(form.phone_number) || digitsOnly.length < 7 || digitsOnly.length > 15) {
+      toast.error("Please enter a valid phone number (7 to 15 digits)");
+      return;
+    }
+
     setLoading(true);
     try {
       const response = await axios.post(
@@ -73,7 +81,7 @@ export default function ContactForm({ withBorder = false }) {
               Phone Number <span className="text-red-500">*</span>
             </label>
             <input
-              type="text"
+              type="tel"
               name="phone_number"
               value={form.phone_number}
               onChange={handleChange}
