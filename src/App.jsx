@@ -13,11 +13,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const About = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
-const BusinessVerticalsPage = lazy(() =>
-  import("./pages/BusinessVerticalsPage")
-);
 const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
 const ProductEnquiryPage = lazy(() => import("./pages/ProductEnquiryPage"));
+const SpicesPage = lazy(() => import("./pages/SpicesPage"));
+const GarmentsPage = lazy(() => import("./pages/GarmentsPage"));
+const NoodlesPage = lazy(() => import("./pages/NoodlesPage"));
+const OthersPage = lazy(() => import("./pages/OthersPage"));
 
 function App() {
   return (
@@ -41,11 +42,36 @@ function App() {
               </Suspense>
             }
           />
+
           <Route
-            path="verticals"
+            path="our-products/spices"
             element={
               <Suspense fallback={<>...</>}>
-                <BusinessVerticalsPage />
+                <SpicesPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="our-products/garments"
+            element={
+              <Suspense fallback={<>...</>}>
+                <GarmentsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="our-products/noodles"
+            element={
+              <Suspense fallback={<>...</>}>
+                <NoodlesPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="our-products/others"
+            element={
+              <Suspense fallback={<>...</>}>
+                <OthersPage />
               </Suspense>
             }
           />
@@ -70,11 +96,11 @@ function App() {
       </Routes>
 
       <ToastContainer
-        position="bottom-left"
+        position="bottom-center"
         transition={Flip}
         autoClose={2500}
         hideProgressBar
-        theme="colored"
+        theme="dark"
       />
     </>
   );

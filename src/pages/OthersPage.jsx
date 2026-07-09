@@ -1,14 +1,10 @@
-import { useState, useEffect } from "react";
-
 import Image1 from "../assets/product_images/Image1.jpg";
 import Image2 from "../assets/product_images/Image2.jpg";
 import Image3 from "../assets/product_images/Image3.jpg";
 import Image4 from "../assets/product_images/Image4.jpg";
 import Image5 from "../assets/product_images/Image5.jpg";
 import Image6 from "../assets/product_images/Image6.jpg";
-import Image7 from "../assets/product_images/Image7.jpg";
 import Image8 from "../assets/product_images/Image8.jpeg";
-import Image9 from "../assets/product_images/Image9.jpeg";
 
 const verticals = [
   {
@@ -36,24 +32,16 @@ const verticals = [
     img: Image6,
   },
   {
-    text: "India Spices",
-    img: Image7,
-  },
-  {
     text: "Coconut",
     img: Image8,
   },
-  {
-    text: "Noodles",
-    img: Image9,
-  },
 ];
 
-const BusinessVerticalsPage = () => {
+const OthersPage = () => {
   return (
     <div className="container mx-auto p-4 pb-10 pt-5">
       <h2 className="uppercase text-[#273296] py-5 text-4xl md:text-5xl text-center !font-bold">
-        Our Business Verticals / Products
+        Other Products
       </h2>
 
       <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -83,4 +71,4 @@ const BusinessVerticalsPage = () => {
   );
 };
 
-export default BusinessVerticalsPage;
+export default OthersPage;

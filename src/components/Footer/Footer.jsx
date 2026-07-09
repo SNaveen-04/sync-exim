@@ -50,24 +50,39 @@ const Footer = () => {
           <h2 className="text-white text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="flex flex-col gap-3 !text-white">
             <li>
-              <a className="hover:underline" href="/about">
+              <Link className="hover:underline" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:underline" href="/verticals">
-                Business Verticals / Products
-              </a>
+              <Link className="hover:underline" to="/our-products/spices">
+                Products - Spices
+              </Link>
             </li>
             <li>
-              <a className="hover:underline" href="/certificates">
+              <Link className="hover:underline" to="/our-products/garments">
+                Products - Garments
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline" to="/our-products/noodles">
+                Products - Noodles
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline" to="/our-products/others">
+                Products - Others
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline" to="/certificates">
                 Certificates
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:underline" href="/contact">
+              <Link className="hover:underline" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -91,21 +106,21 @@ const Footer = () => {
               </span>
             </div>
 
-            <div className="flex items-center gap-3">
+            <Link to="tel:+916380702686" className="flex items-center gap-3 hover:underline">
               <FaPhoneAlt className="flex-shrink-0" />
               <span className="!font-sans">+91 638 070 2686</span>
-            </div>
+            </Link>
 
-            <div className="flex items-center gap-3">
+            <Link to="mailto:export@syncexim.com" className="flex items-center gap-3 hover:underline">
               <FaEnvelope className="flex-shrink-0" />
               <span>export@syncexim.com</span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
 
       <div className="font-semibold text-center text-base mt-8 !text-white">
-        &copy;2024 SyncExim. All Rights Reserved
+        &copy;{new Date().getFullYear()} SyncExim. All Rights Reserved
       </div>
     </footer>
   );
