@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaCheck } from "react-icons/fa";
+import {
+  FaCheck,
+  FaListUl,
+  FaHourglassHalf,
+  FaBoxOpen,
+  FaFire,
+} from "react-icons/fa";
 
 import noodles1 from "../assets/noodles/noodles1.png";
 import noodles2 from "../assets/noodles/noodles2.jpeg";
@@ -7,6 +13,7 @@ import noodles3 from "../assets/noodles/noodles3.jpeg";
 
 import {
   highlights,
+  products,
   packingSizes,
   noodleIngredients,
   masakaIngredients,
@@ -34,9 +41,9 @@ const SectionLabel = ({ children }) => (
 const NoodlesPage = () => {
   return (
     <>
-      <div className="container mx-auto px-4 pb-16 pt-6">
+      <div className="container mx-auto px-4 pb-8 pt-4">
       {/* ── Hero ──────────────────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8 items-center">
         {/* Left - text */}
         <div>
           <h1 className="text-4xl md:text-5xl !font-bold text-[#273296] leading-tight mb-4">
@@ -104,11 +111,12 @@ const NoodlesPage = () => {
       </div>
 
       {/* ── Divider ── */}
-      <hr className="border-gray-200 mb-14" />
+      <hr className="border-gray-200 mb-8" />
+      </div>
 
       {/* ── Product Overview ───────────────────────────────────────────────────── */}
-      <section className="-mx-4 px-4 py-12 mb-0 bg-[#eef1fb]">
-        <div className="container mx-auto">
+      <section className="py-12 bg-[#eef1fb]">
+        <div className="container mx-auto px-4 max-w-7xl">
           <SectionLabel>What We Offer</SectionLabel>
           <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-2">
             Our Product
@@ -119,106 +127,126 @@ const NoodlesPage = () => {
             markets across the globe.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {/* Noodles Card */}
-            <div className="group bg-white border border-[#273296]/10 rounded-xl shadow-sm hover:shadow-md hover:border-[#273296]/30 transition-all duration-300 p-5">
-              <span className="block text-3xl font-black text-[#273296]/10 leading-none mb-2 group-hover:text-[#273296]/25 transition-colors">
-                01
-              </span>
-              <p className="text-[#273296] font-bold text-base leading-snug mb-1">
-                Noodles
-              </p>
-              <p className="text-gray-500 text-xs">
-                Refined Wheat Flour &amp; Permitted Preservatives
-              </p>
-            </div>
-
-            {/* Magic Masala Card */}
-            <div className="group bg-white border border-[#273296]/10 rounded-xl shadow-sm hover:shadow-md hover:border-[#273296]/30 transition-all duration-300 p-5">
-              <span className="block text-3xl font-black text-[#273296]/10 leading-none mb-2 group-hover:text-[#273296]/25 transition-colors">
-                02
-              </span>
-              <p className="text-[#273296] font-bold text-base leading-snug mb-1">
-                Magic Masala
-              </p>
-              <p className="text-gray-500 text-xs">
-                Authentic spice blend with hydrolysed groundnut protein,
-                wheat flour, edible oil, and a rich assortment of premium
-                spices.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center justify-items-center max-w-4xl mx-auto">
+            {products.map((p, i) => (
+              <div
+                key={p.name}
+                className="group bg-white border border-[#273296]/10 rounded-xl shadow-sm hover:shadow-md hover:border-[#273296]/30 transition-all duration-300 overflow-hidden flex flex-col w-full max-w-[380px]"
+              >
+                {/* Product Image */}
+                <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 flex-shrink-0">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#273296]/10 to-transparent" />
+                </div>
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span className="block text-3xl font-black text-[#273296]/10 leading-none mb-2 group-hover:text-[#273296]/25 transition-colors">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-[#273296] font-bold text-lg leading-snug mb-2">
+                      {p.name}
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      {p.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── Specifications ─────────────────────────────────────────────────────── */}
-      <section className="py-12 mb-0">
-        <SectionLabel>Specifications</SectionLabel>
-        <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
-          Product Specifications
-        </h2>
+      <section className="py-16 bg-[#f8fafc] border-y border-slate-200/50 mb-0">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <SectionLabel>Specifications</SectionLabel>
+          <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
+            Product Specifications
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Noodle Ingredients */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-            <h3 className="text-[#273296] font-bold text-base mb-4 pb-2 border-b border-gray-100">
-              Noodles Ingredients
-            </h3>
-            <ul className="space-y-2">
-              {noodleIngredients.map((item) => (
-                <Bullet key={item}>{item}</Bullet>
-              ))}
-            </ul>
-          </div>
-
-          {/* Shelf Life + Packing */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col gap-6">
-            <div>
-              <h3 className="text-[#273296] font-bold text-base mb-4 pb-2 border-b border-gray-100">
-                Shelf Life
+          <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+            {/* Left side: Magic Masala Ingredients (takes 8/12 width) */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 xl:col-span-8">
+              <h3 className="text-[#273296] font-bold text-lg mb-4 pb-2 border-b border-slate-100 flex items-center gap-2.5">
+                <FaFire className="text-xl text-[#273296]" />
+                Magic Masala Ingredients
               </h3>
-              <div className="bg-[#273296]/5 rounded-lg px-4 py-3">
-                <p className="text-[#273296] font-black text-xl">6 Months</p>
-                <p className="text-gray-500 text-xs mt-0.5">
-                  From date of manufacture under recommended storage conditions.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-[#273296] font-bold text-base mb-4 pb-2 border-b border-gray-100">
-                Packing Sizes
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {packingSizes.map((size) => (
-                  <span
-                    key={size}
-                    className="bg-[#273296]/10 text-[#273296] font-bold text-sm px-3 py-1 rounded-lg"
-                  >
-                    {size}
-                  </span>
+              <p className="text-[#2c526e] text-xs font-semibold mt-1 mb-6 leading-relaxed bg-[#273296]/5 rounded-lg px-3.5 py-2.5">
+                A rich blend of authentic spices and food-grade additives.
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3">
+                {masakaIngredients.map((item) => (
+                  <Bullet key={item}>{item}</Bullet>
                 ))}
+              </ul>
+            </div>
+
+            {/* Right side: Noodles Ingredients + Standards & Packaging (takes 4/12 width) */}
+            <div className="xl:col-span-4 flex flex-col gap-8">
+              {/* Noodles Ingredients */}
+              <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-8">
+                <h3 className="text-[#273296] font-bold text-lg mb-5 pb-2 border-b border-slate-100 flex items-center gap-2.5">
+                  <FaListUl className="text-xl text-[#273296]" />
+                  Noodles Ingredients
+                </h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-x-6 gap-y-3">
+                  {noodleIngredients.map((item) => (
+                    <Bullet key={item}>{item}</Bullet>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Shelf Life + Packing */}
+              <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col">
+                <h3 className="text-[#273296] font-bold text-lg mb-6 pb-2 border-b border-slate-100 flex items-center gap-2.5">
+                  <FaBoxOpen className="text-xl text-[#273296]" />
+                  Standards &amp; Packaging
+                </h3>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-6 justify-center">
+                  {/* Shelf Life */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-[#273296]/5 rounded-xl text-[#273296] flex-shrink-0">
+                      <FaHourglassHalf className="text-xl" />
+                    </div>
+                    <div>
+                      <h4 className="text-gray-400 text-xs font-bold uppercase tracking-wider">Shelf Life</h4>
+                      <p className="text-[#273296] font-extrabold text-base mt-0.5">6 Months</p>
+                      <p className="text-[#2c526e] text-xs font-medium mt-0.5 leading-normal">Under recommended storage conditions.</p>
+                    </div>
+                  </div>
+
+                  {/* Packing Sizes */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-[#273296]/5 rounded-xl text-[#273296] flex-shrink-0">
+                      <FaBoxOpen className="text-xl" />
+                    </div>
+                    <div>
+                      <h4 className="text-gray-400 text-xs font-bold uppercase tracking-wider">Packing Sizes</h4>
+                      <div className="flex flex-wrap gap-1.5 mt-1.5 mb-1">
+                        {packingSizes.map((size) => (
+                          <span
+                            key={size}
+                            className="bg-[#273296] text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full"
+                          >
+                            {size}
+                          </span>
+                        ))}
+                      </div>
+                      <p className="text-[#2c526e] text-xs font-medium mt-0.5 leading-normal">Available in retail &amp; bulk.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Magic Masala Ingredients */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-            <h3 className="text-[#273296] font-bold text-base mb-1 pb-2 border-b border-gray-100">
-              Magic Masala Ingredients
-            </h3>
-            <p className="text-[#2c526e] text-xs font-semibold mt-3 mb-3 leading-relaxed bg-[#273296]/5 rounded-lg px-3 py-2">
-              A rich blend of authentic spices and food-grade additives.
-            </p>
-            <ul className="space-y-2">
-              {masakaIngredients.map((item) => (
-                <Bullet key={item}>{item}</Bullet>
-              ))}
-            </ul>
           </div>
         </div>
       </section>
-
-      </div>
       {/* ── Why Choose Us & CTA ────────────────────────────────────────────────── */}
       <ProductWhyChooseUs />
       <ProductCTA productType="noodles" />

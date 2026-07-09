@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { FaCheck } from "react-icons/fa";
+import {
+  FaCheck,
+  FaLayerGroup,
+  FaPencilRuler,
+  FaWeightHanging,
+  FaPalette,
+  FaRulerCombined,
+} from "react-icons/fa";
 
 import garment1 from "../assets/garments/garment1.jpeg";
 import garment2 from "../assets/garments/garment2.jpeg";
@@ -9,7 +16,6 @@ import {
   products,
   fabricOptions,
   customizations,
-  coloursSizes,
 } from "../data/garments.data";
 import ProductWhyChooseUs from "../components/Common/ProductWhyChooseUs";
 import ProductCTA from "../components/Common/ProductCTA";
@@ -34,9 +40,9 @@ const SectionLabel = ({ children }) => (
 const GarmentsPage = () => {
   return (
     <>
-      <div className="container mx-auto px-4 pb-16 pt-6">
+      <div className="container mx-auto px-4 pb-8 pt-4">
       {/* ── Hero ─────────────────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8 items-center">
         {/* Left — text */}
         <div>
           <h1 className="text-4xl md:text-5xl !font-bold text-[#273296] leading-tight mb-4">
@@ -95,11 +101,12 @@ const GarmentsPage = () => {
       </div>
 
       {/* ── Divider ── */}
-      <hr className="border-gray-200 mb-14" />
+      <hr className="border-gray-200 mb-8" />
+      </div>
 
       {/* ── Product Range ─────────────────────────────────────────────────────── */}
-      <section className="-mx-4 px-4 py-12 mb-0 bg-[#eef1fb]">
-        <div className="container mx-auto">
+      <section className="py-12 bg-[#eef1fb]">
+        <div className="container mx-auto px-4 max-w-7xl">
           <SectionLabel>What We Offer</SectionLabel>
           <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-2">
             Our Product Range
@@ -145,70 +152,91 @@ const GarmentsPage = () => {
       </section>
 
       {/* ── Specifications ────────────────────────────────────────────────────── */}
-      <section className="py-12 mb-0">
-        <SectionLabel>Specifications</SectionLabel>
-        <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
-          Product Specifications
-        </h2>
+      <section className="py-16 bg-[#f8fafc] border-y border-slate-200/50 mb-0">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <SectionLabel>Specifications</SectionLabel>
+          <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
+            Product Specifications
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Fabric Options */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-            <h3 className="text-[#273296] font-bold text-base mb-4 pb-2 border-b border-gray-100">
-              Fabric Options
-            </h3>
-            <ul className="space-y-2">
-              {fabricOptions.map((f) => (
-                <Bullet key={f}>{f}</Bullet>
-              ))}
-            </ul>
-          </div>
-
-          {/* GSM + Colours */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col gap-6">
-            <div>
-              <h3 className="text-[#273296] font-bold text-base mb-4 pb-2 border-b border-gray-100">
-                GSM Range
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-12 gap-8">
+            {/* Fabric Options */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 col-span-1 xl:col-span-5">
+              <h3 className="text-[#273296] font-bold text-lg mb-6 pb-2 border-b border-slate-100 flex items-center gap-2.5">
+                <FaLayerGroup className="text-xl text-[#273296]" />
+                Fabric Options
               </h3>
-              <div className="bg-[#273296]/5 rounded-lg px-4 py-3 mb-3">
-                <p className="text-[#273296] font-black text-xl">
-                  180 - 280 GSM
-                </p>
-                <p className="text-gray-500 text-xs mt-0.5">
-                  Customized to meet buyer requirements.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-[#273296] font-bold text-base mb-4 pb-2 border-b border-gray-100">
-                Colours &amp; Sizes
-              </h3>
-              <ul className="space-y-2">
-                {coloursSizes.map((item) => (
-                  <Bullet key={item}>{item}</Bullet>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                {fabricOptions.map((f) => (
+                  <Bullet key={f}>{f}</Bullet>
                 ))}
               </ul>
             </div>
-          </div>
 
-          {/* Customization */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-            <h3 className="text-[#273296] font-bold text-base mb-1 pb-2 border-b border-gray-100">
-              Customization
-            </h3>
-            <p className="text-[#2c526e] text-xs font-semibold mt-3 mb-3 leading-relaxed bg-[#273296]/5 rounded-lg px-3 py-2">
-              Complete customization to match your brand requirements.
-            </p>
-            <ul className="space-y-2">
-              {customizations.map((c) => (
-                <Bullet key={c}>{c}</Bullet>
-              ))}
-            </ul>
+            {/* Customization */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 col-span-1 xl:col-span-4">
+              <h3 className="text-[#273296] font-bold text-lg mb-6 pb-2 border-b border-slate-100 flex items-center gap-2.5">
+                <FaPencilRuler className="text-xl text-[#273296]" />
+                Customization
+              </h3>
+              <p className="text-[#2c526e] text-xs font-semibold mt-1 mb-5 leading-relaxed bg-[#273296]/5 rounded-lg px-3.5 py-2.5">
+                Complete customization to match your brand requirements.
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                {customizations.map((c) => (
+                  <Bullet key={c}>{c}</Bullet>
+                ))}
+              </ul>
+            </div>
+
+            {/* Physical Specifications */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 col-span-1 lg:col-span-2 xl:col-span-3 flex flex-col">
+              <h3 className="text-[#273296] font-bold text-lg mb-6 pb-2 border-b border-slate-100 flex items-center gap-2.5">
+                <FaRulerCombined className="text-xl text-[#273296]" />
+                Standards &amp; Colours
+              </h3>
+              
+              <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-1 gap-6 xl:gap-8 justify-center">
+                {/* GSM Range */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-[#273296]/5 rounded-xl text-[#273296] flex-shrink-0">
+                    <FaWeightHanging className="text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-gray-400 text-xs font-bold uppercase tracking-wider">GSM Range</h4>
+                    <p className="text-[#273296] font-extrabold text-base mt-0.5">180 - 280 GSM</p>
+                    <p className="text-[#2c526e] text-xs font-medium mt-0.5 leading-normal">Customized to meet buyer requirements.</p>
+                  </div>
+                </div>
+
+                {/* Colors */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-[#273296]/5 rounded-xl text-[#273296] flex-shrink-0">
+                    <FaPalette className="text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-gray-400 text-xs font-bold uppercase tracking-wider">Colours</h4>
+                    <p className="text-[#273296] font-extrabold text-base mt-0.5">Pantone Matching</p>
+                    <p className="text-[#2c526e] text-xs font-medium mt-0.5 leading-normal">Custom colours and shades available.</p>
+                  </div>
+                </div>
+
+                {/* Sizes */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-[#273296]/5 rounded-xl text-[#273296] flex-shrink-0">
+                    <FaRulerCombined className="text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-gray-400 text-xs font-bold uppercase tracking-wider">Sizes</h4>
+                    <p className="text-[#273296] font-extrabold text-base mt-0.5">XS - 5XL</p>
+                    <p className="text-[#2c526e] text-xs font-medium mt-0.5 leading-normal">Custom size charts and grading.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      </div>
       {/* ── Why Choose Us & CTA ────────────────────────────────────────────────── */}
       <ProductWhyChooseUs />
       <ProductCTA productType="garment" />

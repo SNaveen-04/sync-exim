@@ -57,7 +57,7 @@ const ProductWhyChooseUs = ({ whyChooseUs }) => {
   if (!list || list.length === 0) return null;
 
   return (
-    <section className="w-full py-5 bg-[#10195a] border-t border-b border-white/10 mt-8 mb-0">
+    <section className="w-full py-5 bg-[#10195a] border-t border-b border-white/10 mt-0 mb-0">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
           {list.map((reason) => {

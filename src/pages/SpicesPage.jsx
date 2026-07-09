@@ -206,9 +206,9 @@ const SpiceCard = ({ spice }) => {
 const SpicesPage = () => {
   return (
     <>
-      <div className="container mx-auto px-4 pb-16 pt-6">
+      <div className="container mx-auto px-4 pb-8 pt-4">
       {/* ── Hero ──────────────────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8 items-center">
         {/* Left - text */}
         <div>
           <h1 className="text-4xl md:text-5xl !font-bold text-[#273296] leading-tight mb-4">
@@ -257,23 +257,23 @@ const SpicesPage = () => {
       </div>
 
       {/* ── Divider ── */}
-      <hr className="border-gray-200 mb-14" />
-
+      <hr className="border-gray-200 mb-8" />
+      </div>
 
       {/* ── Spice Cards ───────────────────────────────────────────────────────── */}
-      <section className="py-14">
-        <SectionLabel>Export Catalogue</SectionLabel>
-        <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
-          Our Spice Catalogue
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-          {spices.map((spice) => (
-            <SpiceCard key={spice.id} spice={spice} />
-          ))}
+      <section className="py-14 bg-[#eef1fb]">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <SectionLabel>Export Catalogue</SectionLabel>
+          <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
+            Our Spice Catalogue
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            {spices.map((spice) => (
+              <SpiceCard key={spice.id} spice={spice} />
+            ))}
+          </div>
         </div>
       </section>
-
-      </div>
       {/* ── Why Choose Us & CTA ────────────────────────────────────────────────── */}
       <ProductWhyChooseUs />
       <ProductCTA productType="spices" />

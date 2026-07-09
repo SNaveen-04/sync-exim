@@ -1,10 +1,25 @@
-// ── Noodles Page Data ─────────────────────────────────────────────────────────
+import noodles2 from "../assets/noodles/noodles2.jpeg";
+import noodles3 from "../assets/noodles/noodles3.jpeg";
 
 export const highlights = [
   "Premium Quality",
   "Multiple Pack Sizes",
   "6-Month Shelf Life",
   "Worldwide Export",
+];
+
+export const products = [
+  {
+    name: "Noodles",
+    image: noodles3,
+    description: "Refined Wheat Flour & Permitted Preservatives",
+  },
+  {
+    name: "Magic Masala",
+    image: noodles2,
+    description:
+      "Authentic spice blend with hydrolysed groundnut protein, wheat flour, edible oil, and a rich assortment of premium spices.",
+  },
 ];
 
 export const packingSizes = ["180g", "450g", "900g", "1 kg"];
