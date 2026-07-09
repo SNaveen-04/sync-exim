@@ -7,7 +7,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 export default function ProductEnquiryPage() {
   const initialState = {
     product_name: "",
-    quantity_required: "",
+    quantity_required: 1,
     shipment_type: "",
     quantity_in: "KGS",
     email: "",
@@ -25,6 +25,11 @@ export default function ProductEnquiryPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (Number(form.quantity_required) <= 0) {
+      toast.error("Quantity required must be greater than zero");
+      return;
+    }
 
     setLoading(true);
     try {
@@ -87,6 +92,8 @@ export default function ProductEnquiryPage() {
                   <input
                     type="number"
                     name="quantity_required"
+                    min="0.01"
+                    step="any"
                     value={form.quantity_required}
                     onChange={handleChange}
                     className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
