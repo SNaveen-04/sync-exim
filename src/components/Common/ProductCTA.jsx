@@ -9,8 +9,8 @@ const ProductCTA = ({ productType, description }) => {
       : `Looking for a reliable export partner? Contact SYNC EXIM today for customized solutions, competitive pricing, and timely delivery for your bulk export requirements.`);
 
   return (
-    <section className="-mx-4 px-4 py-12 bg-[#273296]">
-      <div className="container mx-auto md:flex md:items-center md:justify-between gap-8">
+    <section className="w-full py-12 bg-[#0a1148] mt-0">
+      <div className="container mx-auto px-4 md:flex md:items-center md:justify-between gap-8">
         <div className="mb-6 md:mb-0">
           <p className="text-blue-200 text-xs font-bold uppercase tracking-widest mb-1">
             Get Started

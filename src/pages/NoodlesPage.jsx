@@ -33,7 +33,8 @@ const SectionLabel = ({ children }) => (
 
 const NoodlesPage = () => {
   return (
-    <div className="container mx-auto px-4 pb-16 pt-6">
+    <>
+      <div className="container mx-auto px-4 pb-16 pt-6">
       {/* ── Hero ──────────────────────────────────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
         {/* Left — text */}
@@ -217,10 +218,11 @@ const NoodlesPage = () => {
         </div>
       </section>
 
+      </div>
       {/* ── Why Choose Us & CTA ────────────────────────────────────────────────── */}
       <ProductWhyChooseUs />
       <ProductCTA productType="noodles" />
-    </div>
+    </>
   );
 };
 

@@ -1,10 +1,14 @@
-import { FaCheck } from "react-icons/fa";
-
-const SectionLabel = ({ children }) => (
-  <span className="inline-block uppercase text-xs font-bold tracking-widest text-[#273296] border-b-2 border-[#273296] pb-0.5 mb-3">
-    {children}
-  </span>
-);
+import {
+  LuHandshake,
+  LuShieldCheck,
+  LuNetwork,
+  LuTag,
+  LuBox,
+  LuClipboardCheck,
+  LuTruck,
+  LuFileText,
+  LuGlobe,
+} from "react-icons/lu";
 
 const DEFAULT_WHY_CHOOSE_US = [
   "Trusted Merchant Exporter",
@@ -18,30 +22,58 @@ const DEFAULT_WHY_CHOOSE_US = [
   "Worldwide Shipping Support",
 ];
 
+const getIconForReason = (reason) => {
+  const lower = reason.toLowerCase();
+  if (lower.includes("trust") || lower.includes("exporter") || lower.includes("merchant")) {
+    return LuHandshake;
+  }
+  if (lower.includes("sourcing") || lower.includes("network") || lower.includes("partner")) {
+    return LuNetwork;
+  }
+  if (lower.includes("price") || lower.includes("pricing") || lower.includes("competitive")) {
+    return LuTag;
+  }
+  if (lower.includes("quantity") || lower.includes("quantities") || lower.includes("moq") || lower.includes("flexible")) {
+    return LuBox;
+  }
+  if (lower.includes("inspect") || lower.includes("inspection") || lower.includes("strict")) {
+    return LuClipboardCheck;
+  }
+  if (lower.includes("delivery") || lower.includes("time") || lower.includes("on-time")) {
+    return LuTruck;
+  }
+  if (lower.includes("document") || lower.includes("documentation")) {
+    return LuFileText;
+  }
+  if (lower.includes("ship") || lower.includes("shipping") || lower.includes("worldwide") || lower.includes("global")) {
+    return LuGlobe;
+  }
+  return LuShieldCheck; // fallback
+};
+
 const ProductWhyChooseUs = ({ whyChooseUs }) => {
   const list = whyChooseUs || DEFAULT_WHY_CHOOSE_US;
 
   if (!list || list.length === 0) return null;
 
   return (
-    <section className="-mx-4 px-4 py-12 mb-0 bg-[#f0f4f8]">
-      <div className="container mx-auto">
-        <SectionLabel>Our Advantage</SectionLabel>
-        <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
-          Why Choose SYNC EXIM?
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {list.map((reason) => (
-            <div
-              key={reason}
-              className="bg-white rounded-lg border border-[#273296]/10 shadow-sm hover:shadow-md transition-shadow duration-300 p-4 flex items-center gap-3"
-            >
-              <span className="w-7 h-7 rounded-full bg-[#273296]/10 flex items-center justify-center flex-shrink-0">
-                <FaCheck className="text-[#273296] text-xs" />
-              </span>
-              <p className="text-[#2c526e] font-semibold text-sm">{reason}</p>
-            </div>
-          ))}
+    <section className="w-full py-5 bg-[#10195a] border-t border-b border-white/10 mt-8 mb-0">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+          {list.map((reason) => {
+            const Icon = getIconForReason(reason);
+            return (
+              <div
+                key={reason}
+                className="flex items-center gap-2.5 text-white"
+              >
+                <Icon className="text-lg sm:text-xl text-white/90 shrink-0 stroke-[1.8]" />
+                <span className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-white/90">
+                  {reason}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
