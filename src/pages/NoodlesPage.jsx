@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaCheck, FaArrowRight } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 
 import noodles1 from "../assets/noodles/noodles1.png";
 import noodles2 from "../assets/noodles/noodles2.jpeg";
@@ -10,8 +10,9 @@ import {
   packingSizes,
   noodleIngredients,
   masakaIngredients,
-  whyChooseUs,
 } from "../data/noodles.data";
+import ProductWhyChooseUs from "../components/Common/ProductWhyChooseUs";
+import ProductCTA from "../components/Common/ProductCTA";
 
 // ── Sub-components ─────────────────────────────────────────────────────────────
 
@@ -216,55 +217,9 @@ const NoodlesPage = () => {
         </div>
       </section>
 
-      {/* ── Why Choose Us ──────────────────────────────────────────────────────── */}
-      <section className="-mx-4 px-4 py-12 mb-0 bg-[#f0f4f8]">
-        <div className="container mx-auto">
-          <SectionLabel>Our Advantage</SectionLabel>
-          <h2 className="text-2xl md:text-3xl !font-bold text-[#273296] mb-8">
-            Why Choose SYNC EXIM?
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {whyChooseUs.map((reason) => (
-              <div
-                key={reason}
-                className="bg-white rounded-lg border border-[#273296]/10 shadow-sm hover:shadow-md transition-shadow duration-300 p-4 flex items-center gap-3"
-              >
-                <span className="w-7 h-7 rounded-full bg-[#273296]/10 flex items-center justify-center flex-shrink-0">
-                  <FaCheck className="text-[#273296] text-xs" />
-                </span>
-                <p className="text-[#2c526e] font-semibold text-sm">{reason}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ────────────────────────────────────────────────────────────────── */}
-      <section className="-mx-4 px-4 py-12 bg-[#273296]">
-        <div className="container mx-auto md:flex md:items-center md:justify-between gap-8">
-          <div className="mb-6 md:mb-0">
-            <p className="text-blue-200 text-xs font-bold uppercase tracking-widest mb-1">
-              Get Started
-            </p>
-            <h2 className="text-white text-2xl md:text-3xl font-bold mb-2">
-              Request a Quote
-            </h2>
-            <p className="text-blue-100 text-sm leading-relaxed max-w-lg">
-              Looking for a reliable noodles export partner? Contact SYNC EXIM
-              today for customized solutions, competitive pricing, and timely
-              delivery for your bulk export requirements.
-            </p>
-          </div>
-          <Link
-            to="/product-enquiry"
-            className="inline-block flex-shrink-0 bg-white text-[#273296] font-bold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-sm"
-          >
-            <span className="flex items-center gap-2">
-              Contact Us Today <FaArrowRight className="text-xs" />
-            </span>
-          </Link>
-        </div>
-      </section>
+      {/* ── Why Choose Us & CTA ────────────────────────────────────────────────── */}
+      <ProductWhyChooseUs />
+      <ProductCTA productType="noodles" />
     </div>
   );
 };
