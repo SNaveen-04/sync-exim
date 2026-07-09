@@ -6,12 +6,12 @@ import { BiLoaderAlt } from "react-icons/bi";
 
 export default function ProductEnquiryPage() {
   const initialState = {
-    productName: "",
-    qtyRequired: "",
-    shipmentType: "",
-    qtyType: "KGS",
+    product_name: "",
+    quantity_required: "",
+    shipment_type: "",
+    quantity_in: "KGS",
     email: "",
-    companyName: "",
+    company_name: "",
     query: "",
   };
 
@@ -29,15 +29,16 @@ export default function ProductEnquiryPage() {
     setLoading(true);
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/send-product-enquiry`,
+        `${import.meta.env.VITE_API_URL}/enquiry`,
         form
       );
       if (response.status === 200) {
-        toast.success("Form Data Sent Successfully");
+        toast.success("Enquiry sent successfully");
         setForm(initialState);
       }
     } catch (err) {
-      toast.error("Form Data Not Sent");
+      const errorMessage = err.response?.data?.error || "Failed to submit the form";
+      toast.error(errorMessage);
       console.log(err);
     } finally {
       setLoading(false);
@@ -61,15 +62,15 @@ export default function ProductEnquiryPage() {
               <div className="md:flex md:gap-10 md:items-center">
                 <div className="mb-3 flex-1">
                   <label
-                    htmlFor="productName"
-                    className="block text-[#2c526e] mb-1 text-sm"
+                    htmlFor="product_name"
+                    className="block text-[#2c526e] mb-1 text-sm font-medium"
                   >
-                    Product Name
+                    Product Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
-                    name="productName"
-                    value={form.productName}
+                    name="product_name"
+                    value={form.product_name}
                     onChange={handleChange}
                     className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
                     required
@@ -78,15 +79,15 @@ export default function ProductEnquiryPage() {
 
                 <div className="mb-3 flex-1">
                   <label
-                    htmlFor="qtyRequired"
-                    className="block text-[#2c526e] mb-1 text-sm"
+                    htmlFor="quantity_required"
+                    className="block text-[#2c526e] mb-1 text-sm font-medium"
                   >
-                    Quantity Required
+                    Quantity Required <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="number"
-                    name="qtyRequired"
-                    value={form.qtyRequired}
+                    name="quantity_required"
+                    value={form.quantity_required}
                     onChange={handleChange}
                     className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
                     required
@@ -97,14 +98,14 @@ export default function ProductEnquiryPage() {
               <div className="md:flex md:gap-10 md:items-center">
                 <div className="mb-3 flex-1">
                   <label
-                    htmlFor="shipmentType"
-                    className="block text-[#2c526e] mb-1 text-sm"
+                    htmlFor="shipment_type"
+                    className="block text-[#2c526e] mb-1 text-sm font-medium"
                   >
-                    Shipment Type
+                    Shipment Type <span className="text-red-500">*</span>
                   </label>
                   <select
-                    name="shipmentType"
-                    value={form.shipmentType}
+                    name="shipment_type"
+                    value={form.shipment_type}
                     onChange={handleChange}
                     className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
                     required
@@ -115,25 +116,26 @@ export default function ProductEnquiryPage() {
                     <option value="40'' RF">40'' RF</option>
                     <option value="Break Bulk">Break Bulk</option>
                     <option value="Bulk">Bulk</option>
+                    <option value="Air Freight">Air Freight</option>
                   </select>
                 </div>
 
                 <div className="mb-3 flex-1">
                   <label
-                    htmlFor="qtyType"
-                    className="block text-[#2c526e] mb-1 text-sm"
+                    htmlFor="quantity_in"
+                    className="block text-[#2c526e] mb-1 text-sm font-medium"
                   >
-                    Quantity in
+                    Quantity in <span className="text-red-500">*</span>
                   </label>
 
                   <div className="flex items-center gap-5">
                     <div>
                       <input
                         type="radio"
-                        name="qtyType"
+                        name="quantity_in"
                         value="KGS"
                         onChange={handleChange}
-                        checked={form.qtyType === "KGS"}
+                        checked={form.quantity_in === "KGS"}
                         className="mr-2 focus:ring-2 focus:ring-[#4AB9CF]"
                         required
                       />
@@ -144,10 +146,10 @@ export default function ProductEnquiryPage() {
                     <div>
                       <input
                         type="radio"
-                        name="qtyType"
+                        name="quantity_in"
                         value="MTS"
                         onChange={handleChange}
-                        checked={form.qtyType === "MTS"}
+                        checked={form.quantity_in === "MTS"}
                         className="mr-2 focus:ring-2 focus:ring-[#4AB9CF]"
                       />
                       <label htmlFor="MTS" className="text-sm text-[#2c526e]">
@@ -162,9 +164,9 @@ export default function ProductEnquiryPage() {
                 <div className="mb-3 flex-1">
                   <label
                     htmlFor="email"
-                    className="block text-[#2c526e] mb-1 text-sm"
+                    className="block text-[#2c526e] mb-1 text-sm font-medium"
                   >
-                    Email
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
@@ -178,15 +180,15 @@ export default function ProductEnquiryPage() {
 
                 <div className="mb-3 flex-1">
                   <label
-                    htmlFor="companyName"
-                    className="block text-[#2c526e] mb-1 text-sm"
+                    htmlFor="company_name"
+                    className="block text-[#2c526e] mb-1 text-sm font-medium"
                   >
-                    Company Name
+                    Company Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
-                    name="companyName"
-                    value={form.companyName}
+                    name="company_name"
+                    value={form.company_name}
                     onChange={handleChange}
                     className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
                     required
@@ -197,9 +199,9 @@ export default function ProductEnquiryPage() {
               <div className="mb-3">
                 <label
                   htmlFor="query"
-                  className="block text-[#2c526e] mb-1 text-sm"
+                  className="block text-[#2c526e] mb-1 text-sm font-medium"
                 >
-                  Query
+                  Query <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   rows="3"

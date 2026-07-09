@@ -96,11 +96,11 @@ function App() {
       </Routes>
 
       <ToastContainer
-        position="bottom-left"
+        position="bottom-center"
         transition={Flip}
         autoClose={2500}
         hideProgressBar
-        theme="colored"
+        theme="dark"
       />
     </>
   );

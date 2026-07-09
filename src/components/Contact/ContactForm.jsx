@@ -7,7 +7,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 export default function ContactForm({ withBorder = false }) {
   const initialState = {
     name: "",
-    contact: "",
+    phone_number: "",
     email: "",
     message: "",
   };
@@ -26,15 +26,16 @@ export default function ContactForm({ withBorder = false }) {
     setLoading(true);
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/send-email`,
+        `${import.meta.env.VITE_API_URL}/contact`,
         form
       );
       if (response.status === 200) {
-        toast.success("Form Data Sent Successfully");
+        toast.success("Message sent successfully");
         setForm(initialState);
       }
     } catch (err) {
-      toast.error("Form Data Not Sent");
+      const errorMessage = err.response?.data?.error || "Failed to submit the form";
+      toast.error(errorMessage);
       console.log(err);
     } finally {
       setLoading(false);
@@ -51,8 +52,8 @@ export default function ContactForm({ withBorder = false }) {
         </h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="name" className="block text-[#2c526e] mb-1 text-sm">
-              Name
+            <label htmlFor="name" className="block text-[#2c526e] mb-1 text-sm font-medium">
+              Name <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -66,15 +67,15 @@ export default function ContactForm({ withBorder = false }) {
 
           <div className="mb-3">
             <label
-              htmlFor="phone"
-              className="block text-[#2c526e] mb-1 text-sm"
+              htmlFor="phone_number"
+              className="block text-[#2c526e] mb-1 text-sm font-medium"
             >
-              Phone Number
+              Phone Number <span className="text-red-500">*</span>
             </label>
             <input
-              type="number"
-              name="contact"
-              value={form.contact}
+              type="text"
+              name="phone_number"
+              value={form.phone_number}
               onChange={handleChange}
               className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4AB9CF]"
               required
@@ -84,9 +85,9 @@ export default function ContactForm({ withBorder = false }) {
           <div className="mb-3">
             <label
               htmlFor="email"
-              className="block text-[#2c526e] mb-1 text-sm"
+              className="block text-[#2c526e] mb-1 text-sm font-medium"
             >
-              Email
+              Email <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -101,9 +102,9 @@ export default function ContactForm({ withBorder = false }) {
           <div className="mb-3">
             <label
               htmlFor="message"
-              className="block text-[#2c526e] mb-1 text-sm"
+              className="block text-[#2c526e] mb-1 text-sm font-medium"
             >
-              Message
+              Message <span className="text-red-500">*</span>
             </label>
             <textarea
               rows="3"
