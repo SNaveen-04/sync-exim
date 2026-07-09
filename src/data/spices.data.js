@@ -381,9 +381,9 @@ export const spices = [
       {
         title: "Available Varieties",
         rows: [
-          ["S9 - Ramnad Mundu", "Medium Heat — GI Tagged, round shape"],
-          ["S17 Teja", "High Heat — Slender, bright red"],
-          ["Byadgi", "Low Heat — Deep red, wrinkled skin"],
+          ["S9 - Ramnad Mundu", "Medium Heat - GI Tagged, round shape"],
+          ["S17 Teja", "High Heat - Slender, bright red"],
+          ["Byadgi", "Low Heat - Deep red, wrinkled skin"],
           ["334 / S4 Sannam", "Medium Heat"],
         ],
       },

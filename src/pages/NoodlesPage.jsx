@@ -37,7 +37,7 @@ const NoodlesPage = () => {
       <div className="container mx-auto px-4 pb-16 pt-6">
       {/* ── Hero ──────────────────────────────────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
-        {/* Left — text */}
+        {/* Left - text */}
         <div>
           <h1 className="text-4xl md:text-5xl !font-bold text-[#273296] leading-tight mb-4">
             Premium Quality
@@ -75,7 +75,7 @@ const NoodlesPage = () => {
           </Link>
         </div>
 
-        {/* Right — portrait images */}
+        {/* Right - portrait images */}
         <div className="flex gap-4" style={{ height: "480px" }}>
           <div className="flex-1 rounded-2xl overflow-hidden shadow-lg h-full">
             <img
@@ -114,8 +114,8 @@ const NoodlesPage = () => {
             Our Product
           </h2>
           <p className="text-gray-500 text-sm mb-8 max-w-2xl">
-            A perfectly crafted noodle experience — from the base to the
-            seasoning — designed for retail, food service, and institutional
+            A perfectly crafted noodle experience - from the base to the
+            seasoning - designed for retail, food service, and institutional
             markets across the globe.
           </p>
 

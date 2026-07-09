@@ -71,7 +71,7 @@ const SpiceModal = ({ spice, onClose }) => {
         style={{ zIndex: 10000 }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Modal image banner — sticky top */}
+        {/* Modal image banner - sticky top */}
         <div className="relative h-64 overflow-hidden rounded-t-2xl flex-shrink-0">
           <img
             src={spice.image}
@@ -79,14 +79,14 @@ const SpiceModal = ({ spice, onClose }) => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#273296]/80 via-[#273296]/20 to-transparent" />
-          {/* Close button — top right */}
+          {/* Close button - top right */}
           <button
             onClick={onClose}
             className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-all duration-200"
           >
             <FaTimes className="text-xs" />
           </button>
-          {/* Title — bottom left */}
+          {/* Title - bottom left */}
           <div className="absolute bottom-0 left-0 p-5">
             <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">
               HSN {spice.hsn}
@@ -97,7 +97,7 @@ const SpiceModal = ({ spice, onClose }) => {
           </div>
         </div>
 
-        {/* Modal body — scrollable */}
+        {/* Modal body - scrollable */}
         <div className="flex-1 overflow-y-auto px-6 py-5 space-y-1">
           {spice.specTables.map((t) => (
             <SpecTable key={t.title} title={t.title} rows={t.rows} />
@@ -119,7 +119,7 @@ const SpiceModal = ({ spice, onClose }) => {
           </div>
         </div>
 
-        {/* Modal footer — sticky bottom */}
+        {/* Modal footer - sticky bottom */}
         <div className="flex-shrink-0 px-6 py-4 border-t border-[#273296]/10 flex justify-end bg-white rounded-b-2xl">
           <Link
             to="/product-enquiry"
@@ -209,7 +209,7 @@ const SpicesPage = () => {
       <div className="container mx-auto px-4 pb-16 pt-6">
       {/* ── Hero ──────────────────────────────────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
-        {/* Left — text */}
+        {/* Left - text */}
         <div>
           <h1 className="text-4xl md:text-5xl !font-bold text-[#273296] leading-tight mb-4">
             Premium Indian
@@ -246,7 +246,7 @@ const SpicesPage = () => {
           </Link>
         </div>
 
-        {/* Right — hero image */}
+        {/* Right - hero image */}
         <div className="rounded-2xl overflow-hidden shadow-lg" style={{ height: "480px" }}>
           <img
             src={spicesImg}

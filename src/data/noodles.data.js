@@ -16,7 +16,7 @@ export const noodleIngredients = [
 
 export const masakaIngredients = [
   "Hydrolysed Groundnut Protein",
-  "Mixed Spices — Onion Powder",
+  "Mixed Spices - Onion Powder",
   "Chilli Powder",
   "Garlic Powder",
   "Coriander",
