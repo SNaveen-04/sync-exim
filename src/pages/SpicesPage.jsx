@@ -3,13 +3,9 @@ import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import { FaCheck, FaArrowRight, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
-import { highlights, spices } from "../data/spices.data";
+import { highlights, spices, PLACEHOLDER } from "../data/spices.data";
 import ProductWhyChooseUs from "../components/Common/ProductWhyChooseUs";
 import ProductCTA from "../components/Common/ProductCTA";
-
-// ── Dummy placeholder image (Unsplash spices) ─────────────────────────────────
-const PLACEHOLDER =
-  "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=900&q=80";
 
 // ── Sub-components ─────────────────────────────────────────────────────────────
 
@@ -76,7 +72,7 @@ const SpiceModal = ({ spice, onClose }) => {
         {/* Modal image banner — sticky top */}
         <div className="relative h-52 overflow-hidden rounded-t-2xl flex-shrink-0">
           <img
-            src={PLACEHOLDER}
+            src={spice.image}
             alt={spice.name}
             className="w-full h-full object-cover"
           />
@@ -150,7 +146,7 @@ const SpiceCard = ({ spice }) => {
         {/* Image */}
         <div className="relative h-64 overflow-hidden">
           <img
-            src={PLACEHOLDER}
+            src={spice.image}
             alt={spice.name}
             className="w-full h-full object-cover"
           />

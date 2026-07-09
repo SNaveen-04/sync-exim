@@ -1,4 +1,7 @@
-// ── Spices Page Data ──────────────────────────────────────────────────────────
+import turmericImg from "../assets/spices/turmeric.jpeg";
+
+export const PLACEHOLDER =
+  "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=900&q=80";
 
 export const highlights = [
   "Export-Grade Quality",
@@ -22,6 +25,7 @@ export const whyChooseUs = [
 export const spices = [
   {
     id: "black-pepper",
+    image: "https://images.unsplash.com/photo-1626128665085-4837fc776fd7?w=900&q=80",
     name: "Black Pepper",
     hsn: "09041130",
     description:
@@ -58,6 +62,7 @@ export const spices = [
   },
   {
     id: "cardamom",
+    image: "https://images.unsplash.com/photo-1627998782333-e7f0bf1917f3?w=900&q=80",
     name: "Cardamom",
     hsn: "090831",
     description:
@@ -97,6 +102,7 @@ export const spices = [
   },
   {
     id: "cloves",
+    image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=900&q=80",
     name: "Cloves",
     hsn: "090710",
     description:
@@ -132,6 +138,7 @@ export const spices = [
   },
   {
     id: "fennel",
+    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=900&q=80",
     name: "Fennel",
     hsn: "09096210",
     description:
@@ -180,6 +187,7 @@ export const spices = [
   },
   {
     id: "cumin",
+    image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=900&q=80",
     name: "Cumin",
     hsn: "09093110",
     description:
@@ -230,6 +238,7 @@ export const spices = [
   },
   {
     id: "coriander",
+    image: "https://images.unsplash.com/photo-1608797178974-15b35a61d121?w=900&q=80",
     name: "Coriander",
     hsn: "09092110",
     description:
@@ -280,6 +289,7 @@ export const spices = [
   },
   {
     id: "turmeric",
+    image: turmericImg,
     name: "Turmeric",
     hsn: "09103020",
     description:
@@ -331,6 +341,7 @@ export const spices = [
   },
   {
     id: "dry-red-chilli",
+    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=900&q=80",
     name: "Dry Red Chilli",
     hsn: "09042110",
     description:
