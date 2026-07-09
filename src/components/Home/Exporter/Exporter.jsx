@@ -10,7 +10,7 @@ export default function Exporter() {
           style={{ boxShadow: "1px 0px 8px 4px grey" }}
         >
           <h1 className="text-3xl font-bold text-[#01004b]">
-            Exporter of Agro products and food products
+            Exporter of Agro products, Food products and Garments & Textile products
           </h1>
 
           <p>Welcome to Sync Exim - India's Gateway to Global Markets</p>

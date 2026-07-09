@@ -13,7 +13,7 @@ const About = () => {
           industry. We are dedicated to providing our clients with the best
           possible products and services, and we are always looking for ways to
           improve our offerings. We are committed to sustainable practices, and
-          we work closely with local farmers to ensure that our products meet
+          we work closely with local farmers and manufacturing partners to ensure that our products meet
           the highest standards. Thanks to our years of experience and
           expertise, we are able to provide our clients with unmatched value and
           our Company is engaged into trading and marketing of agricultural
