@@ -55,8 +55,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="/verticals">
-                Business Verticals / Products
+              <a className="hover:underline" href="/our-products">
+                Our Products
               </a>
             </li>
             <li>

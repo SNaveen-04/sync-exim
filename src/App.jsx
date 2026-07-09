@@ -44,7 +44,7 @@ function App() {
           />
 
           <Route
-            path="verticals/spices"
+            path="our-products/spices"
             element={
               <Suspense fallback={<>...</>}>
                 <SpicesPage />
@@ -52,7 +52,7 @@ function App() {
             }
           />
           <Route
-            path="verticals/garments"
+            path="our-products/garments"
             element={
               <Suspense fallback={<>...</>}>
                 <GarmentsPage />
@@ -60,7 +60,7 @@ function App() {
             }
           />
           <Route
-            path="verticals/noodles"
+            path="our-products/noodles"
             element={
               <Suspense fallback={<>...</>}>
                 <NoodlesPage />
@@ -68,7 +68,7 @@ function App() {
             }
           />
           <Route
-            path="verticals/others"
+            path="our-products/others"
             element={
               <Suspense fallback={<>...</>}>
                 <OthersPage />

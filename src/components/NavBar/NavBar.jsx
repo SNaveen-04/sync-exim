@@ -119,12 +119,12 @@ const NavBar = () => {
                   setIsDropdownOpen(!isDropdownOpen);
                 }}
                 className={`${
-                  location.pathname.startsWith("/verticals")
+                  location.pathname.startsWith("/our-products")
                     ? "!bg-[#273296] !text-white"
                     : ""
                 } flex items-center justify-center gap-1 !h-auto md:!h-full group-hover:bg-[#273296] group-hover:!text-white`}
               >
-                BUSINESS VERTICALS / PRODUCTS
+                OUR PRODUCTS
                 <FaChevronDown
                   className={`inline-block ml-1 text-xs transition-transform duration-300 ${
                     isDropdownOpen ? "rotate-180" : ""
@@ -139,7 +139,7 @@ const NavBar = () => {
               >
                 <li onClick={handleClick}>
                   <Link
-                    to="/verticals/spices"
+                    to="/our-products/spices"
                     className="block text-center md:text-left py-2 px-4 text-[#273296] hover:bg-gray-100 text-sm font-semibold normal-case !h-auto w-full"
                   >
                     Spices
@@ -147,7 +147,7 @@ const NavBar = () => {
                 </li>
                 <li onClick={handleClick}>
                   <Link
-                    to="/verticals/garments"
+                    to="/our-products/garments"
                     className="block text-center md:text-left py-2 px-4 text-[#273296] hover:bg-gray-100 text-sm font-semibold normal-case !h-auto w-full"
                   >
                     Garments
@@ -155,7 +155,7 @@ const NavBar = () => {
                 </li>
                 <li onClick={handleClick}>
                   <Link
-                    to="/verticals/noodles"
+                    to="/our-products/noodles"
                     className="block text-center md:text-left py-2 px-4 text-[#273296] hover:bg-gray-100 text-sm font-semibold normal-case !h-auto w-full"
                   >
                     Noodles
@@ -163,7 +163,7 @@ const NavBar = () => {
                 </li>
                 <li onClick={handleClick}>
                   <Link
-                    to="/verticals/others"
+                    to="/our-products/others"
                     className="block text-center md:text-left py-2 px-4 text-[#273296] hover:bg-gray-100 text-sm font-semibold normal-case !h-auto w-full"
                   >
                     Others
