@@ -7,7 +7,7 @@ import { highlights, spices } from "../data/spices.data";
 import ProductWhyChooseUs from "../components/Common/ProductWhyChooseUs";
 import ProductCTA from "../components/Common/ProductCTA";
 
-import spicesImg from "../assets/spices/spices.jpeg"
+import spicesImg from "../assets/spices/spices.png"
 
 // ── Sub-components ─────────────────────────────────────────────────────────────
 
