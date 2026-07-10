@@ -10,6 +10,8 @@ import {
 import noodles1 from "../assets/noodles/noodles1.png";
 import noodles2 from "../assets/noodles/noodles2.jpeg";
 import noodles3 from "../assets/noodles/noodles3.jpeg";
+import noodles4 from "../assets/noodles/noodles4.jpeg";
+import noodles5 from "../assets/noodles/noodles5.jpeg";
 
 import {
   highlights,
@@ -94,14 +96,14 @@ const NoodlesPage = () => {
           <div className="flex flex-col gap-4 flex-1">
             <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src={noodles2}
+                src={noodles4}
                 alt="Noodles product 2"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src={noodles3}
+                src={noodles5}
                 alt="Noodles product 3"
                 className="w-full h-full object-cover"
               />
