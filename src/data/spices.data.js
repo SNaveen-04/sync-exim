@@ -284,7 +284,10 @@ export const spices = [
         ],
       },
     ],
-    packaging: [],
+    packaging: [
+      "25 kg and 50 kg export bags",
+      "Retail packs and powder pouches on request",
+    ],
   },
   {
     id: "dry-red-chilli",
@@ -321,6 +324,9 @@ export const spices = [
         ],
       },
     ],
-    packaging: [],
+    packaging: [
+      "25 kg and 50 kg export bags",
+      "Compressed or customized packs on request",
+    ],
   },
 ];
