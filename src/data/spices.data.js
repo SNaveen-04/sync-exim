@@ -5,7 +5,7 @@ import cardamomImg from "../assets/spices/cardamom.png";
 import corianderImg from "../assets/spices/coriander.jpeg";
 import cuminImg from "../assets/spices/cumin.jpg";
 import dryRedChilliImg from "../assets/spices/dry_red_chilli.jpg";
-import fennelImg from "../assets/spices/fennel.jpg";
+import fennelImg from "../assets/spices/fennel.png";
 
 export const highlights = [
   "Export-Grade Quality",
@@ -36,25 +36,18 @@ export const spices = [
       "We supply high-quality Black Pepper sourced from South India's leading cultivation areas and processed to meet global export standards. Our range includes MG1 FAQ and buyer-specific grades, with carefully monitored moisture levels and density specifications to deliver reliable quality for wholesale, retail, food processing, and premium spice markets worldwide.",
     quickSpecs: [
       { label: "Purity", value: "99% Min" },
-      { label: "Grade", value: "500 GL to 580 GL" },
+      { label: "Moisture", value: "Max 12%" },
+      { label: "Grade", value: "MG1 FAQ / TGSEB" },
       { label: "Shelf Life", value: "12 to 18 months" },
-      { label: "Origin", value: "India" },
     ],
     specTables: [
       {
         title: "Details",
         rows: [
-          ["Density", "550 to 600 g/l"],
-          ["Grade", "MG1 FAQ / TGSEB / buyer-specific"],
-          ["Moisture", "Max 12%"],
-          ["Piperine", "3% to 6%"],
           ["Cleanliness", "Machine + hand sorted"],
-          ["Packing", "25 kg & 50 kg bags or as per buyer requirement"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
+          ["Packing", "25kg and 50kg bags and as per buyer requirement"],
+          ["Density", "550 to 600 g/l"],
+          ["Piperine", "3% to 6%"],
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
@@ -62,7 +55,7 @@ export const spices = [
         ],
       },
     ],
-    packaging: ["25 kg and 50 kg export bags", "Buyer-specific grades available"],
+    packaging: [],
   },
   {
     id: "cardamom",
@@ -74,27 +67,22 @@ export const spices = [
     quickSpecs: [
       { label: "Purity", value: "99% Min" },
       { label: "Moisture", value: "10-12% / As per export grade" },
-      { label: "Grade / Size", value: "Export Quality (7mm - 8mm+)" },
+      {
+        label: "Grade / Size",
+        value: "Export Quality (7mm - 8mm+) bold by requirement",
+      },
       { label: "Shelf Life", value: "6-12 months (cool, dry storage)" },
     ],
     specTables: [
       {
         title: "Details",
         rows: [
-          ["Botanical Name", "Elettaria cardamomum"],
-          ["Origin", "Kerala / South India"],
           ["Color", "Natural green to light green"],
           ["Aroma", "High volatile oil profile"],
           ["Processing", "Hand sorted and graded"],
-          ["Shelf Life", "12 months under cool, dry storage"],
           ["Packing", "Vacuum and bulk options"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
-          ["Color", "Natural green"],
-          ["Aroma", "Strong and premium export quality"],
+          ["Botanical Name", "Elettaria cardamomum"],
+          ["Origin", "Kerala / South India"],
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
@@ -102,7 +90,7 @@ export const spices = [
         ],
       },
     ],
-    packaging: ["Vacuum-packed", "Bulk export bags available"],
+    packaging: [],
   },
   {
     id: "cloves",
@@ -121,24 +109,20 @@ export const spices = [
       {
         title: "Details",
         rows: [
-          ["Origin", "Kerala, South India"],
-          ["Shelf Life", "24 months"],
           ["Color", "Dark brown to reddish-brown"],
           ["Aroma", "Strong characteristic clove aroma"],
           ["Processing", "Hand-picked and machine-sorted"],
           ["Packing", "Vacuum and bulk options"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
-          ["Yeast & Mold", "≤ 10,000 CFU/g"],
-          ["E. coli", "Absent"],
-          ["Salmonella", "Absent in 25g"],
+          ["Botanical Name", "Syzygium aromaticum"],
+          ["Origin", "Kerala, South India"],
+          ["Total Plate Count", "≤ 1,000,000 CFU/g (10⁶ CFU/g)"],
+          ["Yeast & Mold", "≤ 10,000 CFU/g (10⁴ CFU/g)"],
+          ["E. coli", "Absent in 1 g"],
+          ["Salmonella", "Absent in 25 g"],
         ],
       },
     ],
-    packaging: ["25 kg and 50 kg export bags", "Vacuum-packed on request"],
+    packaging: [],
   },
   {
     id: "fennel",
@@ -157,29 +141,19 @@ export const spices = [
       {
         title: "Details",
         rows: [
-          ["Botanical Name", "Foeniculum vulgare"],
-          ["Origin", "Gujarat, India"],
-          ["Harvest Season", "February to April"],
+          // ["Purity", "Min 99%"],
+          // ["Moisture", "Max 8%"],
+          // ["Broken Seeds", "Max 1%"],
           ["Color", "Greenish-brown to light brown"],
           ["Variety", "Bold / Small / Singapore grade"],
           ["Processing", "Sortex cleaned and metal checked"],
-        ],
-      },
-      {
-        title: "Quality Parameters",
-        rows: [
-          ["Purity", "99%"],
-          ["Moisture", "Max 8%"],
-          ["Color", "Light green to green"],
+          ["Botanical Name", "Foeniculum vulgare"],
+          ["Origin", "Gujarat, India"],
+          ["Harvest Season", "February to April"],
+          // ["Shelf Life", "12 to 18 months"],
           ["Size", "Bold / Medium"],
-          ["Breakage", "Low breakage export lots"],
           ["Volatile Oil", "1.5% to 3%"],
           ["Sweetness", "High, export-preferred profile"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
@@ -187,7 +161,7 @@ export const spices = [
         ],
       },
     ],
-    packaging: ["25 kg and 50 kg export bags", "Custom retail packs on request"],
+    packaging: [],
   },
   {
     id: "cumin",
@@ -200,37 +174,29 @@ export const spices = [
       { label: "Purity", value: "98% / 99% / 99.5%" },
       { label: "Moisture", value: "Max 8% to 10%" },
       { label: "Oil Content", value: "2.5% to 4.5%" },
-      { label: "Shelf Life", value: "12 to 24 months" },
+      { label: "Shelf Life", value: "12 to 24 months in cool, dry storage" },
     ],
     specTables: [
       {
         title: "Details",
         rows: [
+          // ["Purity", "98% / 99% / 99.5%"],
+          // ["Moisture", "Max 8% to 10%"],
+          ["Admixture", "Max 1% to 3% by market grade"],
+          // ["Oil Content", "2.5% to 4.5%"],
+          ["Color", "Brown to dark brown"],
+          ["Crop Year", "Latest available"],
           ["Botanical Name", "Cuminum cyminum"],
           ["Origin", "Unjha, Gujarat, India"],
           ["Harvest Season", "February to April"],
-          ["Color", "Brown to dark brown"],
-          ["Admixture", "Max 1% to 3% by market grade"],
-          ["Crop Year", "Latest available"],
-        ],
-      },
-      {
-        title: "Quality Parameters",
-        rows: [
-          ["Purity", "99% / 99.5% / 99.9% (Sortex)"],
-          ["Moisture", "Max 8% to 10%"],
-          ["Admixture", "Max 0.5% to 1%"],
+          // ["Shelf Life", "12 to 24 months in cool, dry storage"],
           ["Foreign Matter", "Max 0.5%"],
           ["Damaged Seeds", "Max 1%"],
+          ["Immature Seeds", "Max 1%"],
           ["Odor", "Strong aromatic, typical cumin"],
           ["Volatile Oil", "2.0 to 4.5 ml/100g"],
           ["Acid Insoluble Ash", "Max 1.5%"],
           ["Total Ash", "Max 9%"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
@@ -238,7 +204,7 @@ export const spices = [
         ],
       },
     ],
-    packaging: ["25 kg and 50 kg export bags"],
+    packaging: [],
   },
   {
     id: "coriander",
@@ -251,37 +217,27 @@ export const spices = [
       { label: "Purity", value: "Min 98%" },
       { label: "Moisture", value: "Max 10%" },
       { label: "Splits", value: "Max 2%" },
-      { label: "Shelf Life", value: "12 to 18 months" },
+      { label: "Shelf Life", value: "12 to 18 months in dry storage" },
     ],
     specTables: [
       {
         title: "Details",
         rows: [
+          // ["Purity", "Min 98%"],
+          // ["Moisture", "Max 10%"],
+          // ["Splits", "Max 2%"],
+          ["Color", "Green to golden yellow"],
+          ["Cleaning", "Machine + Sortex cleaned"],
           ["Botanical Name", "Coriandrum sativum"],
           ["Origin", "Gujarat / Rajasthan, India"],
           ["Harvest Season", "March to May"],
-          ["Color", "Green to golden yellow"],
-          ["Type", "Eagle / Parrot / Badami available"],
-          ["Cleaning", "Machine + Sortex cleaned"],
-        ],
-      },
-      {
-        title: "Quality Parameters",
-        rows: [
-          ["Purity", "98% to 99%"],
-          ["Moisture", "8% to 10%"],
-          ["Split Seeds", "Max 5%"],
+          // ["Shelf Life", "12 to 18 months in dry storage"],
           ["Foreign Matter", "Max 1%"],
           ["Size", "Approx. 2 to 4 mm diameter"],
-          ["Grades", "Eagle / Scooter / Parrot"],
+          ["Grades", "Eagle / Scooter / Parrot / Badami available"],
           ["Volatile Oil", "0.2% to 1.5%"],
           ["Total Ash", "Max 6%"],
           ["Acid Insoluble Ash", "Max 1.25%"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
@@ -289,7 +245,7 @@ export const spices = [
         ],
       },
     ],
-    packaging: ["25 kg and 50 kg export bags", "Retail packs on request"],
+    packaging: [],
   },
   {
     id: "turmeric",
@@ -308,29 +264,15 @@ export const spices = [
       {
         title: "Details",
         rows: [
-          ["Botanical Name", "Curcuma longa"],
-          ["Origin", "Telangana / South India"],
-          ["Harvest Season", "January to March"],
-          ["Type", "Finger / Bulb / Powder"],
+          ["Type", "Finger / bulb / powder"],
+          ["Curcumin", "2% to 5%+ by grade"],
           ["Color", "Golden yellow to deep orange"],
           ["Processing", "Polished and cleaned"],
           ["Lab Test", "NABL COA available"],
-        ],
-      },
-      {
-        title: "Quality Parameters",
-        rows: [
-          ["Curcumin (High Grade)", "3.5% to 4%"],
-          ["Curcumin (Standard Grade)", "2.5% to 3.5%"],
-          ["Moisture", "Max 10%"],
-          ["Formats", "Finger / Bulb / Powder"],
+          ["Botanical Name", "Curcuma longa"],
+          ["Origin", "Telangana / South India"],
+          ["Harvest Season", "January to March"],
           ["Lead Chromate", "NIL"],
-          ["GI Tagged Variety", "Available"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
@@ -360,40 +302,29 @@ export const spices = [
       {
         title: "Details",
         rows: [
-          ["Botanical Name", "Capsicum annuum"],
-          ["Origin", "Andhra Pradesh, India"],
-          ["Harvest Season", "January to April"],
-          ["Type", "Whole / Stemless / Crushed / Powder"],
-          ["Moisture", "Max 10-12%"],
-          ["Stemless", "Available"],
+          ["Type", "Whole / stemless / crushed / powder"],
+          ["Color Value", "As per ASTA requirement"],
+          ["Pungency", "SHU bands available"],
+          ["Aflatoxin", "Test report available"],
           ["Processing", "Cleaned and graded for export"],
-        ],
-      },
-      {
-        title: "Quality Parameters",
-        rows: [
+          ["Botanical Name", "Capsicum annuum"],
+          ["Harvest Season", "January to April"],
+          ["Stemless", "Available"],
           ["ASTA Color", "80 to 180+"],
           ["Capsaicin", "As per required SHU range"],
-          ["Aflatoxin", "Test report available"],
-          ["Pungency", "SHU bands available"],
-        ],
-      },
-      {
-        title: "Available Varieties",
-        rows: [
-          ["S9 - Ramnad Mundu", "Medium Heat - GI Tagged, round shape"],
-          ["S17 Teja", "High Heat - Slender, bright red"],
-          ["Byadgi", "Low Heat - Deep red, wrinkled skin"],
-          ["334 / S4 Sannam", "Medium Heat"],
-        ],
-      },
-      {
-        title: "Microbiology",
-        rows: [
           ["Total Plate Count", "< 1,000,000 cfu/g"],
           ["Yeast & Mold", "< 100,000 cfu/g"],
           ["E. coli", "Absent"],
           ["Salmonella", "Absent / 25g"],
+        ],
+      },
+      {
+        title: "Available Varieties & Grading",
+        rows: [
+          ["S9- Ramnad Mundu", "Medium Heat (GI Tagged, round shape)"],
+          ["S17 Teja", "High Heat (Slender, bright red)"],
+          ["Byadgi", "Low Heat (Deep red, wrinkled skin)"],
+          ["334/S4 Sannam", "Medium Heat (Popular export variety)"],
         ],
       },
     ],

@@ -104,19 +104,21 @@ const SpiceModal = ({ spice, onClose }) => {
           ))}
 
           {/* Packaging */}
-          <div className="pt-2">
-            <h4 className="text-[#273296] font-bold text-xs uppercase tracking-wider mb-2">
-              Packaging Options
-            </h4>
-            <ul className="space-y-1">
-              {spice.packaging.map((p) => (
-                <li key={p} className="flex items-start gap-2 text-gray-600 text-xs">
-                  <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#273296] flex-shrink-0" />
-                  {p}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {spice.packaging && spice.packaging.length > 0 && (
+            <div className="pt-2">
+              <h4 className="text-[#273296] font-bold text-xs uppercase tracking-wider mb-2">
+                Packaging Options
+              </h4>
+              <ul className="space-y-1">
+                {spice.packaging.map((p) => (
+                  <li key={p} className="flex items-start gap-2 text-gray-600 text-xs">
+                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#273296] flex-shrink-0" />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
         {/* Modal footer - sticky bottom */}
