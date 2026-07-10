@@ -5,7 +5,7 @@ import cardamomImg from "../assets/spices/cardamom.png";
 import corianderImg from "../assets/spices/coriander.jpeg";
 import cuminImg from "../assets/spices/cumin.jpg";
 import dryRedChilliImg from "../assets/spices/dry_red_chilli.jpg";
-import fennelImg from "../assets/spices/fennel.jpg";
+import fennelImg from "../assets/spices/fennel.png";
 
 export const highlights = [
   "Export-Grade Quality",
